@@ -15,19 +15,34 @@
 
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      background: #fafafd;       /* --background-default 360L */
-      color: #18191d;            /* --neutral-900 360L */
+      background: #ededed;
+      color: #18191d;
       overflow: hidden;
       display: flex;
       flex-direction: column;
     }
 
-    /* ── Filters ── */
+    /* ── Abschnitts-Titel (wie "Module" in 360L) ── */
+    .section-header {
+      display: flex;
+      align-items: center;
+      padding: 18px 24px 0;
+      flex-shrink: 0;
+    }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #18191d;
+      letter-spacing: -0.1px;
+    }
+
+    /* ── Filter Buttons (Pill-Form) ── */
     .filters {
       display: flex;
-      gap: 6px;
-      padding: 16px 20px 12px;
-      background: #fafafd;
+      gap: 8px;
+      padding: 14px 24px;
+      background: #ededed;
       overflow-x: auto;
       scrollbar-width: none;
       flex-shrink: 0;
@@ -36,11 +51,11 @@
     .filters::-webkit-scrollbar { display: none; }
 
     .filter-btn {
-      padding: 5px 16px;
-      border: 1.5px solid #d5d9e0;  /* --neutral-75 360L */
+      padding: 6px 16px;
+      border: 1.5px solid #c7c9d1;
       border-radius: 20px;
-      background: #ffffff;           /* --neutral-0 360L */
-      color: #484d59;                /* --neutral-700 360L */
+      background: #ffffff;
+      color: #484d59;
       font-size: 12px;
       font-weight: 600;
       font-family: 'Plus Jakarta Sans', sans-serif;
@@ -48,13 +63,13 @@
       white-space: nowrap;
       transition: all 0.18s;
     }
-    .filter-btn:hover { border-color: #0a47c2; color: #0a47c2; }
-    .filter-btn.active { background: #0a47c2; border-color: #0a47c2; color: #ffffff; }
+    .filter-btn:hover { background: #f0f0f0; }
+    .filter-btn.active { background: #3cd4ff; color: #18191d; }
 
     /* ── Karussell ── */
     .carousel-section {
       position: relative;
-      padding: 12px 0 10px;
+      padding: 16px 0 10px;
       flex: 1;
       min-height: 0;
       display: flex;
@@ -67,6 +82,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
     }
 
     .carousel-track {
@@ -83,17 +99,17 @@
       position: absolute;
       width: 290px;
       height: 340px;
-      background: #fff;
+      background: #ffffff;
       border-radius: 12px;
       overflow: hidden;
       cursor: pointer;
       transition: all 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       box-shadow: 0 1px 3px rgba(24,25,29,0.06), 0 4px 16px rgba(24,25,29,0.08);
       text-decoration: none;
-      color: #18191d;            /* --neutral-900 360L */
+      color: #18191d;
       display: block;
       will-change: transform, opacity, filter;
-      border: 1px solid #e6e9f0; /* --neutral-50 360L */
+      border: 1px solid #e6e9f0;
     }
 
     .card[data-pos="0"]           { transform: translateX(0)     scale(1);    opacity: 1;    z-index: 5; filter: blur(0px); }
@@ -109,7 +125,7 @@
       height: 150px;
       object-fit: cover;
       display: block;
-      background: #f0f0f0;
+      background: #f3f3f9;
     }
 
     .card-image-placeholder {
@@ -119,7 +135,7 @@
       align-items: center;
       justify-content: center;
       font-size: 42px;
-      background: linear-gradient(135deg, #f3f3f9 0%, #e6e9f0 100%); /* neutral-25 → neutral-50 360L */
+      background: linear-gradient(135deg, #f3f3f9 0%, #e6e9f0 100%);
     }
 
     .card-body {
@@ -145,11 +161,11 @@
       border-radius: 4px;
     }
 
-    .card-date { font-size: 11px; color: #82889a; } /* --neutral-300 360L */
+    .card-date { font-size: 11px; color: #82889a; }
 
     .card-source {
       font-size: 11px;
-      color: #82889a;            /* --neutral-300 360L */
+      color: #82889a;
       font-weight: 500;
       margin-bottom: 6px;
     }
@@ -159,7 +175,7 @@
       font-size: 15px;
       font-weight: 700;
       line-height: 1.4;
-      color: #18191d;           /* --neutral-900 360L */
+      color: #18191d;
       flex: 1;
       overflow: hidden;
       display: -webkit-box;
@@ -171,7 +187,7 @@
     .card-cta {
       margin-top: 8px;
       font-size: 12px;
-      color: #0a47c2;
+      color: #00acdc;
       font-weight: 600;
       opacity: 0;
       transition: opacity 0.2s;
@@ -187,9 +203,9 @@
       width: 36px;
       height: 36px;
       border-radius: 50%;
-      border: 1.5px solid #e6e9f0; /* --neutral-50 360L */
-      background: #ffffff;          /* --neutral-0 360L */
-      color: #484d59;               /* --neutral-700 360L */
+      border: 1.5px solid #e6e9f0;
+      background: #ffffff;
+      color: #484d59;
       font-size: 15px;
       cursor: pointer;
       display: flex;
@@ -198,13 +214,13 @@
       transition: all 0.18s;
       box-shadow: 0 1px 4px rgba(24,25,29,0.06);
     }
-    .nav-arrow:hover { background: #0a47c2; border-color: #0a47c2; color: #ffffff; }
+    .nav-arrow:hover { background: #00acdc; border-color: #00acdc; color: #ffffff; }
     .nav-prev { left: 12px; }
     .nav-next { right: 12px; }
 
     /* ── Fortschrittsbalken ── */
-    .progress-bar { height: 2px; background: #e6e9f0; margin: 10px 24px 0; flex-shrink: 0; } /* --neutral-50 360L */
-    .progress-fill { height: 100%; background: #0a47c2; width: 0%; }
+    .progress-bar { height: 2px; background: #e6e9f0; margin: 10px 24px 0; flex-shrink: 0; }
+    .progress-fill { height: 100%; background: #00acdc; width: 0%; }
 
     /* ── Loading ── */
     .loading {
@@ -218,13 +234,13 @@
     .spinner {
       width: 36px;
       height: 36px;
-      border: 3px solid #eee;
-      border-top-color: #0a47c2;
+      border: 3px solid #e6e9f0;
+      border-top-color: #00acdc;
       border-radius: 50%;
       animation: spin 0.75s linear infinite;
     }
     @keyframes spin { to { transform: rotate(360deg); } }
-    .loading p { font-size: 13px; color: #bbb; }
+    .loading p { font-size: 13px; color: #82889a; }
 
     /* ── Empty / Error ── */
     .empty-state {
@@ -233,11 +249,15 @@
       justify-content: center;
       height: 360px;
       font-size: 14px;
-      color: #aaa;
+      color: #82889a;
     }
   </style>
 </head>
 <body>
+
+  <div class="section-header">
+    <span class="section-title">KI-News der Woche</span>
+  </div>
 
   <div class="filters" id="filters">
     <button class="filter-btn active" data-cat="all">Alle</button>
@@ -259,17 +279,11 @@
   </div>
 
   <script>
-    /* ═══════════════════════════════════════════════
-       QUELLEN — allgemein + bereichsspezifisch
-    ═══════════════════════════════════════════════ */
     const SOURCES = [
-      // KI & Tech — deutschsprachige Redaktionen
       { name: 'Heise Online',        url: 'https://www.heise.de/thema/Kuenstliche-Intelligenz.xml',                   category: 'KI & Tech'                    },
       { name: 't3n',                 url: 'https://t3n.de/tag/kuenstliche-intelligenz/rss.xml',                       category: 'KI & Tech'                    },
       { name: 'Google Deutschland',  url: 'https://blog.google/intl/de-de/feed/',                                    category: 'KI & Tech'                    },
       { name: 'Microsoft DE',        url: 'https://news.microsoft.com/de-de/tag/agents/feed/',                        category: 'KI & Tech'                    },
-
-      // KI & Tech — grosse KI-Anbieter (englisch, aber gefiltert)
       { name: 'OpenAI',              url: 'https://openai.com/news/rss.xml',                                         category: 'KI & Tech'                    },
       { name: 'Anthropic',           url: 'https://www.anthropic.com/rss.xml',                                       category: 'KI & Tech'                    },
       { name: 'Google DeepMind',     url: 'https://deepmind.google/blog/rss.xml',                                    category: 'KI & Tech'                    },
@@ -286,22 +300,18 @@
       { name: 'Cohere',              url: 'https://cohere.com/blog/rss',                                             category: 'KI & Tech'                    },
       { name: 'Stability AI',        url: 'https://stability.ai/news/rss.xml',                                       category: 'KI & Tech'                    },
       { name: 'IBM Research AI',     url: 'https://research.ibm.com/blog/rss',                                       category: 'KI & Tech'                    },
-
-      // Finance & Banking
       { name: 'IT Finanzmagazin',    url: 'https://www.it-finanzmagazin.de/tag/kuenstliche-intelligenz/feed/',        category: 'Finance & Banking'            },
       { name: 'IT Finanzmagazin KI', url: 'https://www.it-finanzmagazin.de/tag/ki/feed/',                            category: 'Finance & Banking'            },
       { name: 'Der Bank Blog',       url: 'https://www.der-bank-blog.de/stichwort/kuenstliche-intelligenz/feed/',     category: 'Finance & Banking'            },
-
-      // Marketing, Vertrieb & Service
       { name: 'HubSpot Marketing',   url: 'https://blog.hubspot.de/marketing/rss.xml',                               category: 'Marketing, Vertrieb & Service'},
       { name: 'HubSpot Sales',       url: 'https://blog.hubspot.de/sales/rss.xml',                                   category: 'Marketing, Vertrieb & Service'},
       { name: 'HubSpot Service',     url: 'https://blog.hubspot.de/service/rss.xml',                                 category: 'Marketing, Vertrieb & Service'},
     ];
 
     const COLORS = {
-      'KI & Tech':                    { bg: 'rgba(10,71,194,0.09)',  text: '#0a47c2' },
-      'Finance & Banking':            { bg: 'rgba(8,57,155,0.09)',   text: '#08399b' },
-      'Marketing, Vertrieb & Service':{ bg: 'rgba(91,24,180,0.09)',  text: '#5b18b4' },
+      'KI & Tech':                    { bg: 'rgba(0,172,220,0.10)',  text: '#00acdc' },
+      'Finance & Banking':            { bg: 'rgba(0,172,220,0.10)',   text: '#00acdc' },
+      'Marketing, Vertrieb & Service':{ bg: 'rgba(124,58,237,0.09)',  text: '#7c3aed' },
     };
 
     const EMOJI = {
@@ -318,18 +328,12 @@
 
     const AUTO_SECS = 7;
 
-    /* ═══════════════════════════════════════════════
-       STATE
-    ═══════════════════════════════════════════════ */
     let allArticles      = [];
     let filteredArticles = [];
     let currentIndex     = 0;
     let activeCat        = 'all';
     let autoTimer        = null;
 
-    /* ═══════════════════════════════════════════════
-       KEYWORD-FILTER
-    ═══════════════════════════════════════════════ */
     const AI_KEYWORDS = [
       'künstliche intelligenz', 'maschinelles lernen', 'sprachmodell', 'sprachmodelle',
       'chatbot', 'automatisierung', 'algorithmus', 'algorithmen', 'digitalisierung',
@@ -387,9 +391,6 @@
       return false;
     }
 
-    /* ═══════════════════════════════════════════════
-       HILFSFUNKTIONEN
-    ═══════════════════════════════════════════════ */
     function stripHtml(html) {
       return html.replace(/<[^>]*>/g, '').replace(/&[a-z#0-9]+;/gi, ' ').replace(/\s+/g, ' ').trim();
     }
@@ -400,9 +401,6 @@
         .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
     }
 
-    /* ═══════════════════════════════════════════════
-       XML / RSS PARSER
-    ═══════════════════════════════════════════════ */
     function parseRSS(xmlText) {
       try {
         const doc   = new DOMParser().parseFromString(xmlText, 'text/xml');
@@ -427,9 +425,6 @@
       } catch (e) { return []; }
     }
 
-    /* ═══════════════════════════════════════════════
-       FETCH MIT PROXY-FALLBACK
-    ═══════════════════════════════════════════════ */
     async function tryFetch(feedUrl) {
       for (const makeProxy of PROXIES) {
         const ctrl = new AbortController();
@@ -467,11 +462,11 @@
         document.getElementById('carousel-root').innerHTML = `
           <div class="empty-state" style="flex-direction:column;gap:16px;text-align:center;padding:20px">
             <div style="font-size:32px">⚠️</div>
-            <div style="color:#aaa">Artikel konnten nicht geladen werden.<br>
-              <span style="font-size:12px;color:#ccc">Prüfe deine Internetverbindung.</span>
+            <div style="color:#82889a">Artikel konnten nicht geladen werden.<br>
+              <span style="font-size:12px;color:#c0c4cc">Prüfe deine Internetverbindung.</span>
             </div>
             <button onclick="location.reload()"
-              style="padding:8px 20px;border:1px solid #0a47c2;background:transparent;color:#0a47c2;border-radius:20px;cursor:pointer;font-size:13px;font-family:inherit">
+              style="padding:8px 20px;border:1.5px solid #00acdc;background:transparent;color:#00acdc;border-radius:20px;cursor:pointer;font-size:13px;font-family:inherit">
               Neu laden
             </button>
           </div>`;
@@ -481,9 +476,6 @@
       applyFilter(activeCat);
     }
 
-    /* ═══════════════════════════════════════════════
-       FILTER
-    ═══════════════════════════════════════════════ */
     function applyFilter(cat) {
       activeCat        = cat;
       filteredArticles = cat === 'all' ? [...allArticles] : allArticles.filter(a => a.category === cat);
@@ -491,9 +483,6 @@
       renderCarousel();
     }
 
-    /* ═══════════════════════════════════════════════
-       DATUM FORMATIERUNG
-    ═══════════════════════════════════════════════ */
     function fmtDate(d) {
       const h = Math.floor((Date.now() - d) / 3_600_000);
       if (h < 1)  return 'Gerade eben';
@@ -503,9 +492,6 @@
       return d.toLocaleDateString('de-DE', { day: 'numeric', month: 'short' });
     }
 
-    /* ═══════════════════════════════════════════════
-       POSITION BERECHNEN
-    ═══════════════════════════════════════════════ */
     function getPos(idx) {
       const total = filteredArticles.length;
       let diff = idx - currentIndex;
@@ -519,9 +505,6 @@
       return diff > 0 ? 'hidden-right' : 'hidden-left';
     }
 
-    /* ═══════════════════════════════════════════════
-       RENDER
-    ═══════════════════════════════════════════════ */
     function renderCarousel() {
       const root = document.getElementById('carousel-root');
       if (!filteredArticles.length) {
@@ -560,7 +543,7 @@
 <div class="carousel-wrapper">
   <button class="nav-arrow nav-prev" aria-label="Zurück" onclick="navigate(-1)">&#8592;</button>
   <div class="carousel-track">${cards}</div>
-  <button class="nav-arrow nav-next" aria-label="Weiter"  onclick="navigate(1)">&#8594;</button>
+  <button class="nav-arrow nav-next" aria-label="Weiter" onclick="navigate(1)">&#8594;</button>
 </div>`;
 
       document.getElementById('progress-bar').style.display = 'block';
@@ -568,18 +551,12 @@
       startAuto();
     }
 
-    /* ═══════════════════════════════════════════════
-       POSITIONEN UPDATEN
-    ═══════════════════════════════════════════════ */
     function updatePositions() {
       document.querySelectorAll('.card').forEach(card => {
         card.dataset.pos = getPos(parseInt(card.dataset.index));
       });
     }
 
-    /* ═══════════════════════════════════════════════
-       NAVIGATION
-    ═══════════════════════════════════════════════ */
     function navigate(dir) {
       currentIndex = (currentIndex + dir + filteredArticles.length) % filteredArticles.length;
       updatePositions();
@@ -597,15 +574,9 @@
       }
     }
 
-    /* ═══════════════════════════════════════════════
-       AUTO-ADVANCE
-    ═══════════════════════════════════════════════ */
     function startAuto()   { clearInterval(autoTimer); autoTimer = setInterval(() => navigate(1), AUTO_SECS * 1000); }
     function restartAuto() { clearInterval(autoTimer); autoTimer = setInterval(() => navigate(1), AUTO_SECS * 1000); }
 
-    /* ═══════════════════════════════════════════════
-       FORTSCHRITTSBALKEN
-    ═══════════════════════════════════════════════ */
     function startProgress() {
       const fill = document.getElementById('progress-fill');
       if (!fill) return;
@@ -617,9 +588,6 @@
       }));
     }
 
-    /* ═══════════════════════════════════════════════
-       KEYBOARD & TOUCH
-    ═══════════════════════════════════════════════ */
     document.addEventListener('keydown', e => {
       if (e.key === 'ArrowRight') navigate(1);
       if (e.key === 'ArrowLeft')  navigate(-1);
@@ -632,9 +600,6 @@
       if (Math.abs(dx) > 50) navigate(dx > 0 ? 1 : -1);
     });
 
-    /* ═══════════════════════════════════════════════
-       FILTER BUTTONS
-    ═══════════════════════════════════════════════ */
     document.getElementById('filters').addEventListener('click', e => {
       const btn = e.target.closest('.filter-btn');
       if (!btn) return;
@@ -643,9 +608,6 @@
       applyFilter(btn.dataset.cat);
     });
 
-    /* ═══════════════════════════════════════════════
-       START
-    ═══════════════════════════════════════════════ */
     loadAll();
     setInterval(loadAll, 24 * 60 * 60 * 1000);
   </script>
