@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KI.NEWS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: #fafafd;
+      color: #111;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Filters ── */
+    .filters {
+      display: flex;
+      gap: 8px;
+      padding: 12px 24px;
+      background: #fff;
+      border-bottom: 1px solid #ebebeb;
+      overflow-x: auto;
+      scrollbar-width: none;
+      flex-shrink: 0;
+    }
+    .filters::-webkit-scrollbar { display: none; }
+
+    .filter-btn {
+      padding: 6px 16px;
+      border: 1px solid #e0e0e0;
+      border-radius: 20px;
+      background: transparent;
+      color: #888;
+      font-size: 12px;
+      font-weight: 500;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+    .filter-btn:hover { border-color: #ccc; color: #444; }
+    .filter-btn.active { background: #0a47c2; border-color: #0a47c2; color: #fff; }
+
+    /* ── Karussell ── */
+    .carousel-section {
+      position: relative;
+      padding: 16px 0 10px;
+      flex: 1;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .carousel-wrapper {
+      position: relative;
+      height: 360px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .carousel-track {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ── Karten ── */
+    .card {
+      position: absolute;
+      width: 290px;
+      height: 340px;
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      will-change: transform, opacity, filter;
+    }
+
+    .card[data-pos="0"]           { transform: translateX(0)     scale(1);    opacity: 1;    z-index: 5; filter: blur(0px); }
+    .card[data-pos="1"]           { transform: translateX(262px)  scale(0.80); opacity: 0.65; z-index: 4; filter: blur(2px); }
+    .card[data-pos="-1"]          { transform: translateX(-262px) scale(0.80); opacity: 0.65; z-index: 4; filter: blur(2px); }
+    .card[data-pos="2"]           { transform: translateX(460px)  scale(0.62); opacity: 0.32; z-index: 3; filter: blur(5px); }
+    .card[data-pos="-2"]          { transform: translateX(-460px) scale(0.62); opacity: 0.32; z-index: 3; filter: blur(5px); }
+    .card[data-pos="hidden-right"]{ transform: translateX(650px)  scale(0.5);  opacity: 0;    z-index: 1; pointer-events: none; }
+    .card[data-pos="hidden-left"] { transform: translateX(-650px) scale(0.5);  opacity: 0;    z-index: 1; pointer-events: none; }
+
+    .card-image {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      display: block;
+      background: #f0f0f0;
+    }
+
+    .card-image-placeholder {
+      width: 100%;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 42px;
+      background: linear-gradient(135deg, #f0f1f5 0%, #e8eaf0 100%);
+    }
+
+    .card-body {
+      padding: 14px 18px 12px;
+      height: calc(340px - 150px);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-top-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+
+    .card-category {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+      padding: 3px 9px;
+      border-radius: 4px;
+    }
+
+    .card-date { font-size: 11px; color: #bbb; }
+
+    .card-source {
+      font-size: 11px;
+      color: #aaa;
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+
+    .card-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #18191d;
+      flex: 1;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+
+    .card-cta {
+      margin-top: 8px;
+      font-size: 12px;
+      color: #0a47c2;
+      font-weight: 600;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .card[data-pos="0"]:hover .card-cta { opacity: 1; }
+
+    /* ── Pfeile ── */
+    .nav-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid #e0e0e0;
+      background: rgba(255,255,255,0.92);
+      color: #555;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    .nav-arrow:hover { background: #0a47c2; border-color: #0a47c2; color: #fff; }
+    .nav-prev { left: 12px; }
+    .nav-next { right: 12px; }
+
+    /* ── Fortschrittsbalken ── */
+    .progress-bar { height: 2px; background: #e8e8e8; margin: 10px 24px 0; flex-shrink: 0; }
+    .progress-fill { height: 100%; background: #0a47c2; width: 0%; }
+
+    /* ── Loading ── */
+    .loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 360px;
+      gap: 18px;
+    }
+    .spinner {
+      width: 36px;
+      height: 36px;
+      border: 3px solid #eee;
+      border-top-color: #0a47c2;
+      border-radius: 50%;
+      animation: spin 0.75s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .loading p { font-size: 13px; color: #bbb; }
+
+    /* ── Empty / Error ── */
+    .empty-state {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 360px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="filters" id="filters">
+    <button class="filter-btn active" data-cat="all">Alle</button>
+    <button class="filter-btn" data-cat="KI & Tech">KI & Tech</button>
+    <button class="filter-btn" data-cat="Finance & Banking">Finance & Banking</button>
+    <button class="filter-btn" data-cat="Marketing, Vertrieb & Service">Marketing, Vertrieb & Service</button>
+  </div>
+
+  <div class="carousel-section">
+    <div id="carousel-root">
+      <div class="loading">
+        <div class="spinner"></div>
+        <p>Lade aktuelle News&hellip;</p>
+      </div>
+    </div>
+    <div class="progress-bar" id="progress-bar" style="display:none">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+  </div>
+
+  <script>
+    /* ═══════════════════════════════════════════════
+       QUELLEN — allgemein + bereichsspezifisch
+    ═══════════════════════════════════════════════ */
+    const SOURCES = [
+      // KI & Tech — deutschsprachige Redaktionen
+      { name: 'Heise Online',        url: 'https://www.heise.de/thema/Kuenstliche-Intelligenz.xml',                   category: 'KI & Tech'                    },
+      { name: 't3n',                 url: 'https://t3n.de/tag/kuenstliche-intelligenz/rss.xml',                       category: 'KI & Tech'                    },
+      { name: 'Google Deutschland',  url: 'https://blog.google/intl/de-de/feed/',                                    category: 'KI & Tech'                    },
+      { name: 'Microsoft DE',        url: 'https://news.microsoft.com/de-de/tag/agents/feed/',                        category: 'KI & Tech'                    },
+
+      // KI & Tech — grosse KI-Anbieter (englisch, aber gefiltert)
+      { name: 'OpenAI',              url: 'https://openai.com/news/rss.xml',                                         category: 'KI & Tech'                    },
+      { name: 'Anthropic',           url: 'https://www.anthropic.com/rss.xml',                                       category: 'KI & Tech'                    },
+      { name: 'Google DeepMind',     url: 'https://deepmind.google/blog/rss.xml',                                    category: 'KI & Tech'                    },
+      { name: 'Google AI Blog',      url: 'https://ai.googleblog.com/feeds/posts/default',                           category: 'KI & Tech'                    },
+      { name: 'Meta AI',             url: 'https://ai.meta.com/blog/feed/',                                          category: 'KI & Tech'                    },
+      { name: 'Hugging Face',        url: 'https://huggingface.co/blog/feed.xml',                                    category: 'KI & Tech'                    },
+      { name: 'Mistral AI',          url: 'https://mistral.ai/news/feed.xml',                                        category: 'KI & Tech'                    },
+      { name: 'Microsoft AI Blog',   url: 'https://blogs.microsoft.com/ai/feed/',                                    category: 'KI & Tech'                    },
+      { name: 'Perplexity',          url: 'https://www.perplexity.ai/hub/rss.xml',                                   category: 'KI & Tech'                    },
+      { name: 'xAI (Grok)',          url: 'https://x.ai/blog/feed.xml',                                              category: 'KI & Tech'                    },
+      { name: 'NVIDIA AI',           url: 'https://blogs.nvidia.com/blog/category/generative-ai/feed/',              category: 'KI & Tech'                    },
+      { name: 'AWS Machine Learning',url: 'https://aws.amazon.com/blogs/machine-learning/feed/',                     category: 'KI & Tech'                    },
+      { name: 'Apple ML',            url: 'https://machinelearning.apple.com/rss/whats-new.rss',                     category: 'KI & Tech'                    },
+      { name: 'Cohere',              url: 'https://cohere.com/blog/rss',                                             category: 'KI & Tech'                    },
+      { name: 'Stability AI',        url: 'https://stability.ai/news/rss.xml',                                       category: 'KI & Tech'                    },
+      { name: 'IBM Research AI',     url: 'https://research.ibm.com/blog/rss',                                       category: 'KI & Tech'                    },
+
+      // Finance & Banking
+      { name: 'IT Finanzmagazin',    url: 'https://www.it-finanzmagazin.de/tag/kuenstliche-intelligenz/feed/',        category: 'Finance & Banking'            },
+      { name: 'IT Finanzmagazin KI', url: 'https://www.it-finanzmagazin.de/tag/ki/feed/',                            category: 'Finance & Banking'            },
+      { name: 'Der Bank Blog',       url: 'https://www.der-bank-blog.de/stichwort/kuenstliche-intelligenz/feed/',     category: 'Finance & Banking'            },
+
+      // Marketing, Vertrieb & Service
+      { name: 'HubSpot Marketing',   url: 'https://blog.hubspot.de/marketing/rss.xml',                               category: 'Marketing, Vertrieb & Service'},
+      { name: 'HubSpot Sales',       url: 'https://blog.hubspot.de/sales/rss.xml',                                   category: 'Marketing, Vertrieb & Service'},
+      { name: 'HubSpot Service',     url: 'https://blog.hubspot.de/service/rss.xml',                                 category: 'Marketing, Vertrieb & Service'},
+    ];
+
+    const COLORS = {
+      'KI & Tech':                    { bg: 'rgba(10,71,194,0.09)',  text: '#0a47c2' },
+      'Finance & Banking':            { bg: 'rgba(8,57,155,0.09)',   text: '#08399b' },
+      'Marketing, Vertrieb & Service':{ bg: 'rgba(91,24,180,0.09)',  text: '#5b18b4' },
+    };
+
+    const EMOJI = {
+      'KI & Tech':                    '🤖',
+      'Finance & Banking':            '📊',
+      'Marketing, Vertrieb & Service':'📣',
+    };
+
+    const PROXIES = [
+      url => `https://corsproxy.io/?${encodeURIComponent(url)}`,
+      url => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
+      url => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`,
+    ];
+
+    const AUTO_SECS = 7;
+
+    /* ═══════════════════════════════════════════════
+       STATE
+    ═══════════════════════════════════════════════ */
+    let allArticles      = [];
+    let filteredArticles = [];
+    let currentIndex     = 0;
+    let activeCat        = 'all';
+    let autoTimer        = null;
+
+    /* ═══════════════════════════════════════════════
+       KEYWORD-FILTER
+    ═══════════════════════════════════════════════ */
+    const AI_KEYWORDS = [
+      'künstliche intelligenz', 'maschinelles lernen', 'sprachmodell', 'sprachmodelle',
+      'chatbot', 'automatisierung', 'algorithmus', 'algorithmen', 'digitalisierung',
+      'generative ki', 'ki-', 'deep learning', 'neuronale netze', 'neuronale',
+      'technologie', 'digitale transformation', 'ki gestützt', 'ki basiert',
+      'spracherkennung', 'bilderkennung', 'gesichtserkennung', 'objekterkennung',
+      'datenanalyse', 'ki-regulierung', 'ki-gesetz', 'ki-act', 'eu ai act',
+      'robotik', 'autonome systeme', 'recommender', 'trainingsdaten',
+      'ki-strategie', 'ki-ethik', 'ki-governance', 'ki-sicherheit', 'ki-kompetenz',
+      'text-to-image', 'text-to-speech', 'text-to-video', 'multimodal',
+      'prompt engineering', 'fine-tuning', 'embedding', 'vektordatenbank',
+      'ki-assistent', 'ki-agent', 'ki-tool', 'ki-plattform', 'ki-modell',
+      'halluzination', 'halluziniert', 'bias', 'inferenz', 'retrieval',
+      'digitaler zwilling', 'predictive analytics', 'natural language',
+      'computer vision', 'voice assistant', 'sprachassistent',
+      'chatgpt', 'gpt-4', 'gpt-5', 'o1', 'o3', 'o4',
+      'copilot', 'gemini', 'llama', 'mistral', 'grok',
+      'claude', 'perplexity', 'midjourney', 'stable diffusion', 'dall-e',
+      'sora', 'whisper', 'runway', 'cursor', 'devin',
+      'github copilot', 'notion ai', 'adobe firefly', 'canva ki',
+      'microsoft 365 copilot', 'google workspace ai', 'salesforce einstein',
+      'servicenow ai', 'workday ai', 'sap ai', 'oracle ai',
+      'openai', 'anthropic', 'deepmind', 'hugging face', 'stability ai',
+      'cohere', 'inflection', 'xai', 'mistral ai', 'aleph alpha',
+      'scale ai', 'together ai', 'replicate',
+      'artificial intelligence', 'machine learning', 'large language model',
+      'llm', 'gpt-', 'generative ai', 'foundation model', 'transformer',
+      'neural network', 'reinforcement learning', 'agentic', ' rag ',
+      'vector database', 'ai agent', 'ai tool', 'ai model', 'ai platform',
+      'ai safety', 'ai regulation', 'ai ethics', 'ai governance', 'ai act',
+      'prompt', 'fine-tune', 'inference', 'benchmark', 'multimodal',
+      'reasoning model', 'context window', 'token', 'hallucination',
+      'no-code', 'low-code', 'saas', 'automation', 'rpa',
+      'intelligent automation', 'hyperautomation', 'augmented intelligence',
+      'conversational ai', 'decision intelligence',
+    ];
+
+    const CORE_KEYWORDS = [
+      'künstliche intelligenz', 'maschinelles lernen', 'sprachmodell', 'sprachmodelle',
+      'chatbot', 'chatgpt', 'openai', 'anthropic', 'deepmind', 'hugging face',
+      'llm', 'gpt-4', 'gpt-5', 'large language model', 'foundation model',
+      'generative ai', 'generative ki', 'artificial intelligence', 'machine learning',
+      'deep learning', 'neuronale netze', 'copilot', 'gemini', 'llama', 'mistral',
+      'grok', 'claude', 'ki-agent', 'ki-modell', 'ki-tool', 'ki-assistent',
+      'transformer', 'neural network', 'reinforcement learning', 'prompt engineering',
+    ];
+
+    function isRelevant(art) {
+      const title   = art.title.toLowerCase();
+      const excerpt = art.excerpt.toLowerCase();
+      if (/\bki\b/.test(title) || /\bai\b/.test(title)) return true;
+      if (AI_KEYWORDS.some(kw => title.includes(kw))) return true;
+      if (/\bki\b/.test(excerpt) || /\bai\b/.test(excerpt)) return true;
+      if (CORE_KEYWORDS.some(kw => excerpt.includes(kw))) return true;
+      return false;
+    }
+
+    /* ═══════════════════════════════════════════════
+       HILFSFUNKTIONEN
+    ═══════════════════════════════════════════════ */
+    function stripHtml(html) {
+      return html.replace(/<[^>]*>/g, '').replace(/&[a-z#0-9]+;/gi, ' ').replace(/\s+/g, ' ').trim();
+    }
+
+    function escHtml(str) {
+      return String(str)
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    /* ═══════════════════════════════════════════════
+       XML / RSS PARSER
+    ═══════════════════════════════════════════════ */
+    function parseRSS(xmlText) {
+      try {
+        const doc   = new DOMParser().parseFromString(xmlText, 'text/xml');
+        const items = [...doc.querySelectorAll('item, entry')].slice(0, 3);
+        return items.map(item => {
+          const get = s => { const e = item.querySelector(s); return e ? e.textContent.trim() : ''; };
+          const linkEl = item.querySelector('link');
+          const link   = (linkEl && linkEl.getAttribute('href')) || (linkEl && linkEl.textContent.trim()) || '';
+          const rawDate = get('pubDate') || get('published') || get('updated');
+          const date    = rawDate ? new Date(rawDate) : new Date();
+          const thumbEl  = item.querySelector('[url]');
+          const encEl    = item.querySelector('enclosure');
+          const content  = get('encoded') || get('content') || get('description') || get('summary') || '';
+          const imgMatch = content.match(/<img[^>]+src=["']([^"'> ]+)["']/);
+          const image    =
+            (thumbEl && thumbEl.getAttribute('url')) ||
+            (encEl && /image/.test(encEl.getAttribute('type') || '') && encEl.getAttribute('url')) ||
+            (imgMatch && imgMatch[1]) || '';
+          const excerpt = stripHtml(get('description') || get('summary') || '').slice(0, 180);
+          return { title: get('title'), link, image, date, excerpt };
+        }).filter(a => a.title && a.link);
+      } catch (e) { return []; }
+    }
+
+    /* ═══════════════════════════════════════════════
+       FETCH MIT PROXY-FALLBACK
+    ═══════════════════════════════════════════════ */
+    async function tryFetch(feedUrl) {
+      for (const makeProxy of PROXIES) {
+        const ctrl = new AbortController();
+        const tid  = setTimeout(() => ctrl.abort(), 9000);
+        try {
+          const res  = await fetch(makeProxy(feedUrl), { signal: ctrl.signal });
+          clearTimeout(tid);
+          if (!res.ok) continue;
+          const text = await res.text();
+          if (text && (text.includes('<item>') || text.includes('<entry>') || text.includes('<rss') || text.includes('<feed'))) {
+            return text;
+          }
+        } catch { clearTimeout(tid); }
+      }
+      return null;
+    }
+
+    async function fetchSource(source) {
+      const text = await tryFetch(source.url);
+      if (!text) return [];
+      return parseRSS(text)
+        .map(a => ({ ...a, source: source.name, category: source.category }))
+        .filter(isRelevant);
+    }
+
+    async function loadAll() {
+      const results = await Promise.allSettled(SOURCES.map(fetchSource));
+      allArticles = results
+        .filter(r => r.status === 'fulfilled')
+        .flatMap(r => r.value)
+        .sort((a, b) => b.date - a.date)
+        .slice(0, 25);
+
+      if (allArticles.length === 0) {
+        document.getElementById('carousel-root').innerHTML = `
+          <div class="empty-state" style="flex-direction:column;gap:16px;text-align:center;padding:20px">
+            <div style="font-size:32px">⚠️</div>
+            <div style="color:#aaa">Artikel konnten nicht geladen werden.<br>
+              <span style="font-size:12px;color:#ccc">Prüfe deine Internetverbindung.</span>
+            </div>
+            <button onclick="location.reload()"
+              style="padding:8px 20px;border:1px solid #0a47c2;background:transparent;color:#0a47c2;border-radius:20px;cursor:pointer;font-size:13px;font-family:inherit">
+              Neu laden
+            </button>
+          </div>`;
+        return;
+      }
+
+      applyFilter(activeCat);
+    }
+
+    /* ═══════════════════════════════════════════════
+       FILTER
+    ═══════════════════════════════════════════════ */
+    function applyFilter(cat) {
+      activeCat        = cat;
+      filteredArticles = cat === 'all' ? [...allArticles] : allArticles.filter(a => a.category === cat);
+      currentIndex     = 0;
+      renderCarousel();
+    }
+
+    /* ═══════════════════════════════════════════════
+       DATUM FORMATIERUNG
+    ═══════════════════════════════════════════════ */
+    function fmtDate(d) {
+      const h = Math.floor((Date.now() - d) / 3_600_000);
+      if (h < 1)  return 'Gerade eben';
+      if (h < 24) return `vor ${h} Std.`;
+      const days = Math.floor(h / 24);
+      if (days < 7) return `vor ${days} Tag${days > 1 ? 'en' : ''}`;
+      return d.toLocaleDateString('de-DE', { day: 'numeric', month: 'short' });
+    }
+
+    /* ═══════════════════════════════════════════════
+       POSITION BERECHNEN
+    ═══════════════════════════════════════════════ */
+    function getPos(idx) {
+      const total = filteredArticles.length;
+      let diff = idx - currentIndex;
+      if (diff >  total / 2) diff -= total;
+      if (diff < -total / 2) diff += total;
+      if (diff ===  0) return '0';
+      if (diff ===  1) return '1';
+      if (diff === -1) return '-1';
+      if (diff ===  2) return '2';
+      if (diff === -2) return '-2';
+      return diff > 0 ? 'hidden-right' : 'hidden-left';
+    }
+
+    /* ═══════════════════════════════════════════════
+       RENDER
+    ═══════════════════════════════════════════════ */
+    function renderCarousel() {
+      const root = document.getElementById('carousel-root');
+      if (!filteredArticles.length) {
+        root.innerHTML = '<div class="empty-state">Keine Artikel in dieser Kategorie.</div>';
+        return;
+      }
+
+      const cards = filteredArticles.map((art, i) => {
+        const pos   = getPos(i);
+        const col   = COLORS[art.category] || COLORS['KI & Tech'];
+        const emoji = EMOJI[art.category]  || '📄';
+        const imgTag = art.image
+          ? `<img class="card-image" src="${escHtml(art.image)}" alt="" loading="lazy"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">`
+          : '';
+        const phStyle = art.image ? 'display:none' : '';
+
+        return `
+<a class="card" data-pos="${pos}" data-index="${i}" href="${escHtml(art.link)}" target="_blank" rel="noopener"
+   onclick="handleCardClick(event,${i})">
+  ${imgTag}
+  <div class="card-image-placeholder" style="${phStyle}">${emoji}</div>
+  <div class="card-body">
+    <div class="card-top-row">
+      <span class="card-category" style="background:${col.bg};color:${col.text}">${escHtml(art.category)}</span>
+      <span class="card-date">${fmtDate(art.date)}</span>
+    </div>
+    <div class="card-source">${escHtml(art.source)}</div>
+    <h2 class="card-title">${escHtml(art.title)}</h2>
+    <div class="card-cta">Weiterlesen &rarr;</div>
+  </div>
+</a>`;
+      }).join('');
+
+      root.innerHTML = `
+<div class="carousel-wrapper">
+  <button class="nav-arrow nav-prev" aria-label="Zurück" onclick="navigate(-1)">&#8592;</button>
+  <div class="carousel-track">${cards}</div>
+  <button class="nav-arrow nav-next" aria-label="Weiter"  onclick="navigate(1)">&#8594;</button>
+</div>`;
+
+      document.getElementById('progress-bar').style.display = 'block';
+      startProgress();
+      startAuto();
+    }
+
+    /* ═══════════════════════════════════════════════
+       POSITIONEN UPDATEN
+    ═══════════════════════════════════════════════ */
+    function updatePositions() {
+      document.querySelectorAll('.card').forEach(card => {
+        card.dataset.pos = getPos(parseInt(card.dataset.index));
+      });
+    }
+
+    /* ═══════════════════════════════════════════════
+       NAVIGATION
+    ═══════════════════════════════════════════════ */
+    function navigate(dir) {
+      currentIndex = (currentIndex + dir + filteredArticles.length) % filteredArticles.length;
+      updatePositions();
+      startProgress();
+      restartAuto();
+    }
+
+    function handleCardClick(e, idx) {
+      if (idx !== currentIndex) {
+        e.preventDefault();
+        currentIndex = idx;
+        updatePositions();
+        startProgress();
+        restartAuto();
+      }
+    }
+
+    /* ═══════════════════════════════════════════════
+       AUTO-ADVANCE
+    ═══════════════════════════════════════════════ */
+    function startAuto()   { clearInterval(autoTimer); autoTimer = setInterval(() => navigate(1), AUTO_SECS * 1000); }
+    function restartAuto() { clearInterval(autoTimer); autoTimer = setInterval(() => navigate(1), AUTO_SECS * 1000); }
+
+    /* ═══════════════════════════════════════════════
+       FORTSCHRITTSBALKEN
+    ═══════════════════════════════════════════════ */
+    function startProgress() {
+      const fill = document.getElementById('progress-fill');
+      if (!fill) return;
+      fill.style.transition = 'none';
+      fill.style.width = '0%';
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        fill.style.transition = `width ${AUTO_SECS}s linear`;
+        fill.style.width = '100%';
+      }));
+    }
+
+    /* ═══════════════════════════════════════════════
+       KEYBOARD & TOUCH
+    ═══════════════════════════════════════════════ */
+    document.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight') navigate(1);
+      if (e.key === 'ArrowLeft')  navigate(-1);
+    });
+
+    let _touchX = 0;
+    document.addEventListener('touchstart', e => { _touchX = e.touches[0].clientX; });
+    document.addEventListener('touchend',   e => {
+      const dx = _touchX - e.changedTouches[0].clientX;
+      if (Math.abs(dx) > 50) navigate(dx > 0 ? 1 : -1);
+    });
+
+    /* ═══════════════════════════════════════════════
+       FILTER BUTTONS
+    ═══════════════════════════════════════════════ */
+    document.getElementById('filters').addEventListener('click', e => {
+      const btn = e.target.closest('.filter-btn');
+      if (!btn) return;
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      applyFilter(btn.dataset.cat);
+    });
+
+    /* ═══════════════════════════════════════════════
+       START
+    ═══════════════════════════════════════════════ */
+    loadAll();
+    setInterval(loadAll, 24 * 60 * 60 * 1000);
+  </script>
+</body>
+</html>
