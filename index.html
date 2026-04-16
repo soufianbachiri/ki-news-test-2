@@ -25,10 +25,9 @@
     /* ── Filters ── */
     .filters {
       display: flex;
-      gap: 8px;
-      padding: 12px 24px;
-      background: #fff;
-      border-bottom: 1px solid #ebebeb;
+      gap: 6px;
+      padding: 14px 20px 10px;
+      background: #fafafd;
       overflow-x: auto;
       scrollbar-width: none;
       flex-shrink: 0;
@@ -36,25 +35,25 @@
     .filters::-webkit-scrollbar { display: none; }
 
     .filter-btn {
-      padding: 6px 16px;
-      border: 1px solid #e0e0e0;
+      padding: 5px 14px;
+      border: 1.5px solid #d5d9e0;
       border-radius: 20px;
-      background: transparent;
-      color: #888;
+      background: #fff;
+      color: #5f6577;
       font-size: 12px;
-      font-weight: 500;
+      font-weight: 600;
       font-family: 'Plus Jakarta Sans', sans-serif;
       cursor: pointer;
       white-space: nowrap;
-      transition: all 0.2s;
+      transition: all 0.18s;
     }
-    .filter-btn:hover { border-color: #ccc; color: #444; }
+    .filter-btn:hover { border-color: #0a47c2; color: #0a47c2; background: #fff; }
     .filter-btn.active { background: #0a47c2; border-color: #0a47c2; color: #fff; }
 
     /* ── Karussell ── */
     .carousel-section {
       position: relative;
-      padding: 16px 0 10px;
+      padding: 12px 0 10px;
       flex: 1;
       min-height: 0;
       display: flex;
@@ -84,11 +83,11 @@
       width: 290px;
       height: 340px;
       background: #fff;
-      border-radius: 14px;
+      border-radius: 12px;
       overflow: hidden;
       cursor: pointer;
       transition: all 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      box-shadow: 0 2px 12px rgba(24,25,29,0.08);
       text-decoration: none;
       color: inherit;
       display: block;
@@ -183,27 +182,26 @@
       top: 50%;
       transform: translateY(-50%);
       z-index: 10;
-      width: 40px;
-      height: 40px;
+      width: 36px;
+      height: 36px;
       border-radius: 50%;
-      border: 1px solid #e0e0e0;
-      background: rgba(255,255,255,0.92);
-      color: #555;
-      font-size: 16px;
+      border: 1.5px solid #d5d9e0;
+      background: #fff;
+      color: #484d59;
+      font-size: 15px;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: all 0.2s;
-      backdrop-filter: blur(8px);
-      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      transition: all 0.18s;
+      box-shadow: 0 1px 6px rgba(24,25,29,0.07);
     }
     .nav-arrow:hover { background: #0a47c2; border-color: #0a47c2; color: #fff; }
     .nav-prev { left: 12px; }
     .nav-next { right: 12px; }
 
     /* ── Fortschrittsbalken ── */
-    .progress-bar { height: 2px; background: #e8e8e8; margin: 10px 24px 0; flex-shrink: 0; }
+    .progress-bar { height: 2px; background: #e6e9f0; margin: 10px 24px 0; flex-shrink: 0; }
     .progress-fill { height: 100%; background: #0a47c2; width: 0%; }
 
     /* ── Loading ── */
