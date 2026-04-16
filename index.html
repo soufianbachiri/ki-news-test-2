@@ -15,8 +15,8 @@
 
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      background: #fafafd;
-      color: #111;
+      background: #fafafd;       /* --background-default 360L */
+      color: #18191d;            /* --neutral-900 360L */
       overflow: hidden;
       display: flex;
       flex-direction: column;
@@ -26,20 +26,21 @@
     .filters {
       display: flex;
       gap: 6px;
-      padding: 14px 20px 10px;
+      padding: 16px 20px 12px;
       background: #fafafd;
       overflow-x: auto;
       scrollbar-width: none;
       flex-shrink: 0;
+      justify-content: center;
     }
     .filters::-webkit-scrollbar { display: none; }
 
     .filter-btn {
-      padding: 5px 14px;
-      border: 1.5px solid #d5d9e0;
+      padding: 5px 16px;
+      border: 1.5px solid #d5d9e0;  /* --neutral-75 360L */
       border-radius: 20px;
-      background: #fff;
-      color: #5f6577;
+      background: #ffffff;           /* --neutral-0 360L */
+      color: #484d59;                /* --neutral-700 360L */
       font-size: 12px;
       font-weight: 600;
       font-family: 'Plus Jakarta Sans', sans-serif;
@@ -47,8 +48,8 @@
       white-space: nowrap;
       transition: all 0.18s;
     }
-    .filter-btn:hover { border-color: #0a47c2; color: #0a47c2; background: #fff; }
-    .filter-btn.active { background: #0a47c2; border-color: #0a47c2; color: #fff; }
+    .filter-btn:hover { border-color: #0a47c2; color: #0a47c2; }
+    .filter-btn.active { background: #0a47c2; border-color: #0a47c2; color: #ffffff; }
 
     /* ── Karussell ── */
     .carousel-section {
@@ -87,11 +88,12 @@
       overflow: hidden;
       cursor: pointer;
       transition: all 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-      box-shadow: 0 2px 12px rgba(24,25,29,0.08);
+      box-shadow: 0 1px 3px rgba(24,25,29,0.06), 0 4px 16px rgba(24,25,29,0.08);
       text-decoration: none;
-      color: inherit;
+      color: #18191d;            /* --neutral-900 360L */
       display: block;
       will-change: transform, opacity, filter;
+      border: 1px solid #e6e9f0; /* --neutral-50 360L */
     }
 
     .card[data-pos="0"]           { transform: translateX(0)     scale(1);    opacity: 1;    z-index: 5; filter: blur(0px); }
@@ -117,7 +119,7 @@
       align-items: center;
       justify-content: center;
       font-size: 42px;
-      background: linear-gradient(135deg, #f0f1f5 0%, #e8eaf0 100%);
+      background: linear-gradient(135deg, #f3f3f9 0%, #e6e9f0 100%); /* neutral-25 → neutral-50 360L */
     }
 
     .card-body {
@@ -143,11 +145,11 @@
       border-radius: 4px;
     }
 
-    .card-date { font-size: 11px; color: #bbb; }
+    .card-date { font-size: 11px; color: #82889a; } /* --neutral-300 360L */
 
     .card-source {
       font-size: 11px;
-      color: #aaa;
+      color: #82889a;            /* --neutral-300 360L */
       font-weight: 500;
       margin-bottom: 6px;
     }
@@ -157,7 +159,7 @@
       font-size: 15px;
       font-weight: 700;
       line-height: 1.4;
-      color: #18191d;
+      color: #18191d;           /* --neutral-900 360L */
       flex: 1;
       overflow: hidden;
       display: -webkit-box;
@@ -185,23 +187,23 @@
       width: 36px;
       height: 36px;
       border-radius: 50%;
-      border: 1.5px solid #d5d9e0;
-      background: #fff;
-      color: #484d59;
+      border: 1.5px solid #e6e9f0; /* --neutral-50 360L */
+      background: #ffffff;          /* --neutral-0 360L */
+      color: #484d59;               /* --neutral-700 360L */
       font-size: 15px;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
       transition: all 0.18s;
-      box-shadow: 0 1px 6px rgba(24,25,29,0.07);
+      box-shadow: 0 1px 4px rgba(24,25,29,0.06);
     }
-    .nav-arrow:hover { background: #0a47c2; border-color: #0a47c2; color: #fff; }
+    .nav-arrow:hover { background: #0a47c2; border-color: #0a47c2; color: #ffffff; }
     .nav-prev { left: 12px; }
     .nav-next { right: 12px; }
 
     /* ── Fortschrittsbalken ── */
-    .progress-bar { height: 2px; background: #e6e9f0; margin: 10px 24px 0; flex-shrink: 0; }
+    .progress-bar { height: 2px; background: #e6e9f0; margin: 10px 24px 0; flex-shrink: 0; } /* --neutral-50 360L */
     .progress-fill { height: 100%; background: #0a47c2; width: 0%; }
 
     /* ── Loading ── */
