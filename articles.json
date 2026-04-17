@@ -1,6 +1,6 @@
 {
-  "updated": "2026-04-17T14:13:31.505Z",
-  "total_fetched": 38,
+  "updated": "2026-04-17T14:28:13.433Z",
+  "total_fetched": 41,
   "articles": [
     {
       "title": "KI-Update kompakt: Grok, Claude Opus 4.7, Robo-Blindenhund, KI-Influencer",
@@ -20,7 +20,7 @@
       "date": "2026-04-17T12:33:00.000Z",
       "source": "Heise Online",
       "category": "KI & Tech",
-      "score": 8
+      "score": 9
     },
     {
       "title": "OpenAI kontert Anthropic mit großem Codex-Update",
@@ -30,7 +30,7 @@
       "date": "2026-04-17T11:42:00.000Z",
       "source": "Heise Online",
       "category": "KI & Tech",
-      "score": 7
+      "score": 8
     }
   ]
 }
