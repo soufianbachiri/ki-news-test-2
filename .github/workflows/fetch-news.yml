@@ -1,0 +1,32 @@
+name: KI News täglich aktualisieren
+
+on:
+  schedule:
+    - cron: '0 5 * * *'   # jeden Tag um 5:00 Uhr UTC (6:00 Uhr DE)
+  workflow_dispatch:        # auch manuell auslösbar
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: News laden und mit KI filtern
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node fetch-news.js
+
+      - name: Artikel speichern
+        run: |
+          git config user.name "KI News Bot"
+          git config user.email "bot@ki-news.local"
+          git add articles.json
+          git diff --staged --quiet || git commit -m "chore: news aktualisiert"
+          git push
