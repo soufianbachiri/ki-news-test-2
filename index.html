@@ -379,7 +379,6 @@
       if (!text) return [];
       return parseRSS(text)
         .map(a => ({ ...a, source: source.name, category: source.category }))
-        .filter(isRelevant)
         .filter(a => a.image && a.image.trim() !== '');
     }
 
@@ -403,7 +402,7 @@
         .filter(r => r.status === 'fulfilled')
         .flatMap(r => r.value)
         .sort((a, b) => b.date - a.date)
-        .slice(0, 15);
+        .slice(0, 25);
 
       if (allArticles.length === 0) {
         document.getElementById('carousel-root').innerHTML = `
