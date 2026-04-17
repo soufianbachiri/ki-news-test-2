@@ -420,14 +420,42 @@
         .filter(a => a.image && a.image.trim() !== '');
     }
 
+    const CACHE_KEY = 'ki_news_cache';
+    const CACHE_TTL = 6 * 60 * 60 * 1000; // 6 Stunden
+
+    function saveCache(articles) {
+      try {
+        localStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), articles }));
+      } catch(e) {}
+    }
+
+    function loadCache() {
+      try {
+        const raw = localStorage.getItem(CACHE_KEY);
+        if (!raw) return null;
+        const { ts, articles } = JSON.parse(raw);
+        if (Date.now() - ts > CACHE_TTL) return null;
+        return articles;
+      } catch(e) { return null; }
+    }
+
     async function loadAll() {
-      // Zuerst KI-gefilterte Liste laden (wöchentlich von GitHub Actions aktualisiert)
+      // 1. Sofort aus Cache zeigen wenn vorhanden
+      const cached = loadCache();
+      if (cached && cached.length > 0) {
+        allArticles = cached.map(a => ({ ...a, date: new Date(a.date) }));
+        renderCarousel();
+        return;
+      }
+
+      // 2. articles.json von GitHub laden (KI-gefiltert von Gemini)
       try {
         const res = await fetch('./articles.json?t=' + Date.now());
         if (res.ok) {
           const data = await res.json();
           if (data.articles && data.articles.length > 0) {
             allArticles = data.articles.map(a => ({ ...a, date: new Date(a.date) }));
+            saveCache(data.articles);
             renderCarousel();
             return;
           }
@@ -464,6 +492,7 @@
         if (!usedLinks.has(a.link)) { selected.push(a); usedLinks.add(a.link); }
       }
       allArticles = selected.sort((a, b) => b.date - a.date);
+      if (allArticles.length > 0) saveCache(allArticles);
 
       if (allArticles.length === 0) {
         document.getElementById('carousel-root').innerHTML = `
