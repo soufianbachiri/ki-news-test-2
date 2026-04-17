@@ -1,96 +1,16 @@
 {
-  "updated": "2026-04-17T10:30:07.897Z",
-  "total_fetched": 98,
+  "updated": "2026-04-17T14:00:17.531Z",
+  "total_fetched": 44,
   "articles": [
     {
-      "title": "Salesforce macht Ernst mit KI-Agenten: Headless 360 öffnet Plattform per API",
-      "link": "https://www.heise.de/news/Salesforce-macht-Ernst-mit-KI-Agenten-Headless-360-oeffnet-Plattform-per-API-11262036.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/6/5/9/0/7/Salesforce_Headless360-2a90700f79641427.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "Salesforce stellt mit „Headless 360“ zentrale Funktionen seiner Plattform per API bereit und erweitert die Entwicklungsumgebung um KI-gestützte Funktionen.",
-      "date": "2026-04-17T09:41:00.000Z",
-      "source": "Heise Online",
-      "category": "KI & Tech",
+      "title": "Das Pitchdeck, mit dem dieses Fintech 6 Millionen eingesammelt hat",
+      "link": "https://www.businessinsider.de/gruenderszene/das-pitchdeck-mit-dem-dieses-fintech-6-millionen-eingesammelt-hat/",
+      "image": "https://cdn.businessinsider.de/wp-content/uploads/2026/04/Round-Treasury_Team_cRoundTreasury-800x640.jpg?ver=1775719184",
+      "excerpt": "Das Londoner Fintech Round entwickelt eine KI-gestützte Plattform, die Finanzprozesse wie Payments, Treasury und Payroll automatisiert.",
+      "date": "2026-04-16T14:02:07.000Z",
+      "source": "Gründerszene Fintech",
+      "category": "Finance & Banking",
       "score": 9
-    },
-    {
-      "title": "OpenAI’s big Codex update is a direct shot at Claude Code",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/913034/openai-codex-updates-use-macos",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/Screenshot-2026-04-16-at-13.01.11.png?quality=90&#038;strip=all&#038;crop=0,5.8356559824806,100,89.31166633486",
-      "excerpt": "OpenAI is beefing up its agentic coding and development system, Codex, with a suite of updates that let it use your computer, generate images, and remember from past experiences. The package of updates comes as OpenAI's rivalry with Anthropic intensi",
-      "date": "2026-04-16T17:00:00.000Z",
-      "source": "The Verge AI",
-      "category": "KI & Tech",
-      "score": 9
-    },
-    {
-      "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
-      "link": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
-      "image": "https://images.ctfassets.net/jdtwqhzvc2n1/4gD12ThOmNHZuosqC4xCTz/277b1e8968da602108a29fae2eaca440/nuneybits_Vector_art_of_billboard_with_cryptic_code_dbe5b0ff-7644-45e6-a1ca-4a5dceeff986.webp?w=300&amp;q=30",
-      "excerpt": "Alfred Wahlforss was running out of options. His startup, Listen Labs, needed to hire over 100 engineers, but competing against Mark Zuckerberg s $100 million offers seemed impossible. So he spent $5,000 — a fifth of his marketing budget — on a billb",
-      "date": "2026-01-16T14:01:00.000Z",
-      "source": "VentureBeat AI",
-      "category": "KI & Tech",
-      "score": 9
-    },
-    {
-      "title": "AI Agents Are Advancing Rapidly… Is Your Testing Strategy Keeping Up?",
-      "link": "https://www.salesforce.com/blog/agentforce-testing-center/",
-      "image": "https://www.salesforce.com/blog/wp-content/uploads/sites/2/2026/04/AF-Testing-Center-Vid-Pic.jpeg?w=638",
-      "excerpt": "It’s 2026 — are you still editing CSV files to manage your testing suite?",
-      "date": "2026-04-15T13:00:00.000Z",
-      "source": "Salesforce Blog",
-      "category": "Marketing, Vertrieb & Service",
-      "score": 9
-    },
-    {
-      "title": "Never stop disrupting yourself; introducing the Fin API platform",
-      "link": "https://www.intercom.com/blog/introducing-the-fin-api-platform/",
-      "image": "https://blog.intercomassets.com/blog/wp-content/uploads/2056/04/1775236158481.png",
-      "excerpt": "Last week, we announced Apex, the world's first specialized customer service LLM. We're now going to allow you to access all of this power and all of our core models directly via API.",
-      "date": "2026-04-02T18:00:02.000Z",
-      "source": "Intercom Blog",
-      "category": "Marketing, Vertrieb & Service",
-      "score": 9
-    },
-    {
-      "title": "c't-Webinar: KI-Schreibwerkzeuge effizient nutzen",
-      "link": "https://www.heise.de/news/c-t-Webinar-KI-Schreibwerkzeuge-effizient-nutzen-11255849.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/6/2/8/1/4/KI-Schreibwerkzeuge-Ticker-Header-16-9-fe5bdf2eddbe7346.png?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "Das c't-Webinar hilft Ihnen, im KI-Dickicht die zu Ihren Anforderungen passende Anwendung zu entdecken, sie souverän zu beurteilen und zielführend einzusetzen.",
-      "date": "2026-04-17T10:00:00.000Z",
-      "source": "Heise Online",
-      "category": "KI & Tech",
-      "score": 8
-    },
-    {
-      "title": "Google’s AI Mode update lets you open links without leaving the page",
-      "link": "https://www.theverge.com/tech/913109/google-ai-mode-tabs-sources",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/google-ai-mode-side-by-side.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-      "excerpt": "Google is upgrading AI Mode in Chrome with a new feature that will allow you to open links to sources alongside your chat. Now, instead of automatically opening a new tab, clicking a source will open the website side by side with AI Mode, allowing yo",
-      "date": "2026-04-16T17:00:00.000Z",
-      "source": "The Verge AI",
-      "category": "KI & Tech",
-      "score": 8
-    },
-    {
-      "title": "The hardest percentages",
-      "link": "https://www.intercom.com/blog/the-hardest-percentages/",
-      "image": "https://blog.intercomassets.com/blog/wp-content/uploads/2026/04/Time-spent-across-different-query-types.png",
-      "excerpt": "Solving your customers' most challenging problems is what your support team exists for. With Procedures, Fin can do this too.",
-      "date": "2026-04-14T14:40:07.000Z",
-      "source": "Intercom Blog",
-      "category": "Marketing, Vertrieb & Service",
-      "score": 7
-    },
-    {
-      "title": "From swarms to product: Turning customer signals into scalable features",
-      "link": "https://www.intercom.com/blog/from-swarms-to-product-turning-customer-signals-into-scalable-features/",
-      "image": "https://blog.intercomassets.com/blog/wp-content/uploads/2026/04/image2.png",
-      "excerpt": "The best product signal often comes from the least scalable work. Here's how Intercom's swarm model turns individual customer insights into features that reach everyone.",
-      "date": "2026-04-13T20:01:51.000Z",
-      "source": "Intercom Blog",
-      "category": "Marketing, Vertrieb & Service",
-      "score": 7
     }
   ]
 }
