@@ -2,7 +2,7 @@ name: KI News täglich aktualisieren
 
 on:
   schedule:
-    - cron: '0 5 * * *'   # jeden Tag um 5:00 Uhr UTC (6:00 Uhr DE)
+    - cron: '0 5 * * 1'   # jeden Tag um 5:00 Uhr UTC (6:00 Uhr DE)
   workflow_dispatch:        # auch manuell auslösbar
 
 jobs:
