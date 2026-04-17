@@ -256,7 +256,7 @@ async function main() {
 
   // Top 25 pro Kategorie ausgewogen + beste Gesamtartikel
   const top = scored
-    .filter(a => a.score >= 6)
+    .filter(a => a.score >= 6 && a.image && a.image.trim() !== '')
     .sort((a, b) => b.score - a.score || new Date(b.date) - new Date(a.date));
 
   // Mindestens 5 pro Kategorie sicherstellen

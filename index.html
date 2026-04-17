@@ -557,7 +557,8 @@
 
     function applyFilter(cat) {
       activeCat        = cat;
-      filteredArticles = cat === 'all' ? [...allArticles] : allArticles.filter(a => a.category === cat);
+      const base       = cat === 'all' ? [...allArticles] : allArticles.filter(a => a.category === cat);
+      filteredArticles = base.filter(a => a.image && a.image.trim() !== '');
       currentIndex     = 0;
       renderCarousel();
     }
