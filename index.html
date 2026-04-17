@@ -22,63 +22,18 @@
       flex-direction: column;
     }
 
-    /* ── Abschnitts-Titel (wie "Module" in 360L) ── */
-    .section-header {
-      display: flex;
-      align-items: center;
-      padding: 18px 24px 0;
-      flex-shrink: 0;
-    }
-
-    .section-title {
-      font-size: 16px;
-      font-weight: 700;
-      color: #18191d;
-      letter-spacing: -0.1px;
-    }
-
-    /* ── Filter Buttons (Pill-Form) ── */
-    .filters {
-      display: flex;
-      gap: 8px;
-      padding: 14px 24px;
-      background: #ededed;
-      overflow-x: auto;
-      scrollbar-width: none;
-      flex-shrink: 0;
-      justify-content: center;
-    }
-    .filters::-webkit-scrollbar { display: none; }
-
-    .filter-btn {
-      padding: 6px 16px;
-      border: 1.5px solid #c7c9d1;
-      border-radius: 20px;
-      background: #ffffff;
-      color: #484d59;
-      font-size: 12px;
-      font-weight: 600;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      cursor: pointer;
-      white-space: nowrap;
-      transition: all 0.18s;
-    }
-    .filter-btn:hover { background: #f0f0f0; }
-    .filter-btn.active { background: #3cd4ff; color: #18191d; }
-
     /* ── Karussell ── */
     .carousel-section {
-      position: relative;
-      padding: 16px 0 10px;
       flex: 1;
       min-height: 0;
       display: flex;
       flex-direction: column;
+      padding: 20px 0 10px;
     }
 
     .carousel-wrapper {
       position: relative;
-      height: 360px;
+      height: 170px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -94,11 +49,11 @@
       justify-content: center;
     }
 
-    /* ── Karten ── */
+    /* ── Karten — horizontal (Bild links, Text rechts) ── */
     .card {
       position: absolute;
-      width: 290px;
-      height: 340px;
+      width: 560px;
+      height: 150px;
       background: #ffffff;
       border-radius: 12px;
       overflow: hidden;
@@ -107,72 +62,84 @@
       box-shadow: 0 1px 3px rgba(24,25,29,0.06), 0 4px 16px rgba(24,25,29,0.08);
       text-decoration: none;
       color: #18191d;
-      display: block;
+      display: flex;
+      flex-direction: row;
       will-change: transform, opacity, filter;
       border: 1px solid #e6e9f0;
     }
 
     .card[data-pos="0"]           { transform: translateX(0)     scale(1);    opacity: 1;    z-index: 5; filter: blur(0px); }
-    .card[data-pos="1"]           { transform: translateX(262px)  scale(0.80); opacity: 0.65; z-index: 4; filter: blur(2px); }
-    .card[data-pos="-1"]          { transform: translateX(-262px) scale(0.80); opacity: 0.65; z-index: 4; filter: blur(2px); }
-    .card[data-pos="2"]           { transform: translateX(460px)  scale(0.62); opacity: 0.32; z-index: 3; filter: blur(5px); }
-    .card[data-pos="-2"]          { transform: translateX(-460px) scale(0.62); opacity: 0.32; z-index: 3; filter: blur(5px); }
-    .card[data-pos="hidden-right"]{ transform: translateX(650px)  scale(0.5);  opacity: 0;    z-index: 1; pointer-events: none; }
-    .card[data-pos="hidden-left"] { transform: translateX(-650px) scale(0.5);  opacity: 0;    z-index: 1; pointer-events: none; }
+    .card[data-pos="1"]           { transform: translateX(430px)  scale(0.82); opacity: 0.55; z-index: 4; filter: blur(2px); }
+    .card[data-pos="-1"]          { transform: translateX(-430px) scale(0.82); opacity: 0.55; z-index: 4; filter: blur(2px); }
+    .card[data-pos="2"]           { transform: translateX(720px)  scale(0.65); opacity: 0.2;  z-index: 3; filter: blur(4px); }
+    .card[data-pos="-2"]          { transform: translateX(-720px) scale(0.65); opacity: 0.2;  z-index: 3; filter: blur(4px); }
+    .card[data-pos="hidden-right"]{ transform: translateX(900px)  scale(0.5);  opacity: 0;    z-index: 1; pointer-events: none; }
+    .card[data-pos="hidden-left"] { transform: translateX(-900px) scale(0.5);  opacity: 0;    z-index: 1; pointer-events: none; }
 
+    /* ── Bild (linke Seite) ── */
     .card-image {
-      width: 100%;
+      width: 195px;
       height: 150px;
+      flex-shrink: 0;
       object-fit: cover;
       display: block;
-      background: #f3f3f9;
     }
 
     .card-image-placeholder {
-      width: 100%;
+      width: 195px;
       height: 150px;
+      flex-shrink: 0;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 42px;
+      font-size: 40px;
       background: linear-gradient(135deg, #f3f3f9 0%, #e6e9f0 100%);
     }
 
+    /* ── Text (rechte Seite) ── */
     .card-body {
+      flex: 1;
       padding: 14px 18px 12px;
-      height: calc(340px - 150px);
       display: flex;
       flex-direction: column;
+      overflow: hidden;
+      min-width: 0;
     }
 
     .card-top-row {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 6px;
+      margin-bottom: 5px;
+      gap: 8px;
     }
 
     .card-category {
-      font-size: 10px;
+      font-size: 9px;
       font-weight: 700;
       letter-spacing: 0.7px;
       text-transform: uppercase;
-      padding: 3px 9px;
+      padding: 2px 8px;
       border-radius: 4px;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
-    .card-date { font-size: 11px; color: #82889a; }
+    .card-date {
+      font-size: 10px;
+      color: #82889a;
+      white-space: nowrap;
+    }
 
     .card-source {
-      font-size: 11px;
+      font-size: 10px;
       color: #82889a;
       font-weight: 500;
-      margin-bottom: 6px;
+      margin-bottom: 5px;
     }
 
     .card-title {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 700;
       line-height: 1.4;
       color: #18191d;
@@ -185,12 +152,13 @@
     }
 
     .card-cta {
-      margin-top: 8px;
-      font-size: 12px;
+      margin-top: 6px;
+      font-size: 11px;
       color: #00acdc;
       font-weight: 600;
       opacity: 0;
       transition: opacity 0.2s;
+      flex-shrink: 0;
     }
     .card[data-pos="0"]:hover .card-cta { opacity: 1; }
 
@@ -200,13 +168,13 @@
       top: 50%;
       transform: translateY(-50%);
       z-index: 10;
-      width: 36px;
-      height: 36px;
+      width: 34px;
+      height: 34px;
       border-radius: 50%;
       border: 1.5px solid #e6e9f0;
       background: #ffffff;
       color: #484d59;
-      font-size: 15px;
+      font-size: 14px;
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -219,7 +187,7 @@
     .nav-next { right: 12px; }
 
     /* ── Fortschrittsbalken ── */
-    .progress-bar { height: 2px; background: #e6e9f0; margin: 10px 24px 0; flex-shrink: 0; }
+    .progress-bar { height: 2px; background: #d5d5d5; margin: 12px 24px 0; flex-shrink: 0; }
     .progress-fill { height: 100%; background: #00acdc; width: 0%; }
 
     /* ── Loading ── */
@@ -228,43 +196,32 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 360px;
-      gap: 18px;
+      height: 170px;
+      gap: 14px;
     }
     .spinner {
-      width: 36px;
-      height: 36px;
-      border: 3px solid #e6e9f0;
+      width: 30px;
+      height: 30px;
+      border: 3px solid #d5d5d5;
       border-top-color: #00acdc;
       border-radius: 50%;
       animation: spin 0.75s linear infinite;
     }
     @keyframes spin { to { transform: rotate(360deg); } }
-    .loading p { font-size: 13px; color: #82889a; }
+    .loading p { font-size: 12px; color: #82889a; }
 
     /* ── Empty / Error ── */
     .empty-state {
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 360px;
-      font-size: 14px;
+      height: 170px;
+      font-size: 13px;
       color: #82889a;
     }
   </style>
 </head>
 <body>
-
-  <div class="section-header">
-    <span class="section-title">KI-News der Woche</span>
-  </div>
-
-  <div class="filters" id="filters">
-    <button class="filter-btn active" data-cat="all">Alle</button>
-    <button class="filter-btn" data-cat="KI & Tech">KI & Tech</button>
-    <button class="filter-btn" data-cat="Finance & Banking">Finance & Banking</button>
-    <button class="filter-btn" data-cat="Marketing, Vertrieb & Service">Marketing, Vertrieb & Service</button>
-  </div>
 
   <div class="carousel-section">
     <div id="carousel-root">
@@ -280,51 +237,20 @@
 
   <script>
     const SOURCES = [
-      // ── KI & Tech — Deutsch ──
+      // KI & Tech — DACH
       { name: 'Heise Online',         url: 'https://www.heise.de/thema/Kuenstliche-Intelligenz.xml',                  category: 'KI & Tech' },
       { name: 't3n',                  url: 'https://t3n.de/tag/kuenstliche-intelligenz/rss.xml',                      category: 'KI & Tech' },
+      { name: 'Golem.de',             url: 'https://www.golem.de/rss.php?feed=ATOM1.0',                               category: 'KI & Tech' },
       { name: 'Google Deutschland',   url: 'https://blog.google/intl/de-de/feed/',                                   category: 'KI & Tech' },
       { name: 'Microsoft DE',         url: 'https://news.microsoft.com/de-de/tag/agents/feed/',                       category: 'KI & Tech' },
-
-      // ── KI & Tech — Grosse Anbieter ──
-      { name: 'OpenAI',               url: 'https://openai.com/news/rss.xml',                                        category: 'KI & Tech' },
-      { name: 'Anthropic',            url: 'https://www.anthropic.com/rss.xml',                                      category: 'KI & Tech' },
-      { name: 'Google DeepMind',      url: 'https://deepmind.google/blog/rss.xml',                                   category: 'KI & Tech' },
-      { name: 'Google AI Blog',       url: 'https://ai.googleblog.com/feeds/posts/default',                          category: 'KI & Tech' },
-      { name: 'Meta AI',              url: 'https://ai.meta.com/blog/feed/',                                         category: 'KI & Tech' },
-      { name: 'Hugging Face',         url: 'https://huggingface.co/blog/feed.xml',                                   category: 'KI & Tech' },
-      { name: 'Mistral AI',           url: 'https://mistral.ai/news/feed.xml',                                       category: 'KI & Tech' },
-      { name: 'Microsoft AI Blog',    url: 'https://blogs.microsoft.com/ai/feed/',                                   category: 'KI & Tech' },
-      { name: 'Perplexity',           url: 'https://www.perplexity.ai/hub/rss.xml',                                  category: 'KI & Tech' },
-      { name: 'xAI (Grok)',           url: 'https://x.ai/blog/feed.xml',                                             category: 'KI & Tech' },
-      { name: 'NVIDIA AI',            url: 'https://blogs.nvidia.com/blog/category/generative-ai/feed/',             category: 'KI & Tech' },
-      { name: 'AWS Machine Learning', url: 'https://aws.amazon.com/blogs/machine-learning/feed/',                    category: 'KI & Tech' },
-      { name: 'Apple ML',             url: 'https://machinelearning.apple.com/rss/whats-new.rss',                    category: 'KI & Tech' },
-      { name: 'Cohere',               url: 'https://cohere.com/blog/rss',                                            category: 'KI & Tech' },
-      { name: 'IBM Research AI',      url: 'https://research.ibm.com/blog/rss',                                      category: 'KI & Tech' },
-
-      // ── KI & Tech — Internationale Fachmedien ──
-      { name: 'VentureBeat AI',       url: 'https://venturebeat.com/category/ai/feed/',                              category: 'KI & Tech' },
-      { name: 'TechCrunch AI',        url: 'https://techcrunch.com/category/artificial-intelligence/feed/',          category: 'KI & Tech' },
-      { name: 'The Verge AI',         url: 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml',      category: 'KI & Tech' },
-      { name: 'Wired AI',             url: 'https://www.wired.com/feed/category/artificial-intelligence/latest/rss', category: 'KI & Tech' },
-      { name: 'MIT Tech Review',      url: 'https://www.technologyreview.com/feed/',                                 category: 'KI & Tech' },
-      { name: 'ZDNet AI',             url: 'https://www.zdnet.com/topic/artificial-intelligence/rss.xml',            category: 'KI & Tech' },
-      { name: 'AI Business',          url: 'https://aibusiness.com/feed/',                                           category: 'KI & Tech' },
-      { name: 'AI News',              url: 'https://www.artificialintelligence-news.com/feed/',                      category: 'KI & Tech' },
-      { name: 'The Batch',            url: 'https://www.deeplearning.ai/the-batch/rss/',                             category: 'KI & Tech' },
-      { name: 'The Rundown AI',       url: 'https://www.therundown.ai/rss',                                          category: 'KI & Tech' },
-      { name: 'Towards Data Science', url: 'https://towardsdatascience.com/feed',                                    category: 'KI & Tech' },
-
-      // ── KI & Tech — Enterprise Software mit KI ──
-      { name: 'SAP News AI',          url: 'https://news.sap.com/category/artificial-intelligence/feed/',            category: 'KI & Tech' },
-      { name: 'ServiceNow Blog',      url: 'https://www.servicenow.com/blogs/feed/',                                 category: 'KI & Tech' },
-      { name: 'Workday Blog',         url: 'https://blog.workday.com/en-us/feed.xml',                                category: 'KI & Tech' },
-      { name: 'Oracle AI',            url: 'https://blogs.oracle.com/ai-and-datascience/rss',                        category: 'KI & Tech' },
-      { name: 'McKinsey AI',          url: 'https://www.mckinsey.com/capabilities/quantumblack/our-insights/rss',    category: 'KI & Tech' },
-      { name: 'Microsoft Dynamics',   url: 'https://cloudblogs.microsoft.com/dynamics365/feed/',                     category: 'KI & Tech' },
-
-      // ── Finance & Banking ──
+      { name: 'ZDNet DE',             url: 'https://www.zdnet.de/feed/',                                             category: 'KI & Tech' },
+      { name: 'Computerwoche',        url: 'https://www.computerwoche.de/a/rss.xml',                                  category: 'KI & Tech' },
+      { name: 'Gründerszene',         url: 'https://www.gruenderszene.de/feed/',                                     category: 'KI & Tech' },
+      { name: 'futurezone.at',        url: 'https://futurezone.at/rss/tech',                                         category: 'KI & Tech' },
+      { name: 'netzpolitik.org',      url: 'https://netzpolitik.org/feed/',                                          category: 'KI & Tech' },
+      { name: 'WirtschaftsWoche Tech',url: 'https://www.wiwo.de/themen/digitale-welt/rss',                           category: 'KI & Tech' },
+      { name: 'Handelsblatt Tech',    url: 'https://www.handelsblatt.com/rss/technologie',                           category: 'KI & Tech' },
+      // Finance & Banking
       { name: 'IT Finanzmagazin',     url: 'https://www.it-finanzmagazin.de/tag/kuenstliche-intelligenz/feed/',       category: 'Finance & Banking' },
       { name: 'IT Finanzmagazin KI',  url: 'https://www.it-finanzmagazin.de/tag/ki/feed/',                           category: 'Finance & Banking' },
       { name: 'Der Bank Blog',        url: 'https://www.der-bank-blog.de/stichwort/kuenstliche-intelligenz/feed/',    category: 'Finance & Banking' },
@@ -334,8 +260,7 @@
       { name: 'finews.ch',            url: 'https://www.finews.ch/rss/',                                             category: 'Finance & Banking' },
       { name: 'Gründerszene Fintech', url: 'https://www.gruenderszene.de/feed/?cat=fintech',                         category: 'Finance & Banking' },
       { name: 'WirtschaftsWoche KI',  url: 'https://www.wiwo.de/themen/kuenstliche-intelligenz/rss',                 category: 'Finance & Banking' },
-
-      // ── Marketing, Vertrieb & Service — Deutsch ──
+      // Marketing, Vertrieb & Service
       { name: 'HubSpot Marketing',    url: 'https://blog.hubspot.de/marketing/rss.xml',                              category: 'Marketing, Vertrieb & Service' },
       { name: 'HubSpot Sales',        url: 'https://blog.hubspot.de/sales/rss.xml',                                  category: 'Marketing, Vertrieb & Service' },
       { name: 'HubSpot Service',      url: 'https://blog.hubspot.de/service/rss.xml',                                category: 'Marketing, Vertrieb & Service' },
@@ -343,40 +268,14 @@
       { name: 'OnlineMarketing.de',   url: 'https://onlinemarketing.de/feed/',                                       category: 'Marketing, Vertrieb & Service' },
       { name: 'W&V',                  url: 'https://www.wuv.de/rss/alle-news.xml',                                   category: 'Marketing, Vertrieb & Service' },
       { name: 'Absatzwirtschaft',     url: 'https://www.absatzwirtschaft.de/feed/',                                  category: 'Marketing, Vertrieb & Service' },
-
-      // ── Marketing, Vertrieb & Service — CRM & Sales Tools ──
-      { name: 'Salesforce Blog',      url: 'https://www.salesforce.com/blog/feed/',                                  category: 'Marketing, Vertrieb & Service' },
-      { name: 'Salesforce DE',        url: 'https://www.salesforce.com/de/blog/feed/',                               category: 'Marketing, Vertrieb & Service' },
-      { name: 'Pipedrive Blog',       url: 'https://www.pipedrive.com/en/blog/rss',                                  category: 'Marketing, Vertrieb & Service' },
-      { name: 'Intercom Blog',        url: 'https://www.intercom.com/blog/feed/',                                    category: 'Marketing, Vertrieb & Service' },
-      { name: 'Zendesk Blog',         url: 'https://www.zendesk.com/blog/feed/',                                     category: 'Marketing, Vertrieb & Service' },
-      { name: 'Freshworks Blog',      url: 'https://www.freshworks.com/blog/feed/',                                  category: 'Marketing, Vertrieb & Service' },
-      { name: 'ActiveCampaign',       url: 'https://www.activecampaign.com/blog/feed/',                              category: 'Marketing, Vertrieb & Service' },
-      { name: 'Monday.com Blog',      url: 'https://monday.com/blog/feed/',                                          category: 'Marketing, Vertrieb & Service' },
-      { name: 'Close CRM',            url: 'https://close.com/blog/feed/',                                           category: 'Marketing, Vertrieb & Service' },
-      { name: 'SuperOffice',          url: 'https://www.superoffice.com/blog/feed/',                                 category: 'Marketing, Vertrieb & Service' },
-      { name: 'Zoho Blog',            url: 'https://www.zoho.com/blog/rss.xml',                                      category: 'Marketing, Vertrieb & Service' },
-      { name: 'Microsoft Dynamics CRM', url: 'https://cloudblogs.microsoft.com/dynamics365/feed/',                   category: 'Marketing, Vertrieb & Service' },
-      { name: 'Gong Blog',            url: 'https://www.gong.io/blog/feed/',                                         category: 'Marketing, Vertrieb & Service' },
-      { name: 'Drift Blog',           url: 'https://www.drift.com/blog/feed/',                                       category: 'Marketing, Vertrieb & Service' },
-      { name: 'Zapier Blog',          url: 'https://zapier.com/blog/feeds/latest/',                                  category: 'Marketing, Vertrieb & Service' },
-      { name: 'Make Blog',            url: 'https://www.make.com/en/blog/feed',                                      category: 'Marketing, Vertrieb & Service' },
-      { name: 'n8n Blog',             url: 'https://blog.n8n.io/rss/',                                               category: 'Marketing, Vertrieb & Service' },
-
-      // ── Marketing, Vertrieb & Service — International ──
-      { name: 'Sprout Social',        url: 'https://sproutsocial.com/insights/feed/',                                category: 'Marketing, Vertrieb & Service' },
-      { name: 'Buffer Blog',          url: 'https://buffer.com/resources/feed/',                                     category: 'Marketing, Vertrieb & Service' },
-      { name: 'Content Marketing Inst.', url: 'https://contentmarketinginstitute.com/feed/',                         category: 'Marketing, Vertrieb & Service' },
-      { name: 'MarketingProfs',       url: 'https://www.marketingprofs.com/rss/articles.asp',                       category: 'Marketing, Vertrieb & Service' },
-      { name: 'Neil Patel',           url: 'https://neilpatel.com/blog/feed/',                                       category: 'Marketing, Vertrieb & Service' },
-      { name: 'Moz Blog',             url: 'https://moz.com/blog/feed/rss',                                          category: 'Marketing, Vertrieb & Service' },
-      { name: 'SEMrush Blog',         url: 'https://www.semrush.com/blog/feed/',                                     category: 'Marketing, Vertrieb & Service' },
+      { name: 'meedia',               url: 'https://meedia.de/feed/',                                                category: 'Marketing, Vertrieb & Service' },
+      { name: 'Horizont',             url: 'https://www.horizont.net/rss/',                                          category: 'Marketing, Vertrieb & Service' },
     ];
 
     const COLORS = {
       'KI & Tech':                    { bg: 'rgba(0,172,220,0.10)',  text: '#00acdc' },
-      'Finance & Banking':            { bg: 'rgba(0,172,220,0.10)',   text: '#00acdc' },
-      'Marketing, Vertrieb & Service':{ bg: 'rgba(124,58,237,0.09)',  text: '#7c3aed' },
+      'Finance & Banking':            { bg: 'rgba(0,172,220,0.10)',  text: '#00acdc' },
+      'Marketing, Vertrieb & Service':{ bg: 'rgba(0,172,220,0.10)',  text: '#00acdc' },
     };
 
     const EMOJI = {
@@ -396,54 +295,26 @@
     let allArticles      = [];
     let filteredArticles = [];
     let currentIndex     = 0;
-    let activeCat        = 'all';
     let autoTimer        = null;
 
     const AI_KEYWORDS = [
-      'künstliche intelligenz', 'maschinelles lernen', 'sprachmodell', 'sprachmodelle',
-      'chatbot', 'automatisierung', 'algorithmus', 'algorithmen', 'digitalisierung',
-      'generative ki', 'ki-', 'deep learning', 'neuronale netze', 'neuronale',
-      'technologie', 'digitale transformation', 'ki gestützt', 'ki basiert',
-      'spracherkennung', 'bilderkennung', 'gesichtserkennung', 'objekterkennung',
-      'datenanalyse', 'ki-regulierung', 'ki-gesetz', 'ki-act', 'eu ai act',
-      'robotik', 'autonome systeme', 'recommender', 'trainingsdaten',
-      'ki-strategie', 'ki-ethik', 'ki-governance', 'ki-sicherheit', 'ki-kompetenz',
-      'text-to-image', 'text-to-speech', 'text-to-video', 'multimodal',
-      'prompt engineering', 'fine-tuning', 'embedding', 'vektordatenbank',
-      'ki-assistent', 'ki-agent', 'ki-tool', 'ki-plattform', 'ki-modell',
-      'halluzination', 'halluziniert', 'bias', 'inferenz', 'retrieval',
-      'digitaler zwilling', 'predictive analytics', 'natural language',
-      'computer vision', 'voice assistant', 'sprachassistent',
-      'chatgpt', 'gpt-4', 'gpt-5', 'o1', 'o3', 'o4',
-      'copilot', 'gemini', 'llama', 'mistral', 'grok',
-      'claude', 'perplexity', 'midjourney', 'stable diffusion', 'dall-e',
-      'sora', 'whisper', 'runway', 'cursor', 'devin',
-      'github copilot', 'notion ai', 'adobe firefly', 'canva ki',
-      'microsoft 365 copilot', 'google workspace ai', 'salesforce einstein',
-      'servicenow ai', 'workday ai', 'sap ai', 'oracle ai',
-      'openai', 'anthropic', 'deepmind', 'hugging face', 'stability ai',
-      'cohere', 'inflection', 'xai', 'mistral ai', 'aleph alpha',
-      'scale ai', 'together ai', 'replicate',
-      'artificial intelligence', 'machine learning', 'large language model',
-      'llm', 'gpt-', 'generative ai', 'foundation model', 'transformer',
-      'neural network', 'reinforcement learning', 'agentic', ' rag ',
-      'vector database', 'ai agent', 'ai tool', 'ai model', 'ai platform',
-      'ai safety', 'ai regulation', 'ai ethics', 'ai governance', 'ai act',
-      'prompt', 'fine-tune', 'inference', 'benchmark', 'multimodal',
-      'reasoning model', 'context window', 'token', 'hallucination',
-      'no-code', 'low-code', 'saas', 'automation', 'rpa',
-      'intelligent automation', 'hyperautomation', 'augmented intelligence',
-      'conversational ai', 'decision intelligence',
+      'künstliche intelligenz','maschinelles lernen','sprachmodell','chatbot','automatisierung',
+      'generative ki','ki-','deep learning','neuronale','digitale transformation',
+      'ki-assistent','ki-agent','ki-tool','ki-plattform','ki-modell',
+      'chatgpt','gpt-4','gpt-5','copilot','gemini','llama','mistral','grok','claude','perplexity',
+      'openai','anthropic','deepmind','hugging face','stability ai','cohere','xai','mistral ai',
+      'artificial intelligence','machine learning','large language model','llm','gpt-',
+      'generative ai','foundation model','transformer','neural network','agentic',
+      'ai agent','ai tool','ai model','ai platform','ai safety','prompt','fine-tune',
+      'automation','rpa','intelligent automation','conversational ai',
     ];
 
     const CORE_KEYWORDS = [
-      'künstliche intelligenz', 'maschinelles lernen', 'sprachmodell', 'sprachmodelle',
-      'chatbot', 'chatgpt', 'openai', 'anthropic', 'deepmind', 'hugging face',
-      'llm', 'gpt-4', 'gpt-5', 'large language model', 'foundation model',
-      'generative ai', 'generative ki', 'artificial intelligence', 'machine learning',
-      'deep learning', 'neuronale netze', 'copilot', 'gemini', 'llama', 'mistral',
-      'grok', 'claude', 'ki-agent', 'ki-modell', 'ki-tool', 'ki-assistent',
-      'transformer', 'neural network', 'reinforcement learning', 'prompt engineering',
+      'künstliche intelligenz','maschinelles lernen','sprachmodell','chatbot','chatgpt',
+      'openai','anthropic','deepmind','llm','gpt-4','gpt-5','large language model',
+      'generative ai','generative ki','artificial intelligence','machine learning',
+      'deep learning','copilot','gemini','llama','mistral','grok','claude',
+      'transformer','neural network','prompt engineering',
     ];
 
     function isRelevant(art) {
@@ -461,9 +332,7 @@
     }
 
     function escHtml(str) {
-      return String(str)
-        .replace(/&/g, '&amp;').replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
     }
 
     function parseRSS(xmlText) {
@@ -499,9 +368,7 @@
           clearTimeout(tid);
           if (!res.ok) continue;
           const text = await res.text();
-          if (text && (text.includes('<item>') || text.includes('<entry>') || text.includes('<rss') || text.includes('<feed'))) {
-            return text;
-          }
+          if (text && (text.includes('<item>') || text.includes('<entry>') || text.includes('<rss') || text.includes('<feed'))) return text;
         } catch { clearTimeout(tid); }
       }
       return null;
@@ -512,54 +379,44 @@
       if (!text) return [];
       return parseRSS(text)
         .map(a => ({ ...a, source: source.name, category: source.category }))
-        .filter(isRelevant);
+        .filter(isRelevant)
+        .filter(a => a.image && a.image.trim() !== '');
     }
 
     async function loadAll() {
-      // Zuerst KI-gefilterte Liste laden (von GitHub Actions täglich aktualisiert)
+      // Zuerst KI-gefilterte Liste laden (wöchentlich von GitHub Actions aktualisiert)
       try {
         const res = await fetch('./articles.json?t=' + Date.now());
         if (res.ok) {
           const data = await res.json();
           if (data.articles && data.articles.length > 0) {
             allArticles = data.articles.map(a => ({ ...a, date: new Date(a.date) }));
-            applyFilter(activeCat);
+            renderCarousel();
             return;
           }
         }
       } catch (e) { /* Fallback auf Live-RSS */ }
 
-      // Fallback: Live-RSS direkt laden
+      // Fallback: Live-RSS
       const results = await Promise.allSettled(SOURCES.map(fetchSource));
       allArticles = results
         .filter(r => r.status === 'fulfilled')
         .flatMap(r => r.value)
         .sort((a, b) => b.date - a.date)
-        .slice(0, 25);
+        .slice(0, 15);
 
       if (allArticles.length === 0) {
         document.getElementById('carousel-root').innerHTML = `
-          <div class="empty-state" style="flex-direction:column;gap:16px;text-align:center;padding:20px">
-            <div style="font-size:32px">⚠️</div>
-            <div style="color:#82889a">Artikel konnten nicht geladen werden.<br>
-              <span style="font-size:12px;color:#c0c4cc">Prüfe deine Internetverbindung.</span>
-            </div>
+          <div class="empty-state" style="flex-direction:column;gap:14px;text-align:center">
+            <div style="font-size:28px">⚠️</div>
+            <div style="color:#82889a">Artikel konnten nicht geladen werden.</div>
             <button onclick="location.reload()"
-              style="padding:8px 20px;border:1.5px solid #00acdc;background:transparent;color:#00acdc;border-radius:20px;cursor:pointer;font-size:13px;font-family:inherit">
+              style="padding:7px 18px;border:1.5px solid #00acdc;background:transparent;color:#00acdc;border-radius:20px;cursor:pointer;font-size:12px;font-family:inherit">
               Neu laden
             </button>
           </div>`;
         return;
       }
-
-      applyFilter(activeCat);
-    }
-
-    function applyFilter(cat) {
-      activeCat        = cat;
-      const base       = cat === 'all' ? [...allArticles] : allArticles.filter(a => a.category === cat);
-      filteredArticles = base.filter(a => a.image && a.image.trim() !== '');
-      currentIndex     = 0;
       renderCarousel();
     }
 
@@ -573,7 +430,7 @@
     }
 
     function getPos(idx) {
-      const total = filteredArticles.length;
+      const total = allArticles.length;
       let diff = idx - currentIndex;
       if (diff >  total / 2) diff -= total;
       if (diff < -total / 2) diff += total;
@@ -587,12 +444,12 @@
 
     function renderCarousel() {
       const root = document.getElementById('carousel-root');
-      if (!filteredArticles.length) {
-        root.innerHTML = '<div class="empty-state">Keine Artikel in dieser Kategorie.</div>';
+      if (!allArticles.length) {
+        root.innerHTML = '<div class="empty-state">Keine Artikel verfügbar.</div>';
         return;
       }
 
-      const cards = filteredArticles.map((art, i) => {
+      const cards = allArticles.map((art, i) => {
         const pos   = getPos(i);
         const col   = COLORS[art.category] || COLORS['KI & Tech'];
         const emoji = EMOJI[art.category]  || '📄';
@@ -638,7 +495,7 @@
     }
 
     function navigate(dir) {
-      currentIndex = (currentIndex + dir + filteredArticles.length) % filteredArticles.length;
+      currentIndex = (currentIndex + dir + allArticles.length) % allArticles.length;
       updatePositions();
       startProgress();
       restartAuto();
@@ -678,14 +535,6 @@
     document.addEventListener('touchend',   e => {
       const dx = _touchX - e.changedTouches[0].clientX;
       if (Math.abs(dx) > 50) navigate(dx > 0 ? 1 : -1);
-    });
-
-    document.getElementById('filters').addEventListener('click', e => {
-      const btn = e.target.closest('.filter-btn');
-      if (!btn) return;
-      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      applyFilter(btn.dataset.cat);
     });
 
     loadAll();

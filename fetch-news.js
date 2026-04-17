@@ -6,51 +6,21 @@
 
 const { writeFileSync } = require('fs');
 
-// ── Quellen (identisch mit index.html) ──
+// ── Quellen — nur deutschsprachige DACH-Medien ──
 const SOURCES = [
-  // KI & Tech — Deutsch
+  // KI & Tech — DACH
   { name: 'Heise Online',         url: 'https://www.heise.de/thema/Kuenstliche-Intelligenz.xml',                  category: 'KI & Tech' },
   { name: 't3n',                  url: 'https://t3n.de/tag/kuenstliche-intelligenz/rss.xml',                      category: 'KI & Tech' },
+  { name: 'Golem.de',             url: 'https://www.golem.de/rss.php?feed=ATOM1.0',                               category: 'KI & Tech' },
   { name: 'Google Deutschland',   url: 'https://blog.google/intl/de-de/feed/',                                   category: 'KI & Tech' },
   { name: 'Microsoft DE',         url: 'https://news.microsoft.com/de-de/tag/agents/feed/',                       category: 'KI & Tech' },
-
-  // KI & Tech — Grosse Anbieter
-  { name: 'OpenAI',               url: 'https://openai.com/news/rss.xml',                                        category: 'KI & Tech' },
-  { name: 'Anthropic',            url: 'https://www.anthropic.com/rss.xml',                                      category: 'KI & Tech' },
-  { name: 'Google DeepMind',      url: 'https://deepmind.google/blog/rss.xml',                                   category: 'KI & Tech' },
-  { name: 'Google AI Blog',       url: 'https://ai.googleblog.com/feeds/posts/default',                          category: 'KI & Tech' },
-  { name: 'Meta AI',              url: 'https://ai.meta.com/blog/feed/',                                         category: 'KI & Tech' },
-  { name: 'Hugging Face',         url: 'https://huggingface.co/blog/feed.xml',                                   category: 'KI & Tech' },
-  { name: 'Mistral AI',           url: 'https://mistral.ai/news/feed.xml',                                       category: 'KI & Tech' },
-  { name: 'Microsoft AI Blog',    url: 'https://blogs.microsoft.com/ai/feed/',                                   category: 'KI & Tech' },
-  { name: 'Perplexity',           url: 'https://www.perplexity.ai/hub/rss.xml',                                  category: 'KI & Tech' },
-  { name: 'xAI (Grok)',           url: 'https://x.ai/blog/feed.xml',                                             category: 'KI & Tech' },
-  { name: 'NVIDIA AI',            url: 'https://blogs.nvidia.com/blog/category/generative-ai/feed/',             category: 'KI & Tech' },
-  { name: 'AWS Machine Learning', url: 'https://aws.amazon.com/blogs/machine-learning/feed/',                    category: 'KI & Tech' },
-  { name: 'Apple ML',             url: 'https://machinelearning.apple.com/rss/whats-new.rss',                    category: 'KI & Tech' },
-  { name: 'Cohere',               url: 'https://cohere.com/blog/rss',                                            category: 'KI & Tech' },
-  { name: 'IBM Research AI',      url: 'https://research.ibm.com/blog/rss',                                      category: 'KI & Tech' },
-
-  // KI & Tech — Fachmedien
-  { name: 'VentureBeat AI',       url: 'https://venturebeat.com/category/ai/feed/',                              category: 'KI & Tech' },
-  { name: 'TechCrunch AI',        url: 'https://techcrunch.com/category/artificial-intelligence/feed/',          category: 'KI & Tech' },
-  { name: 'The Verge AI',         url: 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml',      category: 'KI & Tech' },
-  { name: 'Wired AI',             url: 'https://www.wired.com/feed/category/artificial-intelligence/latest/rss', category: 'KI & Tech' },
-  { name: 'MIT Tech Review',      url: 'https://www.technologyreview.com/feed/',                                 category: 'KI & Tech' },
-  { name: 'ZDNet AI',             url: 'https://www.zdnet.com/topic/artificial-intelligence/rss.xml',            category: 'KI & Tech' },
-  { name: 'AI Business',          url: 'https://aibusiness.com/feed/',                                           category: 'KI & Tech' },
-  { name: 'AI News',              url: 'https://www.artificialintelligence-news.com/feed/',                      category: 'KI & Tech' },
-  { name: 'The Batch',            url: 'https://www.deeplearning.ai/the-batch/rss/',                             category: 'KI & Tech' },
-  { name: 'The Rundown AI',       url: 'https://www.therundown.ai/rss',                                          category: 'KI & Tech' },
-  { name: 'Towards Data Science', url: 'https://towardsdatascience.com/feed',                                    category: 'KI & Tech' },
-
-  // KI & Tech — Enterprise Software
-  { name: 'SAP News AI',          url: 'https://news.sap.com/category/artificial-intelligence/feed/',            category: 'KI & Tech' },
-  { name: 'ServiceNow Blog',      url: 'https://www.servicenow.com/blogs/feed/',                                 category: 'KI & Tech' },
-  { name: 'Workday Blog',         url: 'https://blog.workday.com/en-us/feed.xml',                                category: 'KI & Tech' },
-  { name: 'Oracle AI',            url: 'https://blogs.oracle.com/ai-and-datascience/rss',                        category: 'KI & Tech' },
-  { name: 'McKinsey AI',          url: 'https://www.mckinsey.com/capabilities/quantumblack/our-insights/rss',    category: 'KI & Tech' },
-  { name: 'Microsoft Dynamics',   url: 'https://cloudblogs.microsoft.com/dynamics365/feed/',                     category: 'KI & Tech' },
+  { name: 'ZDNet DE',             url: 'https://www.zdnet.de/feed/',                                             category: 'KI & Tech' },
+  { name: 'Computerwoche',        url: 'https://www.computerwoche.de/a/rss.xml',                                  category: 'KI & Tech' },
+  { name: 'Gründerszene',         url: 'https://www.gruenderszene.de/feed/',                                     category: 'KI & Tech' },
+  { name: 'futurezone.at',        url: 'https://futurezone.at/rss/tech',                                         category: 'KI & Tech' },
+  { name: 'netzpolitik.org',      url: 'https://netzpolitik.org/feed/',                                          category: 'KI & Tech' },
+  { name: 'WirtschaftsWoche Tech',url: 'https://www.wiwo.de/themen/digitale-welt/rss',                           category: 'KI & Tech' },
+  { name: 'Handelsblatt Tech',    url: 'https://www.handelsblatt.com/rss/technologie',                           category: 'KI & Tech' },
 
   // Finance & Banking
   { name: 'IT Finanzmagazin',     url: 'https://www.it-finanzmagazin.de/tag/kuenstliche-intelligenz/feed/',       category: 'Finance & Banking' },
@@ -63,7 +33,7 @@ const SOURCES = [
   { name: 'Gründerszene Fintech', url: 'https://www.gruenderszene.de/feed/?cat=fintech',                         category: 'Finance & Banking' },
   { name: 'WirtschaftsWoche KI',  url: 'https://www.wiwo.de/themen/kuenstliche-intelligenz/rss',                 category: 'Finance & Banking' },
 
-  // Marketing, Vertrieb & Service — Deutsch
+  // Marketing, Vertrieb & Service
   { name: 'HubSpot Marketing',    url: 'https://blog.hubspot.de/marketing/rss.xml',                              category: 'Marketing, Vertrieb & Service' },
   { name: 'HubSpot Sales',        url: 'https://blog.hubspot.de/sales/rss.xml',                                  category: 'Marketing, Vertrieb & Service' },
   { name: 'HubSpot Service',      url: 'https://blog.hubspot.de/service/rss.xml',                                category: 'Marketing, Vertrieb & Service' },
@@ -71,32 +41,8 @@ const SOURCES = [
   { name: 'OnlineMarketing.de',   url: 'https://onlinemarketing.de/feed/',                                       category: 'Marketing, Vertrieb & Service' },
   { name: 'W&V',                  url: 'https://www.wuv.de/rss/alle-news.xml',                                   category: 'Marketing, Vertrieb & Service' },
   { name: 'Absatzwirtschaft',     url: 'https://www.absatzwirtschaft.de/feed/',                                  category: 'Marketing, Vertrieb & Service' },
-
-  // Marketing, Vertrieb & Service — CRM & Tools
-  { name: 'Salesforce Blog',      url: 'https://www.salesforce.com/blog/feed/',                                  category: 'Marketing, Vertrieb & Service' },
-  { name: 'Pipedrive Blog',       url: 'https://www.pipedrive.com/en/blog/rss',                                  category: 'Marketing, Vertrieb & Service' },
-  { name: 'Intercom Blog',        url: 'https://www.intercom.com/blog/feed/',                                    category: 'Marketing, Vertrieb & Service' },
-  { name: 'Zendesk Blog',         url: 'https://www.zendesk.com/blog/feed/',                                     category: 'Marketing, Vertrieb & Service' },
-  { name: 'Freshworks Blog',      url: 'https://www.freshworks.com/blog/feed/',                                  category: 'Marketing, Vertrieb & Service' },
-  { name: 'ActiveCampaign',       url: 'https://www.activecampaign.com/blog/feed/',                              category: 'Marketing, Vertrieb & Service' },
-  { name: 'Monday.com Blog',      url: 'https://monday.com/blog/feed/',                                          category: 'Marketing, Vertrieb & Service' },
-  { name: 'Close CRM',            url: 'https://close.com/blog/feed/',                                           category: 'Marketing, Vertrieb & Service' },
-  { name: 'SuperOffice',          url: 'https://www.superoffice.com/blog/feed/',                                 category: 'Marketing, Vertrieb & Service' },
-  { name: 'Zoho Blog',            url: 'https://www.zoho.com/blog/rss.xml',                                      category: 'Marketing, Vertrieb & Service' },
-  { name: 'Gong Blog',            url: 'https://www.gong.io/blog/feed/',                                         category: 'Marketing, Vertrieb & Service' },
-  { name: 'Drift Blog',           url: 'https://www.drift.com/blog/feed/',                                       category: 'Marketing, Vertrieb & Service' },
-  { name: 'Zapier Blog',          url: 'https://zapier.com/blog/feeds/latest/',                                  category: 'Marketing, Vertrieb & Service' },
-  { name: 'Make Blog',            url: 'https://www.make.com/en/blog/feed',                                      category: 'Marketing, Vertrieb & Service' },
-  { name: 'n8n Blog',             url: 'https://blog.n8n.io/rss/',                                               category: 'Marketing, Vertrieb & Service' },
-
-  // Marketing, Vertrieb & Service — International
-  { name: 'Sprout Social',        url: 'https://sproutsocial.com/insights/feed/',                                category: 'Marketing, Vertrieb & Service' },
-  { name: 'Buffer Blog',          url: 'https://buffer.com/resources/feed/',                                     category: 'Marketing, Vertrieb & Service' },
-  { name: 'Content Marketing Inst.', url: 'https://contentmarketinginstitute.com/feed/',                         category: 'Marketing, Vertrieb & Service' },
-  { name: 'MarketingProfs',       url: 'https://www.marketingprofs.com/rss/articles.asp',                       category: 'Marketing, Vertrieb & Service' },
-  { name: 'Neil Patel',           url: 'https://neilpatel.com/blog/feed/',                                       category: 'Marketing, Vertrieb & Service' },
-  { name: 'Moz Blog',             url: 'https://moz.com/blog/feed/rss',                                          category: 'Marketing, Vertrieb & Service' },
-  { name: 'SEMrush Blog',         url: 'https://www.semrush.com/blog/feed/',                                     category: 'Marketing, Vertrieb & Service' },
+  { name: 'meedia',               url: 'https://meedia.de/feed/',                                                category: 'Marketing, Vertrieb & Service' },
+  { name: 'Horizont',             url: 'https://www.horizont.net/rss/',                                          category: 'Marketing, Vertrieb & Service' },
 ];
 
 // ── XML Parser ──
@@ -186,13 +132,16 @@ async function scoreWithGemini(articles) {
 
     const prompt = `Du bist Chefredakteur einer KI-Lernplattform für deutschsprachige Fach- und Führungskräfte.
 
+WICHTIG: Wähle NUR deutschsprachige Artikel. Vergib 0 für englischsprachige Artikel.
+
 Bewerte jeden Artikel von 0 bis 10. Vergib hohe Punktzahlen wenn:
-- Der Artikel echte, aktuelle KI-News enthält (neue Modelle, Partnerschaften, Produkte, Studien)
-- Es für Berufstätige relevant ist die KI im Arbeitsalltag einsetzen wollen
+- Der Artikel auf Deutsch verfasst ist UND echte, aktuelle KI-News enthält (neue Modelle, Partnerschaften, Produkte, Studien)
+- Es für deutschsprachige Berufstätige relevant ist, die KI im Arbeitsalltag einsetzen wollen
 - Bei Finance: Bezug zu KI, Fintech, digitaler Transformation in Banken/Versicherungen
 - Bei Marketing/Sales/CRM: Bezug zu KI-Tools, Automatisierung, modernen Sales-Methoden
 
 Vergib niedrige Punktzahlen (0–3) für:
+- Englischsprachige Artikel (immer 0)
 - Allgemeine Unternehmens-PR ohne echten Informationswert
 - Clickbait oder oberflächliche Inhalte
 - Keine erkennbare Relevanz für KI oder digitale Transformation
