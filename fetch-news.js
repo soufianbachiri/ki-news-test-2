@@ -9,40 +9,69 @@ const { writeFileSync } = require('fs');
 // ── Quellen — nur deutschsprachige DACH-Medien ──
 const SOURCES = [
   // KI & Tech — DACH
-  { name: 'Heise Online',         url: 'https://www.heise.de/thema/Kuenstliche-Intelligenz.xml',                  category: 'KI & Tech' },
-  { name: 't3n',                  url: 'https://t3n.de/tag/kuenstliche-intelligenz/rss.xml',                      category: 'KI & Tech' },
-  { name: 'Golem.de',             url: 'https://www.golem.de/rss.php?feed=ATOM1.0',                               category: 'KI & Tech' },
-  { name: 'Google Deutschland',   url: 'https://blog.google/intl/de-de/feed/',                                   category: 'KI & Tech' },
-  { name: 'Microsoft DE',         url: 'https://news.microsoft.com/de-de/tag/agents/feed/',                       category: 'KI & Tech' },
-  { name: 'ZDNet DE',             url: 'https://www.zdnet.de/feed/',                                             category: 'KI & Tech' },
-  { name: 'Computerwoche',        url: 'https://www.computerwoche.de/a/rss.xml',                                  category: 'KI & Tech' },
-  { name: 'Gründerszene',         url: 'https://www.gruenderszene.de/feed/',                                     category: 'KI & Tech' },
-  { name: 'futurezone.at',        url: 'https://futurezone.at/rss/tech',                                         category: 'KI & Tech' },
-  { name: 'netzpolitik.org',      url: 'https://netzpolitik.org/feed/',                                          category: 'KI & Tech' },
-  { name: 'WirtschaftsWoche Tech',url: 'https://www.wiwo.de/themen/digitale-welt/rss',                           category: 'KI & Tech' },
-  { name: 'Handelsblatt Tech',    url: 'https://www.handelsblatt.com/rss/technologie',                           category: 'KI & Tech' },
+  { name: 'Heise Online',          url: 'https://www.heise.de/thema/Kuenstliche-Intelligenz.xml',                  category: 'KI & Tech' },
+  { name: 't3n',                   url: 'https://t3n.de/tag/kuenstliche-intelligenz/rss.xml',                      category: 'KI & Tech' },
+  { name: 'Golem.de',              url: 'https://www.golem.de/rss.php?feed=ATOM1.0',                               category: 'KI & Tech' },
+  { name: 'Wired DE',              url: 'https://www.wired.de/feed/',                                             category: 'KI & Tech' },
+  { name: 'MIT Tech Review DE',    url: 'https://www.technologyreview.de/feed/',                                  category: 'KI & Tech' },
+  { name: 'Google Deutschland',    url: 'https://blog.google/intl/de-de/feed/',                                   category: 'KI & Tech' },
+  { name: 'Microsoft DE',          url: 'https://news.microsoft.com/de-de/tag/agents/feed/',                       category: 'KI & Tech' },
+  { name: 'ZDNet DE',              url: 'https://www.zdnet.de/feed/',                                             category: 'KI & Tech' },
+  { name: 'Computerwoche',         url: 'https://www.computerwoche.de/a/rss.xml',                                  category: 'KI & Tech' },
+  { name: 'PC-Welt',               url: 'https://www.pcwelt.de/feed/',                                            category: 'KI & Tech' },
+  { name: 'CHIP.de',               url: 'https://www.chip.de/rss/news.xml',                                       category: 'KI & Tech' },
+  { name: 'Gründerszene',          url: 'https://www.gruenderszene.de/feed/',                                     category: 'KI & Tech' },
+  { name: 'futurezone.at',         url: 'https://futurezone.at/rss/tech',                                         category: 'KI & Tech' },
+  { name: 'netzpolitik.org',       url: 'https://netzpolitik.org/feed/',                                          category: 'KI & Tech' },
+  { name: 'WirtschaftsWoche Tech', url: 'https://www.wiwo.de/themen/digitale-welt/rss',                           category: 'KI & Tech' },
+  { name: 'Handelsblatt Tech',     url: 'https://www.handelsblatt.com/rss/technologie',                           category: 'KI & Tech' },
+  { name: 'Manager Magazin KI',    url: 'https://www.manager-magazin.de/thema/kuenstliche_intelligenz/rss',        category: 'KI & Tech' },
+  { name: 'Spiegel Netzwelt',      url: 'https://www.spiegel.de/netzwelt/index.rss',                              category: 'KI & Tech' },
+  { name: 'SAP News DE',           url: 'https://news.sap.com/de/category/artificial-intelligence/feed/',          category: 'KI & Tech' },
+  { name: 'Zeit Online Digital',   url: 'https://www.zeit.de/digital/index.xml',                                  category: 'KI & Tech' },
+  { name: 'FAZ Digital',           url: 'https://www.faz.net/rss/aktuell/digitec/',                               category: 'KI & Tech' },
+  { name: 'Deutsche Welle Tech',   url: 'https://rss.dw.com/rdf/rss-de-tech',                                    category: 'KI & Tech' },
+  { name: 'Bitkom',                url: 'https://www.bitkom.org/rss/Presse.xml',                                  category: 'KI & Tech' },
+  { name: 'iX Magazin',            url: 'https://www.ix.de/rss.xml',                                             category: 'KI & Tech' },
+  { name: 'c\'t',                  url: 'https://www.ct.de/rss/ct.php',                                          category: 'KI & Tech' },
+  { name: 'Digital Kompakt',       url: 'https://www.digitalkompakt.de/feed/',                                   category: 'KI & Tech' },
+  { name: 'Fraunhofer',            url: 'https://www.fraunhofer.de/de/presse/aktuelles/rss.xml',                 category: 'KI & Tech' },
+  { name: 'Dataconomy DE',         url: 'https://dataconomy.com/de/feed/',                                       category: 'KI & Tech' },
 
   // Finance & Banking
-  { name: 'IT Finanzmagazin',     url: 'https://www.it-finanzmagazin.de/tag/kuenstliche-intelligenz/feed/',       category: 'Finance & Banking' },
-  { name: 'IT Finanzmagazin KI',  url: 'https://www.it-finanzmagazin.de/tag/ki/feed/',                           category: 'Finance & Banking' },
-  { name: 'Der Bank Blog',        url: 'https://www.der-bank-blog.de/stichwort/kuenstliche-intelligenz/feed/',    category: 'Finance & Banking' },
-  { name: 'Finance Forward',      url: 'https://financeforward.de/feed/',                                        category: 'Finance & Banking' },
-  { name: 'Payment & Banking',    url: 'https://paymentandbanking.com/feed/',                                    category: 'Finance & Banking' },
-  { name: 'BankingHub',           url: 'https://www.bankinghub.eu/feed/',                                        category: 'Finance & Banking' },
-  { name: 'finews.ch',            url: 'https://www.finews.ch/rss/',                                             category: 'Finance & Banking' },
-  { name: 'Gründerszene Fintech', url: 'https://www.gruenderszene.de/feed/?cat=fintech',                         category: 'Finance & Banking' },
-  { name: 'WirtschaftsWoche KI',  url: 'https://www.wiwo.de/themen/kuenstliche-intelligenz/rss',                 category: 'Finance & Banking' },
+  { name: 'IT Finanzmagazin',      url: 'https://www.it-finanzmagazin.de/tag/kuenstliche-intelligenz/feed/',       category: 'Finance & Banking' },
+  { name: 'IT Finanzmagazin KI',   url: 'https://www.it-finanzmagazin.de/tag/ki/feed/',                           category: 'Finance & Banking' },
+  { name: 'Der Bank Blog',         url: 'https://www.der-bank-blog.de/stichwort/kuenstliche-intelligenz/feed/',    category: 'Finance & Banking' },
+  { name: 'Finance Forward',       url: 'https://financeforward.de/feed/',                                        category: 'Finance & Banking' },
+  { name: 'Payment & Banking',     url: 'https://paymentandbanking.com/feed/',                                    category: 'Finance & Banking' },
+  { name: 'BankingHub',            url: 'https://www.bankinghub.eu/feed/',                                        category: 'Finance & Banking' },
+  { name: 'finews.ch',             url: 'https://www.finews.ch/rss/',                                             category: 'Finance & Banking' },
+  { name: 'Gründerszene Fintech',  url: 'https://www.gruenderszene.de/feed/?cat=fintech',                         category: 'Finance & Banking' },
+  { name: 'WirtschaftsWoche KI',   url: 'https://www.wiwo.de/themen/kuenstliche-intelligenz/rss',                 category: 'Finance & Banking' },
+  { name: 'Handelsblatt Finanzen', url: 'https://www.handelsblatt.com/rss/finanzen',                              category: 'Finance & Banking' },
+  { name: 'Capital.de',            url: 'https://www.capital.de/feed',                                            category: 'Finance & Banking' },
+  { name: 'Versicherungsbote',     url: 'https://www.versicherungsbote.de/feed/',                                 category: 'Finance & Banking' },
+  { name: 'FAZ Finanzen',          url: 'https://www.faz.net/rss/aktuell/finanzen/',                              category: 'Finance & Banking' },
+  { name: 'Tagesschau Wirtschaft', url: 'https://www.tagesschau.de/wirtschaft/index~rss2.xml',                    category: 'Finance & Banking' },
 
   // Marketing, Vertrieb & Service
-  { name: 'HubSpot Marketing',    url: 'https://blog.hubspot.de/marketing/rss.xml',                              category: 'Marketing, Vertrieb & Service' },
-  { name: 'HubSpot Sales',        url: 'https://blog.hubspot.de/sales/rss.xml',                                  category: 'Marketing, Vertrieb & Service' },
-  { name: 'HubSpot Service',      url: 'https://blog.hubspot.de/service/rss.xml',                                category: 'Marketing, Vertrieb & Service' },
-  { name: 'OMR',                  url: 'https://omr.com/de/daily/feed/',                                         category: 'Marketing, Vertrieb & Service' },
-  { name: 'OnlineMarketing.de',   url: 'https://onlinemarketing.de/feed/',                                       category: 'Marketing, Vertrieb & Service' },
-  { name: 'W&V',                  url: 'https://www.wuv.de/rss/alle-news.xml',                                   category: 'Marketing, Vertrieb & Service' },
-  { name: 'Absatzwirtschaft',     url: 'https://www.absatzwirtschaft.de/feed/',                                  category: 'Marketing, Vertrieb & Service' },
-  { name: 'meedia',               url: 'https://meedia.de/feed/',                                                category: 'Marketing, Vertrieb & Service' },
-  { name: 'Horizont',             url: 'https://www.horizont.net/rss/',                                          category: 'Marketing, Vertrieb & Service' },
+  { name: 'HubSpot Marketing',     url: 'https://blog.hubspot.de/marketing/rss.xml',                              category: 'Marketing, Vertrieb & Service' },
+  { name: 'HubSpot Sales',         url: 'https://blog.hubspot.de/sales/rss.xml',                                  category: 'Marketing, Vertrieb & Service' },
+  { name: 'HubSpot Service',       url: 'https://blog.hubspot.de/service/rss.xml',                                category: 'Marketing, Vertrieb & Service' },
+  { name: 'OMR',                   url: 'https://omr.com/de/daily/feed/',                                         category: 'Marketing, Vertrieb & Service' },
+  { name: 'OnlineMarketing.de',    url: 'https://onlinemarketing.de/feed/',                                       category: 'Marketing, Vertrieb & Service' },
+  { name: 'W&V',                   url: 'https://www.wuv.de/rss/alle-news.xml',                                   category: 'Marketing, Vertrieb & Service' },
+  { name: 'Absatzwirtschaft',      url: 'https://www.absatzwirtschaft.de/feed/',                                  category: 'Marketing, Vertrieb & Service' },
+  { name: 'meedia',                url: 'https://meedia.de/feed/',                                                category: 'Marketing, Vertrieb & Service' },
+  { name: 'Horizont',              url: 'https://www.horizont.net/rss/',                                          category: 'Marketing, Vertrieb & Service' },
+  { name: 'LEAD Digital',          url: 'https://www.lead-digital.de/feed/',                                      category: 'Marketing, Vertrieb & Service' },
+  { name: 'eCommerce Magazin',     url: 'https://www.ecommerce-magazin.de/feed/',                                 category: 'Marketing, Vertrieb & Service' },
+  { name: 'acquisa',               url: 'https://www.acquisa.de/feed',                                            category: 'Marketing, Vertrieb & Service' },
+  { name: 'Internetworld',         url: 'https://www.internetworld.de/rss/feed.html',                             category: 'Marketing, Vertrieb & Service' },
+  { name: 'BVDW',                  url: 'https://www.bvdw.org/news/rss/',                                         category: 'Marketing, Vertrieb & Service' },
+  { name: 'Allfacebook.de',        url: 'https://allfacebook.de/feed',                                           category: 'Marketing, Vertrieb & Service' },
+  { name: 't3n Marketing',         url: 'https://t3n.de/tag/marketing/rss.xml',                                   category: 'Marketing, Vertrieb & Service' },
+  { name: 'OnlineMarketing Praxis',url: 'https://www.onlinemarketing-praxis.de/feed/',                            category: 'Marketing, Vertrieb & Service' },
 ];
 
 // ── KI-Relevanz-Filter ──
@@ -98,7 +127,7 @@ function parseRSS(xml, source) {
   const items = [];
   const re = /<(item|entry)[^>]*>([\s\S]*?)<\/(item|entry)>/g;
   let match;
-  while ((match = re.exec(xml)) && items.length < 3) {
+  while ((match = re.exec(xml)) && items.length < 5) {
     const c = match[2];
     const title = stripHtml(extract(c, 'title'));
     const link  = extractLink(c);
@@ -249,7 +278,7 @@ async function main() {
 
   // Top-Artikel nach Score filtern
   const top = deduped
-    .filter(a => a.score >= 6 && a.image && a.image.trim() !== '')
+    .filter(a => a.score >= 5)
     .sort((a, b) => b.score - a.score || new Date(b.date) - new Date(a.date));
 
   // Mindestens 3 pro Kategorie sicherstellen
