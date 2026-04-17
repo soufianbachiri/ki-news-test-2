@@ -516,6 +516,20 @@
     }
 
     async function loadAll() {
+      // Zuerst KI-gefilterte Liste laden (von GitHub Actions täglich aktualisiert)
+      try {
+        const res = await fetch('./articles.json?t=' + Date.now());
+        if (res.ok) {
+          const data = await res.json();
+          if (data.articles && data.articles.length > 0) {
+            allArticles = data.articles.map(a => ({ ...a, date: new Date(a.date) }));
+            applyFilter(activeCat);
+            return;
+          }
+        }
+      } catch (e) { /* Fallback auf Live-RSS */ }
+
+      // Fallback: Live-RSS direkt laden
       const results = await Promise.allSettled(SOURCES.map(fetchSource));
       allArticles = results
         .filter(r => r.status === 'fulfilled')
