@@ -45,6 +45,35 @@ const SOURCES = [
   { name: 'Horizont',             url: 'https://www.horizont.net/rss/',                                          category: 'Marketing, Vertrieb & Service' },
 ];
 
+// ── KI-Relevanz-Filter ──
+function isRelevant(art) {
+  const title   = art.title.toLowerCase();
+  const excerpt = art.excerpt.toLowerCase();
+  const KI_KEYWORDS = [
+    'künstliche intelligenz','maschinelles lernen','sprachmodell','chatbot','automatisierung',
+    'generative ki','deep learning','neuronale','digitale transformation',
+    'ki-assistent','ki-agent','ki-tool','ki-plattform','ki-modell','ki-gestützt',
+    'chatgpt','gpt-4','gpt-5','copilot','gemini','llama','mistral','grok','claude','perplexity',
+    'openai','anthropic','deepmind','hugging face','cohere','xai','mistral ai',
+    'large language model','llm','generative ai','foundation model','transformer',
+    'agentic','ai agent','ai tool','prompt','fine-tuning',
+    'automation','rpa','intelligente automatisierung','conversational ai',
+  ];
+  if (/\bki\b/.test(title) || /\bai\b/.test(title)) return true;
+  if (KI_KEYWORDS.some(kw => title.includes(kw))) return true;
+  if (/\bki\b/.test(excerpt) || /\bai\b/.test(excerpt)) return true;
+  if (KI_KEYWORDS.some(kw => excerpt.includes(kw))) return true;
+  return false;
+}
+
+// ── Sprachfilter: nur deutsche Artikel ──
+function isGerman(art) {
+  const text = (art.title + ' ' + art.excerpt).toLowerCase();
+  if (/[äöüß]/.test(text)) return true;
+  const words = [' der ',' die ',' das ',' und ',' mit ',' für ',' ist ',' von ',' auf ',' ein ',' eine ',' wird ',' hat ',' zu ',' im ',' an ',' bei ',' über ',' wie ',' aber ',' auch ',' nur ',' sich ',' sind ',' dem ',' den ',' als ',' oder ',' wenn ',' neue ',' neues '];
+  return words.some(w => text.includes(w));
+}
+
 // ── XML Parser ──
 function extract(xml, tag) {
   const re = new RegExp(
@@ -197,18 +226,33 @@ async function main() {
     }
   }
 
+  // Nur deutsche UND KI-relevante Artikel weiterverarbeiten
+  const deutscheArtikel = allArticles.filter(isGerman).filter(isRelevant);
+
   console.log(`\n📊 Ergebnis: ${success} Quellen geladen, ${failed} fehlgeschlagen`);
-  console.log(`📰 Insgesamt ${allArticles.length} Artikel gesammelt`);
+  console.log(`📰 Insgesamt ${allArticles.length} Artikel gesammelt, davon ${deutscheArtikel.length} auf Deutsch`);
   console.log('\n🤖 Gemini bewertet die Artikel...\n');
 
-  const scored = await scoreWithGemini(allArticles);
+  const scored = await scoreWithGemini(deutscheArtikel);
 
-  // Top 25 pro Kategorie ausgewogen + beste Gesamtartikel
-  const top = scored
+  // Duplikate entfernen (gleicher Link oder sehr ähnlicher Titel)
+  const seenLinks = new Set();
+  const seenTitles = new Set();
+  const deduped = scored.filter(a => {
+    if (seenLinks.has(a.link)) return false;
+    const titleKey = a.title.toLowerCase().replace(/[^a-z0-9äöüß]/g, '').slice(0, 40);
+    if (seenTitles.has(titleKey)) return false;
+    seenLinks.add(a.link);
+    seenTitles.add(titleKey);
+    return true;
+  });
+
+  // Top-Artikel nach Score filtern
+  const top = deduped
     .filter(a => a.score >= 6 && a.image && a.image.trim() !== '')
     .sort((a, b) => b.score - a.score || new Date(b.date) - new Date(a.date));
 
-  // Mindestens 5 pro Kategorie sicherstellen
+  // Mindestens 3 pro Kategorie sicherstellen
   const categories = ['KI & Tech', 'Finance & Banking', 'Marketing, Vertrieb & Service'];
   const selected = [];
   const used = new Set();
