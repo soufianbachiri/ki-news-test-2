@@ -1,0 +1,186 @@
+{
+  "updated": "2026-04-17T09:29:51.116Z",
+  "total_fetched": 98,
+  "articles": [
+    {
+      "title": "Factory hits $1.5B valuation to build AI coding for enterprises",
+      "link": "https://techcrunch.com/2026/04/16/factory-hits-1-5b-valuation-to-build-ai-coding-for-enterprises/",
+      "image": "",
+      "excerpt": "The three-year-old startup raised $150 million led by Khosla Ventures.",
+      "date": "2026-04-16T22:55:30.000Z",
+      "source": "TechCrunch AI",
+      "category": "KI & Tech",
+      "score": 9
+    },
+    {
+      "title": "Upscale AI in talks to raise at $2B valuation, says report",
+      "link": "https://techcrunch.com/2026/04/16/upscale-ai-in-talks-to-raise-at-2b-valuation-says-report/",
+      "image": "",
+      "excerpt": "AI infrastructure company Upscale AI is reportedly in talks to raise its third funding round since launching just seven months ago.",
+      "date": "2026-04-16T20:41:13.000Z",
+      "source": "TechCrunch AI",
+      "category": "KI & Tech",
+      "score": 9
+    },
+    {
+      "title": "OpenAI’s big Codex update is a direct shot at Claude Code",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/913034/openai-codex-updates-use-macos",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/Screenshot-2026-04-16-at-13.01.11.png?quality=90&#038;strip=all&#038;crop=0,5.8356559824806,100,89.31166633486",
+      "excerpt": "OpenAI is beefing up its agentic coding and development system, Codex, with a suite of updates that let it use your computer, generate images, and remember from past experiences. The package of updates comes as OpenAI's rivalry with Anthropic intensi",
+      "date": "2026-04-16T17:00:00.000Z",
+      "source": "The Verge AI",
+      "category": "KI & Tech",
+      "score": 9
+    },
+    {
+      "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
+      "link": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
+      "image": "https://images.ctfassets.net/jdtwqhzvc2n1/4gD12ThOmNHZuosqC4xCTz/277b1e8968da602108a29fae2eaca440/nuneybits_Vector_art_of_billboard_with_cryptic_code_dbe5b0ff-7644-45e6-a1ca-4a5dceeff986.webp?w=300&amp;q=30",
+      "excerpt": "Alfred Wahlforss was running out of options. His startup, Listen Labs, needed to hire over 100 engineers, but competing against Mark Zuckerberg s $100 million offers seemed impossible. So he spent $5,000 — a fifth of his marketing budget — on a billb",
+      "date": "2026-01-16T14:01:00.000Z",
+      "source": "VentureBeat AI",
+      "category": "KI & Tech",
+      "score": 9
+    },
+    {
+      "title": "Microsoft Build 2025: Das Zeitalter der KI-Agenten und der Aufbau des Open Agentic Web",
+      "link": "https://news.microsoft.com/de-de/build2025/",
+      "image": "",
+      "excerpt": "Die wichtigsten Neuigkeiten im Überblick: Microsoft Build 2025 läutet das Zeitalter der KI-Agenten ein: Durch große Fortschritte bei Reasoning und Memory sind KI-Modelle jetzt noch leistungsfähiger, um die Arbeit in Wirtschaft, Forschung und Alltag v",
+      "date": "2025-05-19T16:00:02.000Z",
+      "source": "Microsoft DE",
+      "category": "KI & Tech",
+      "score": 9
+    },
+    {
+      "title": "„Audit-Ready“-Compliance für Unternehmen und Banken - Agentic AI: Revolution für Mittelstand und Bankwesen",
+      "link": "https://www.der-bank-blog.de/audit-ready-compliance-unternehmen/regulierung-aufsicht/37730980/?utm_source=bankblog&#038;utm_medium=rss&#038;utm_campaign=rss",
+      "image": "https://www.der-bank-blog.de/wp-content/uploads/2026/03/agentic-ai-compliance-336x200.jpg",
+      "excerpt": "Ein jährliches Plus von 0,8 Prozentpunkten beim BIP-Wachstum durch KI ist kein bloßes statistisches Rauschen, sondern das Ergebnis einer neuen technologischen Reife. 2026 wird zeigen, wie aus Assistenten autonome Akteure in der Compliance werden.",
+      "date": "2026-04-14T22:25:12.000Z",
+      "source": "Der Bank Blog",
+      "category": "Finance & Banking",
+      "score": 9
+    },
+    {
+      "title": "AI Agents Are Advancing Rapidly… Is Your Testing Strategy Keeping Up?",
+      "link": "https://www.salesforce.com/blog/agentforce-testing-center/",
+      "image": "https://www.salesforce.com/blog/wp-content/uploads/sites/2/2026/04/AF-Testing-Center-Vid-Pic.jpeg?w=638",
+      "excerpt": "It’s 2026 — are you still editing CSV files to manage your testing suite?",
+      "date": "2026-04-15T13:00:00.000Z",
+      "source": "Salesforce Blog",
+      "category": "Marketing, Vertrieb & Service",
+      "score": 9
+    },
+    {
+      "title": "Never stop disrupting yourself; introducing the Fin API platform",
+      "link": "https://www.intercom.com/blog/introducing-the-fin-api-platform/",
+      "image": "https://blog.intercomassets.com/blog/wp-content/uploads/2056/04/1775236158481.png",
+      "excerpt": "Last week, we announced Apex, the world's first specialized customer service LLM. We're now going to allow you to access all of this power and all of our core models directly via API.",
+      "date": "2026-04-02T18:00:02.000Z",
+      "source": "Intercom Blog",
+      "category": "Marketing, Vertrieb & Service",
+      "score": 9
+    },
+    {
+      "title": "Deutsche Industrieunternehmen liegen weltweit beim Einsatz von KI vorn",
+      "link": "https://www.heise.de/news/65-Prozent-der-deutschen-Industrieunternehmen-setzt-KI-ein-11261619.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/6/5/6/9/4/shutterstock_2201996681-4ac3a5c95eb9480a.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "In Deutschland setzt eine Mehrheit der Industrieunternehmen Künstliche Intelligenz ein. Damit liegt Deutschland über dem weltweiten Durchschnitt.",
+      "date": "2026-04-17T05:09:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 8
+    },
+    {
+      "title": "Google’s AI Mode update lets you open links without leaving the page",
+      "link": "https://www.theverge.com/tech/913109/google-ai-mode-tabs-sources",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/google-ai-mode-side-by-side.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+      "excerpt": "Google is upgrading AI Mode in Chrome with a new feature that will allow you to open links to sources alongside your chat. Now, instead of automatically opening a new tab, clicking a source will open the website side by side with AI Mode, allowing yo",
+      "date": "2026-04-16T17:00:00.000Z",
+      "source": "The Verge AI",
+      "category": "KI & Tech",
+      "score": 8
+    },
+    {
+      "title": "Bankarbeitgeber und Gewerkschaften im Spannungsfeld von KI - Unterschiedliche Perspektiven auf Arbeit und Verantwortung",
+      "link": "https://www.der-bank-blog.de/bankarbeitgeber-gewerkschaften-spannungsfeld-ki/studien/37729508/?utm_source=bankblog&#038;utm_medium=rss&#038;utm_campaign=rss",
+      "image": "https://www.der-bank-blog.de/wp-content/uploads/2026/01/ki-im-spannungsfeld-336x200.jpg",
+      "excerpt": "Der Einsatz von Künstlicher Intelligenz in der Finanzbranche wird von Arbeitgebern und Gewerkschaften unterschiedlich bewertet. Daraus entstehen relevante Spannungsfelder im Hinblick auf Arbeit, Mitbestimmung und Verantwortung.",
+      "date": "2026-04-14T22:20:17.000Z",
+      "source": "Der Bank Blog",
+      "category": "Finance & Banking",
+      "score": 8
+    },
+    {
+      "title": "Top Tech Trends 2026: Innovation im Fokus - KI, Cloud und intelligente Betriebsmodelle für Wachstum",
+      "link": "https://www.der-bank-blog.de/top-tech-trends2026-innovation/studien/37729489/?utm_source=bankblog&#038;utm_medium=rss&#038;utm_campaign=rss",
+      "image": "https://www.der-bank-blog.de/wp-content/uploads/2026/01/technologie-trends-2026-336x200.jpg",
+      "excerpt": "Zentrale Technologie-Trends verändern 2026 die Grundlagen moderner Unternehmen. KI, intelligente Betriebsmodelle und Cloud-Strategien verschieben Prozesse, eröffnen neue Chancen und erhöhen die Anpassungsfähigkeit in allen Branchen.",
+      "date": "2026-04-13T22:15:35.000Z",
+      "source": "Der Bank Blog",
+      "category": "Finance & Banking",
+      "score": 8
+    },
+    {
+      "title": "The hardest percentages",
+      "link": "https://www.intercom.com/blog/the-hardest-percentages/",
+      "image": "https://blog.intercomassets.com/blog/wp-content/uploads/2026/04/Time-spent-across-different-query-types.png",
+      "excerpt": "Solving your customers' most challenging problems is what your support team exists for. With Procedures, Fin can do this too.",
+      "date": "2026-04-14T14:40:07.000Z",
+      "source": "Intercom Blog",
+      "category": "Marketing, Vertrieb & Service",
+      "score": 7
+    },
+    {
+      "title": "Analyse: Vom Mythos zur Vulnocalypse und was jetzt wirklich zu tun ist",
+      "link": "https://www.heise.de/hintergrund/Analyse-Vom-Mythos-zur-Vulnocalypse-und-was-jetzt-wirklich-zu-tun-ist-11260797.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/6/5/2/6/8/OVERLAY__Analyse-9fdd342d3e6d9677.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Alle Welt redet darüber, wie gefährlich Anthropics neue KI sein könnte. Jürgen Schmidt von heise security konzentriert sich lieber darauf, was jetzt zu tun ist.",
+      "date": "2026-04-17T07:20:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 7
+    },
+    {
+      "title": "heise+ | Drei Unified-Memory-Workstations für lokale KI im Test",
+      "link": "https://www.heise.de/tests/Drei-Unified-Memory-Workstations-fuer-lokale-KI-im-Test-11254738.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag_plus.beitrag_plus",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/6/2/3/1/3/unifiedmemory_aufmacher_final_digital-148cf1998854732f.png?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Bezahlbare Workstations für lokale KI: Die Unified-Memory-Workstations HP Z2 Mini G1a, Asus Ascent GX10 und Apple Mac Studio M4 Max im Check.",
+      "date": "2026-04-17T05:00:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 7
+    },
+    {
+      "title": "Codex for (almost) everything",
+      "link": "https://openai.com/index/codex-for-almost-everything",
+      "image": "",
+      "excerpt": "The updated Codex app for macOS and Windows adds computer use, in-app browsing, image generation, memory, and plugins to accelerate developer workflows.",
+      "date": "2026-04-16T10:00:00.000Z",
+      "source": "OpenAI",
+      "category": "KI & Tech",
+      "score": 7
+    },
+    {
+      "title": "Sechs KI-Trends, von denen wir 2025 noch mehr sehen werden",
+      "link": "https://news.microsoft.com/de-de/sechs-ki-trends-von-denen-wir-2025-noch-mehr-sehen-werden/",
+      "image": "",
+      "excerpt": "Künstliche Intelligenz (KI) hat sich längst als unverzichtbares Werkzeug in Beruf und Alltag etabliert. Im Jahr 2025 wird sie jedoch weit mehr sein: KI wird neue Möglichkeiten eröffnen, komplexe Herausforderungen lösen und den Fortschritt in Wissensc",
+      "date": "2024-12-06T10:58:52.000Z",
+      "source": "Microsoft DE",
+      "category": "KI & Tech",
+      "score": 7
+    },
+    {
+      "title": "From swarms to product: Turning customer signals into scalable features",
+      "link": "https://www.intercom.com/blog/from-swarms-to-product-turning-customer-signals-into-scalable-features/",
+      "image": "https://blog.intercomassets.com/blog/wp-content/uploads/2026/04/image2.png",
+      "excerpt": "The best product signal often comes from the least scalable work. Here's how Intercom's swarm model turns individual customer insights into features that reach everyone.",
+      "date": "2026-04-13T20:01:51.000Z",
+      "source": "Intercom Blog",
+      "category": "Marketing, Vertrieb & Service",
+      "score": 6
+    }
+  ]
+}
