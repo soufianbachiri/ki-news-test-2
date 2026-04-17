@@ -1,5 +1,56 @@
 {
-  "updated": "2026-04-17T14:44:12.112Z",
+  "updated": "2026-04-17T17:18:21.094Z",
   "total_fetched": 107,
-  "articles": []
+  "articles": [
+    {
+      "title": "Anthropic stellt Claude Design vor: KI-Werkzeug für Prototypen und Webseiten",
+      "link": "https://www.heise.de/news/Anthropic-stellt-Claude-Design-vor-KI-Werkzeug-fuer-Prototypen-und-Webseiten-11262940.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/6/6/3/6/8/CleanShot_2026-04-17_at_18-cf0e0ef519aff266.png?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Mit Claude Design präsentiert Anthropic ein experimentelles Werkzeug für Webdesign und Prototyping, das auf dem neuen Modell Claude Opus 4.7 basiert.",
+      "date": "2026-04-17T16:38:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 10
+    },
+    {
+      "title": "KI-Update kompakt: Grok, Claude Opus 4.7, Robo-Blindenhund, KI-Influencer",
+      "link": "https://www.heise.de/news/KI-Update-kompakt-Grok-Claude-Opus-4-7-Robo-Blindenhund-KI-Influencer-11261765.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/6/5/7/6/9/heise_Podcasts_KIUpdate_ho_16_9-29d64feac662a6b2.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Das „KI-Update“ liefert dreimal pro Woche eine Zusammenfassung der wichtigsten KI-Entwicklungen.",
+      "date": "2026-04-17T13:00:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 9
+    },
+    {
+      "title": "OpenAI kontert Anthropic mit großem Codex-Update",
+      "link": "https://www.heise.de/news/OpenAI-kontert-Anthropic-mit-grossem-Codex-Update-11262364.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/6/6/0/7/2/shutterstock_2424222439-555596f00a20dcd7.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "OpenAI rüstet Codex auf: Der Assistent steuert nun andere Apps, merkt sich Vorlieben und übernimmt laufende Arbeit im Hintergrund.",
+      "date": "2026-04-17T11:42:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 9
+    },
+    {
+      "title": "Microsoft Build 2025: Das Zeitalter der KI-Agenten und der Aufbau des Open Agentic Web",
+      "link": "https://news.microsoft.com/de-de/build2025/",
+      "image": "",
+      "excerpt": "Die wichtigsten Neuigkeiten im Überblick: Microsoft Build 2025 läutet das Zeitalter der KI-Agenten ein: Durch große Fortschritte bei Reasoning und Memory sind KI-Modelle jetzt noch leistungsfähiger, um die Arbeit in Wirtschaft, Forschung und Alltag v",
+      "date": "2025-05-19T16:00:02.000Z",
+      "source": "Microsoft DE",
+      "category": "KI & Tech",
+      "score": 9
+    },
+    {
+      "title": "heise+ | Lokale KI auf dem MacBook Neo: Wie gut LLMs und Bild-KIs auf 8 GByte RAM laufen",
+      "link": "https://www.heise.de/ratgeber/Lokale-KI-auf-dem-MacBook-Neo-Wie-gut-LLMs-und-Bild-KIs-auf-8-GByte-RAM-laufen-11212041.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag_plus.beitrag_plus",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/4/5/8/8/6/macbookneoki-861a6cadff9f0814.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Apples günstiges MacBook Neo krempelt den Notebook-Markt um. Aber reicht die Rechenleistung des iPhone-Chips auch für lokale KI-Sprachmodelle aus?",
+      "date": "2026-04-17T12:33:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 8
+    }
+  ]
 }
