@@ -1,7 +1,17 @@
 {
-  "updated": "2026-04-17T17:18:21.094Z",
-  "total_fetched": 107,
+  "updated": "2026-04-18T10:08:25.334Z",
+  "total_fetched": 117,
   "articles": [
+    {
+      "title": "OpenAI stellt GPT-Rosalind vor: KI-Modell speziell für Biologieforschung",
+      "link": "https://www.heise.de/news/OpenAI-stellt-GPT-Rosalind-vor-KI-Modell-speziell-fuer-Biologieforschung-11261983.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/6/5/8/8/0/shutterstock_2037331748-4f74f2580cbb7978.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "OpenAI bietet mit GPT-Rosalind ein biologisches Sprachmodell für Target Discovery und Genomik. Vorerst nur für US-Firmenkunden verfügbar.",
+      "date": "2026-04-18T08:12:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 10
+    },
     {
       "title": "Anthropic stellt Claude Design vor: KI-Werkzeug für Prototypen und Webseiten",
       "link": "https://www.heise.de/news/Anthropic-stellt-Claude-Design-vor-KI-Werkzeug-fuer-Prototypen-und-Webseiten-11262940.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
@@ -13,6 +23,46 @@
       "score": 10
     },
     {
+      "title": "Claude Design: Anthropic baut einen KI-Designer",
+      "link": "https://www.golem.de/news/claude-design-anthropic-baut-einen-ki-designer-2604-207729.html",
+      "image": "",
+      "excerpt": "Anthropic Claude Design verwandelt Text in fertige Visuals - will dabei aber keine Konkurrenz zu menschlichen Designern sein. ( a href= https://www.golem.de/specials/claude/ Claude /a , a href= https://www.golem.de/specials/ki/ KI /a ) img src= https",
+      "date": "2026-04-18T09:55:10.000Z",
+      "source": "Golem.de",
+      "category": "KI & Tech",
+      "score": 9
+    },
+    {
+      "title": "Mensch + KI: Die Zukunft des aktiven Asset Managements - Erklärbar, agentisch, datenstark – mit Governance zum Mehrwert",
+      "link": "https://www.der-bank-blog.de/mensch-ki-die-zukunft/private-banking/37729422/?utm_source=bankblog&#038;utm_medium=rss&#038;utm_campaign=rss",
+      "image": "https://www.der-bank-blog.de/wp-content/uploads/2026/02/kuenstliche-intelligenz-portfoliomanagement-336x200.jpg",
+      "excerpt": "Aktive Fondsmanager nutzen bereits seit langem moderne Technologien in ihrer täglichen Arbeit. Aber spätestens seit dem Durchbruch der generativen Künstlichen Intelligenz (KI) stellt sich die Frage, ob der Mensch im Portfoliomanagement ein Auslaufmod",
+      "date": "2026-04-12T22:25:57.000Z",
+      "source": "Der Bank Blog",
+      "category": "Finance & Banking",
+      "score": 9
+    },
+    {
+      "title": "iX-Workshop: KI-Methoden und -Werkzeuge für die IT-Sicherheit",
+      "link": "https://www.heise.de/news/iX-Workshop-KI-Methoden-und-Werkzeuge-fuer-die-IT-Sicherheit-11246680.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/5/8/2/2/7/it-security_kuenstliche_intelligenz_fuer_effiziente_verteidigungsstrategien_ticker-1920x1080px-739e6c9efabcfcb0.png?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Erfahren Sie, wie künstliche Intelligenz in der IT-Sicherheit eingesetzt werden kann: Überblick, Methoden, Werkzeuge und praktische Anwendung.",
+      "date": "2026-04-18T08:00:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 8
+    },
+    {
+      "title": "Defizite beim Management von KI-Risiken - Reale Sicherheitsvorfälle zeigen strukturelle Defizite",
+      "link": "https://www.der-bank-blog.de/defizite-management-ki-risiken/studien/37728595/?utm_source=bankblog&#038;utm_medium=rss&#038;utm_campaign=rss",
+      "image": "https://www.der-bank-blog.de/wp-content/uploads/2026/01/ki-workloads-336x200.jpg",
+      "excerpt": "Der produktive Einsatz von KI ist in vielen Organisationen Realität. Mit der wachsenden Verbreitung steigen jedoch auch operative Risiken. Sicherheitsstrategien geraten unter Druck, bekannte Schwachstellen wirken fort – und Prioritäten müssen neu jus",
+      "date": "2026-04-13T22:10:51.000Z",
+      "source": "Der Bank Blog",
+      "category": "Finance & Banking",
+      "score": 8
+    },
+    {
       "title": "KI-Update kompakt: Grok, Claude Opus 4.7, Robo-Blindenhund, KI-Influencer",
       "link": "https://www.heise.de/news/KI-Update-kompakt-Grok-Claude-Opus-4-7-Robo-Blindenhund-KI-Influencer-11261765.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
       "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/6/5/7/6/9/heise_Podcasts_KIUpdate_ho_16_9-29d64feac662a6b2.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
@@ -20,37 +70,7 @@
       "date": "2026-04-17T13:00:00.000Z",
       "source": "Heise Online",
       "category": "KI & Tech",
-      "score": 9
-    },
-    {
-      "title": "OpenAI kontert Anthropic mit großem Codex-Update",
-      "link": "https://www.heise.de/news/OpenAI-kontert-Anthropic-mit-grossem-Codex-Update-11262364.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/6/6/0/7/2/shutterstock_2424222439-555596f00a20dcd7.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "OpenAI rüstet Codex auf: Der Assistent steuert nun andere Apps, merkt sich Vorlieben und übernimmt laufende Arbeit im Hintergrund.",
-      "date": "2026-04-17T11:42:00.000Z",
-      "source": "Heise Online",
-      "category": "KI & Tech",
-      "score": 9
-    },
-    {
-      "title": "Microsoft Build 2025: Das Zeitalter der KI-Agenten und der Aufbau des Open Agentic Web",
-      "link": "https://news.microsoft.com/de-de/build2025/",
-      "image": "",
-      "excerpt": "Die wichtigsten Neuigkeiten im Überblick: Microsoft Build 2025 läutet das Zeitalter der KI-Agenten ein: Durch große Fortschritte bei Reasoning und Memory sind KI-Modelle jetzt noch leistungsfähiger, um die Arbeit in Wirtschaft, Forschung und Alltag v",
-      "date": "2025-05-19T16:00:02.000Z",
-      "source": "Microsoft DE",
-      "category": "KI & Tech",
-      "score": 9
-    },
-    {
-      "title": "heise+ | Lokale KI auf dem MacBook Neo: Wie gut LLMs und Bild-KIs auf 8 GByte RAM laufen",
-      "link": "https://www.heise.de/ratgeber/Lokale-KI-auf-dem-MacBook-Neo-Wie-gut-LLMs-und-Bild-KIs-auf-8-GByte-RAM-laufen-11212041.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag_plus.beitrag_plus",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/4/5/8/8/6/macbookneoki-861a6cadff9f0814.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "Apples günstiges MacBook Neo krempelt den Notebook-Markt um. Aber reicht die Rechenleistung des iPhone-Chips auch für lokale KI-Sprachmodelle aus?",
-      "date": "2026-04-17T12:33:00.000Z",
-      "source": "Heise Online",
-      "category": "KI & Tech",
-      "score": 8
+      "score": 7
     }
   ]
 }
