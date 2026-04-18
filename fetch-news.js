@@ -72,6 +72,21 @@ const SOURCES = [
   { name: 'Allfacebook.de',        url: 'https://allfacebook.de/feed',                                           category: 'Marketing, Vertrieb & Service' },
   { name: 't3n Marketing',         url: 'https://t3n.de/tag/marketing/rss.xml',                                   category: 'Marketing, Vertrieb & Service' },
   { name: 'OnlineMarketing Praxis',url: 'https://www.onlinemarketing-praxis.de/feed/',                            category: 'Marketing, Vertrieb & Service' },
+
+  // HR & Future of Work
+  { name: 'Personalwirtschaft',    url: 'https://www.personalwirtschaft.de/feed/',                                category: 'HR & Future of Work' },
+  { name: 'HR Journal',            url: 'https://www.hr-journal.de/rss.xml',                                     category: 'HR & Future of Work' },
+  { name: 'Haufe Personal',        url: 'https://www.haufe.de/personal/rss/alle-news.xml',                       category: 'HR & Future of Work' },
+  { name: 't3n Future of Work',    url: 'https://t3n.de/tag/future-of-work/rss.xml',                             category: 'HR & Future of Work' },
+  { name: 'HR Pepper',             url: 'https://hr-pepper.de/feed/',                                            category: 'HR & Future of Work' },
+  { name: 'Haufe Karriere',        url: 'https://www.haufe.de/karriere/rss/alle-news.xml',                       category: 'HR & Future of Work' },
+
+  // Recht & KI
+  { name: 'Legal Tribune Online',  url: 'https://www.lto.de/rss/',                                              category: 'Recht & KI' },
+  { name: 'Heise Recht',           url: 'https://www.heise.de/thema/Recht/rss',                                 category: 'Recht & KI' },
+  { name: 'Datenschutz-Guru',      url: 'https://www.datenschutz-guru.de/feed/',                                 category: 'Recht & KI' },
+  { name: 'Haufe Recht',           url: 'https://www.haufe.de/recht/rss/alle-news.xml',                         category: 'Recht & KI' },
+  { name: 'CR-online',             url: 'https://www.cr-online.de/feed/',                                       category: 'Recht & KI' },
 ];
 
 // ── KI-Relevanz-Filter ──
@@ -197,6 +212,8 @@ Bewerte jeden Artikel von 0 bis 10. Vergib hohe Punktzahlen wenn:
 - Es für deutschsprachige Berufstätige relevant ist, die KI im Arbeitsalltag einsetzen wollen
 - Bei Finance: Bezug zu KI, Fintech, digitaler Transformation in Banken/Versicherungen
 - Bei Marketing/Sales/CRM: Bezug zu KI-Tools, Automatisierung, modernen Sales-Methoden
+- Bei HR & Future of Work: KI im Personalwesen, Recruiting, New Work, Weiterbildung
+- Bei Recht & KI: KI-Regulierung, DSGVO, EU AI Act, Datenschutz
 
 Vergib niedrige Punktzahlen (0–3) für:
 - Englischsprachige Artikel (immer 0)
@@ -281,23 +298,23 @@ async function main() {
     .filter(a => a.score >= 5)
     .sort((a, b) => b.score - a.score || new Date(b.date) - new Date(a.date));
 
-  // Mindestens 3 pro Kategorie sicherstellen
-  const categories = ['KI & Tech', 'Finance & Banking', 'Marketing, Vertrieb & Service'];
+  // Mindestens 5 pro Kategorie sicherstellen
+  const categories = ['KI & Tech', 'Finance & Banking', 'Marketing, Vertrieb & Service', 'HR & Future of Work', 'Recht & KI'];
   const selected = [];
   const used = new Set();
 
   for (const cat of categories) {
-    const catArticles = top.filter(a => a.category === cat && !used.has(a.link)).slice(0, 7);
+    const catArticles = top.filter(a => a.category === cat && !used.has(a.link)).slice(0, 8);
     catArticles.forEach(a => { selected.push(a); used.add(a.link); });
   }
 
   // Restliche Plätze mit besten verbleibenden füllen
   for (const a of top) {
-    if (selected.length >= 25) break;
+    if (selected.length >= 40) break;
     if (!used.has(a.link)) { selected.push(a); used.add(a.link); }
   }
 
-  const final = selected.slice(0, 25).sort((a, b) => b.score - a.score);
+  const final = selected.slice(0, 40).sort((a, b) => b.score - a.score);
 
   console.log(`\n⭐ Top ${final.length} Artikel ausgewählt:`);
   final.forEach((a, i) => console.log(`  ${i + 1}. [${a.score}/10] [${a.category}] ${a.title.slice(0, 60)}`));
