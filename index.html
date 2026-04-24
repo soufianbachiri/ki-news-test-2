@@ -444,7 +444,7 @@
         .filter(a => a.image && a.image.trim() !== '');
     }
 
-    const CACHE_KEY = 'ki_news_cache';
+    const CACHE_KEY = 'ki_news_cache_' + new Date().toISOString().slice(0, 10);
     const CACHE_TTL = 6 * 60 * 60 * 1000; // 6 Stunden
 
     function saveCache(articles) {
