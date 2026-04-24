@@ -388,6 +388,13 @@
       return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
     }
 
+    function safeUrl(url) {
+      try {
+        const u = new URL(url);
+        return (u.protocol === 'https:' || u.protocol === 'http:') ? url : '#';
+      } catch { return '#'; }
+    }
+
     function parseRSS(xmlText) {
       try {
         const doc   = new DOMParser().parseFromString(xmlText, 'text/xml');
@@ -566,7 +573,7 @@
         const phStyle = art.image ? 'display:none' : '';
 
         return `
-<a class="card" data-pos="${pos}" data-index="${i}" href="${escHtml(art.link)}" target="_blank" rel="noopener"
+<a class="card" data-pos="${pos}" data-index="${i}" href="${escHtml(safeUrl(art.link))}" target="_blank" rel="noopener"
    onclick="handleCardClick(event,${i})">
   ${imgTag}
   <div class="card-image-placeholder" style="${phStyle}">${emoji}</div>
