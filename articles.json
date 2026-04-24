@@ -1,36 +1,96 @@
 {
-  "updated": "2026-04-20T11:00:48.449Z",
-  "total_fetched": 117,
+  "updated": "2026-04-24T09:25:18.435Z",
+  "total_fetched": 112,
   "articles": [
     {
-      "title": "Künstliche Intelligenz: KI-Wettrennen: Anthropic holt OpenAI bei wichtiger Kennzahl ein",
-      "link": "https://www.capital.de/wirtschaft-politik/ki-wettrennen--anthropic-holt-openai-bei-wichtiger-kennzahl-ein-37311438.html?utm_medium=standard&amp;utm_source=rss",
-      "image": "https://image.capital.de/37311440/t/bB/v7/w1440/r1.7778/-/anthropic-holt-openai-ein-bild.jpg",
-      "excerpt": "Lange galt OpenAI als die Nummer eins der KI-Branche. Jetzt will das Start-up Anthropic das Unternehmen OpenAI bei der „Run Rate“ überholt haben",
-      "date": "2026-04-20T09:49:00.000Z",
-      "source": "Capital.de",
-      "category": "Finance & Banking",
+      "title": "Visual Studio Code 1.117 bringt flexiblere LLM-Anbindung",
+      "link": "https://www.heise.de/news/Visual-Studio-Code-1-117-Unternehmenskunden-koennen-eigene-LLM-Keys-nutzen-11270957.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/7/0/7/2/1/shutterstock_1833902986-7993cb952ee75098.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Business- und Enterprise-User können nun ihre eigenen API-Keys verbinden, um LLMs via OpenRouter, Ollama, Google, OpenAI und mehr im VS Code Chat zu nutzen.",
+      "date": "2026-04-24T08:48:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 10
+    },
+    {
+      "title": "Fast 12 Jahre unentdeckt: Telekom deckt gefährliche Root-Lücke in Linux auf",
+      "link": "https://www.golem.de/news/fast-12-jahre-unentdeckt-telekom-deckt-gefaehrliche-root-luecke-in-linux-auf-2604-207963.html",
+      "image": "",
+      "excerpt": "Sicherheitsforscher der Telekom haben Claude auf Linux-Systeme losgelassen. Die KI hat eine seit 2014 bestehende Root-Lücke in Packagekit gefunden. ( a href= https://www.golem.de/specials/sicherheitsluecke/ Sicherheitslücke /a , a href= https://www.g",
+      "date": "2026-04-24T09:16:04.000Z",
+      "source": "Golem.de",
+      "category": "KI & Tech",
       "score": 9
     },
     {
-      "title": "Bankarbeitgeber und Gewerkschaften im Spannungsfeld von KI - Unterschiedliche Perspektiven auf Arbeit und Verantwortung",
-      "link": "https://www.der-bank-blog.de/bankarbeitgeber-gewerkschaften-spannungsfeld-ki/studien/37729508/?utm_source=bankblog&#038;utm_medium=rss&#038;utm_campaign=rss",
-      "image": "https://www.der-bank-blog.de/wp-content/uploads/2026/01/ki-im-spannungsfeld-336x200.jpg",
-      "excerpt": "Der Einsatz von Künstlicher Intelligenz in der Finanzbranche wird von Arbeitgebern und Gewerkschaften unterschiedlich bewertet. Daraus entstehen relevante Spannungsfelder im Hinblick auf Arbeit, Mitbestimmung und Verantwortung.",
-      "date": "2026-04-14T22:20:17.000Z",
-      "source": "Der Bank Blog",
+      "title": "LLMs: OpenAI bringt GPT-5.5 heraus",
+      "link": "https://www.golem.de/news/llms-openai-bringt-gpt-5-5-heraus-2604-207961.html",
+      "image": "",
+      "excerpt": "Das neue KI-Modell soll Tasks besser verstehen können und dabei mit weniger Token arbeiten. Dafür hebt OpenAI die Preise an. ( a href= https://www.golem.de/specials/openai/ OpenAI /a , a href= https://www.golem.de/specials/ki/ KI /a ) img src= https:",
+      "date": "2026-04-24T08:59:03.000Z",
+      "source": "Golem.de",
+      "category": "KI & Tech",
+      "score": 9
+    },
+    {
+      "title": "Mythos von Anthropic: Schwachstellen-KI wirft neue Sicherheitsfragen auf",
+      "link": "https://www.heise.de/news/Mythos-von-Anthropic-Schwachstellen-KI-wirft-neue-Sicherheitsfragen-auf-11270831.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/7/0/6/5/8/shutterstock_2663445441-95518d38da565f27.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Ein neues KI-Modell zur Suche nach Schwachstellen sorgt für Aufsehen. Inzwischen wird die Frage gestellt, was Mythos für die Sicherheit hierzulande bedeutet.",
+      "date": "2026-04-24T07:16:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 9
+    },
+    {
+      "title": "ChatGPT Ads: OpenAI zeigt Werbung für nicht angemeldete Nutzer",
+      "link": "https://www.golem.de/news/chatgpt-ads-openai-zeigt-werbung-fuer-nicht-angemeldete-nutzer-2604-207960.html",
+      "image": "",
+      "excerpt": "Wer ChatGPT ohne Log-in nutzt, sieht neuerdings offenbar Werbung - obwohl OpenAI das eigentlich noch nicht angekündigt hat. ( a href= https://www.golem.de/specials/chatgpt/ ChatGPT /a , a href= https://www.golem.de/specials/ki/ KI /a ) img src= https",
+      "date": "2026-04-24T08:30:01.000Z",
+      "source": "Golem.de",
+      "category": "KI & Tech",
+      "score": 8
+    },
+    {
+      "title": "iX-Workshop: Mehr Tempo beim Coding – mit KI-Assistenten effizient programmieren",
+      "link": "https://www.heise.de/news/iX-Workshop-Mehr-Tempo-beim-Coding-mit-KI-Assistenten-effizient-programmieren-11256747.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/6/3/2/4/2/Github-Copilot-Ticker-Header-16-9-3a082eb7c211fe5b.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Erfahren Sie, wie Sie produktiv mit KI-Assistenten programmieren und lernen Sie die Stärken und Schwächen der Tools für den Einsatz in eigenen Projekten kennen.",
+      "date": "2026-04-24T06:00:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 8
+    },
+    {
+      "title": "SpaceX, OpenAI, Anthropic: Milliardenverluste, Billionenbewertungen: Wie riskant ist die IPO-Welle?",
+      "link": "https://www.capital.de/geld-versicherungen/spacex--openai--anthropic--diese-ipos-stellen-den-markt-auf-die-probe-37339100.html?utm_medium=standard&amp;utm_source=rss",
+      "image": "https://image.capital.de/37339188/t/aE/v2/w1440/r1.7778/-/spacex-rakete.jpg",
+      "excerpt": "SpaceX, OpenAI und Anthropic streben Mega-IPOs an. Doch ihre Bewertungen klaffen weit auseinander von den Fundamentaldaten. Wie viel Risiko sind Investoren bereit einzugehen?",
+      "date": "2026-04-24T09:06:00.000Z",
+      "source": "Capital.de",
       "category": "Finance & Banking",
       "score": 8
     },
     {
-      "title": "KI-Bias im Marketing: So schreiben Sie inklusive Prompts",
-      "link": "https://blog.hubspot.de/marketing/prompts-ohne-bias",
-      "image": "",
-      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/marketing/prompts-ohne-bias\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://53.fs1.hubspotusercontent-na1.net/hubfs/53/Germany/Blog_images/ki-bias-vermeiden.png\" alt=\"KI-",
-      "date": "2026-03-24T06:00:01.000Z",
-      "source": "HubSpot Marketing",
-      "category": "Marketing, Vertrieb & Service",
-      "score": 8
+      "title": "Wegen Investitionen in KI: Meta will fast jeden zehnten Job streichen",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/meta-stellenstreichung-100.html",
+      "image": "https://images.tagesschau.de/image/88157c1b-9723-445c-9115-d8b060e52fe7/AAABmc1BV_4/AAABnSSvrFg/16x9-big/meta-150.jpg?width=1920",
+      "excerpt": "Meta steckt derzeit Milliarden in die Weiterentwicklung von Künstlicher Intelligenz. Um diese Investitionen auszugleichen, hat der Konzern die Streichung von rund zehn Prozent aller Stellen angekündigt.",
+      "date": "2026-04-24T02:53:36.000Z",
+      "source": "Tagesschau Wirtschaft",
+      "category": "Finance & Banking",
+      "score": 7
+    },
+    {
+      "title": "Big-Tech-Konzerne vernetzen sich enger - das birgt Risiken",
+      "link": "https://www.tagesschau.de/wirtschaft/digitales/allianz-der-techkonzerne-100.html",
+      "image": "https://images.tagesschau.de/image/bbbab00c-4df0-4b1b-a825-d82bdbe5ae62/AAABnbAlWyQ/AAABnSSvrFg/16x9-big/ai-apps-100.jpg?width=1920",
+      "excerpt": "Amazon, Anthropic, Microsoft und Co. investieren gegenseitig Milliarden Dollar und treiben damit das KI-Rennen weiter an. Das schafft gefährliche Abhängigkeiten und Risiken für die Weltwirtschaft. Von Melanie Böff.",
+      "date": "2026-04-23T17:00:27.000Z",
+      "source": "Tagesschau Wirtschaft",
+      "category": "Finance & Banking",
+      "score": 7
     },
     {
       "title": "KI-Agenten: Definition, Funktionsweise und Tools",
@@ -40,7 +100,27 @@
       "date": "2026-03-17T10:30:02.000Z",
       "source": "HubSpot Marketing",
       "category": "Marketing, Vertrieb & Service",
-      "score": 8
+      "score": 7
+    },
+    {
+      "title": "KI und Vertrauen im Marketing: So stärken Sie Ihre Marke 2026",
+      "link": "https://blog.hubspot.de/marketing/vertrauen-im-marketing",
+      "image": "",
+      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/marketing/vertrauen-im-marketing\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://53.fs1.hubspotusercontent-na1.net/hubfs/53/Germany/Blog_images/vertrauen-marketing.png\" a",
+      "date": "2026-04-22T09:30:01.000Z",
+      "source": "HubSpot Marketing",
+      "category": "Marketing, Vertrieb & Service",
+      "score": 6
+    },
+    {
+      "title": "KI-Bias im Marketing: So schreiben Sie inklusive Prompts",
+      "link": "https://blog.hubspot.de/marketing/prompts-ohne-bias",
+      "image": "",
+      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/marketing/prompts-ohne-bias\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://53.fs1.hubspotusercontent-na1.net/hubfs/53/Germany/Blog_images/ki-bias-vermeiden.png\" alt=\"KI-",
+      "date": "2026-03-24T06:00:01.000Z",
+      "source": "HubSpot Marketing",
+      "category": "Marketing, Vertrieb & Service",
+      "score": 6
     }
   ]
 }
