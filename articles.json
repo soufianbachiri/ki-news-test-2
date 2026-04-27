@@ -1,96 +1,46 @@
 {
-  "updated": "2026-04-24T09:25:18.435Z",
-  "total_fetched": 112,
+  "updated": "2026-04-27T07:44:23.404Z",
+  "total_fetched": 117,
   "articles": [
     {
-      "title": "Visual Studio Code 1.117 bringt flexiblere LLM-Anbindung",
-      "link": "https://www.heise.de/news/Visual-Studio-Code-1-117-Unternehmenskunden-koennen-eigene-LLM-Keys-nutzen-11270957.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/7/0/7/2/1/shutterstock_1833902986-7993cb952ee75098.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "Business- und Enterprise-User können nun ihre eigenen API-Keys verbinden, um LLMs via OpenRouter, Ollama, Google, OpenAI und mehr im VS Code Chat zu nutzen.",
-      "date": "2026-04-24T08:48:00.000Z",
+      "title": "KI und Data Science im Unternehmen – von Rohdaten zu verwertbaren Erkenntnissen",
+      "link": "https://www.heise.de/news/KI-und-Data-Science-im-Unternehmen-von-Rohdaten-zu-verwertbaren-Erkenntnissen-11268069.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/6/9/1/2/6/classroom-ki-datascience-unternehmen-banner-ticker-1920x1080px-905e03fb95806330.png?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "In fünf Sessions lernen Teilnehmende ab dem 03.06., wie sie KI und Data Science einsetzen, um Datenquellen effektiv zu erschließen und Strategien abzuleiten.",
+      "date": "2026-04-27T06:00:00.000Z",
       "source": "Heise Online",
       "category": "KI & Tech",
       "score": 10
     },
     {
-      "title": "Fast 12 Jahre unentdeckt: Telekom deckt gefährliche Root-Lücke in Linux auf",
-      "link": "https://www.golem.de/news/fast-12-jahre-unentdeckt-telekom-deckt-gefaehrliche-root-luecke-in-linux-auf-2604-207963.html",
-      "image": "",
-      "excerpt": "Sicherheitsforscher der Telekom haben Claude auf Linux-Systeme losgelassen. Die KI hat eine seit 2014 bestehende Root-Lücke in Packagekit gefunden. ( a href= https://www.golem.de/specials/sicherheitsluecke/ Sicherheitslücke /a , a href= https://www.g",
-      "date": "2026-04-24T09:16:04.000Z",
-      "source": "Golem.de",
-      "category": "KI & Tech",
-      "score": 9
-    },
-    {
-      "title": "LLMs: OpenAI bringt GPT-5.5 heraus",
-      "link": "https://www.golem.de/news/llms-openai-bringt-gpt-5-5-heraus-2604-207961.html",
-      "image": "",
-      "excerpt": "Das neue KI-Modell soll Tasks besser verstehen können und dabei mit weniger Token arbeiten. Dafür hebt OpenAI die Preise an. ( a href= https://www.golem.de/specials/openai/ OpenAI /a , a href= https://www.golem.de/specials/ki/ KI /a ) img src= https:",
-      "date": "2026-04-24T08:59:03.000Z",
-      "source": "Golem.de",
-      "category": "KI & Tech",
-      "score": 9
-    },
-    {
-      "title": "Mythos von Anthropic: Schwachstellen-KI wirft neue Sicherheitsfragen auf",
-      "link": "https://www.heise.de/news/Mythos-von-Anthropic-Schwachstellen-KI-wirft-neue-Sicherheitsfragen-auf-11270831.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/7/0/6/5/8/shutterstock_2663445441-95518d38da565f27.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "Ein neues KI-Modell zur Suche nach Schwachstellen sorgt für Aufsehen. Inzwischen wird die Frage gestellt, was Mythos für die Sicherheit hierzulande bedeutet.",
-      "date": "2026-04-24T07:16:00.000Z",
-      "source": "Heise Online",
-      "category": "KI & Tech",
-      "score": 9
-    },
-    {
-      "title": "ChatGPT Ads: OpenAI zeigt Werbung für nicht angemeldete Nutzer",
-      "link": "https://www.golem.de/news/chatgpt-ads-openai-zeigt-werbung-fuer-nicht-angemeldete-nutzer-2604-207960.html",
-      "image": "",
-      "excerpt": "Wer ChatGPT ohne Log-in nutzt, sieht neuerdings offenbar Werbung - obwohl OpenAI das eigentlich noch nicht angekündigt hat. ( a href= https://www.golem.de/specials/chatgpt/ ChatGPT /a , a href= https://www.golem.de/specials/ki/ KI /a ) img src= https",
-      "date": "2026-04-24T08:30:01.000Z",
-      "source": "Golem.de",
-      "category": "KI & Tech",
-      "score": 8
-    },
-    {
-      "title": "iX-Workshop: Mehr Tempo beim Coding – mit KI-Assistenten effizient programmieren",
-      "link": "https://www.heise.de/news/iX-Workshop-Mehr-Tempo-beim-Coding-mit-KI-Assistenten-effizient-programmieren-11256747.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/6/3/2/4/2/Github-Copilot-Ticker-Header-16-9-3a082eb7c211fe5b.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "Erfahren Sie, wie Sie produktiv mit KI-Assistenten programmieren und lernen Sie die Stärken und Schwächen der Tools für den Einsatz in eigenen Projekten kennen.",
-      "date": "2026-04-24T06:00:00.000Z",
+      "title": "Geistiges US-Eigentum gestohlen: US-Botschaften sollen vor DeepSeek & Co. warnen",
+      "link": "https://www.heise.de/news/Geistiges-US-Eigentum-gestohlen-US-Botschaften-sollen-vor-DeepSeek-Co-warnen-11272583.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/7/1/5/4/3/shutterstock_2577766253-461a8b9ed0d59898.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Die US-Regierung macht sich Kritik von KI-Firmen wie Anthropic an der Konkurrenz aus China zu eigen. US-Botschaften sollen vor der Nutzung von DeepSeek warnen.",
+      "date": "2026-04-27T04:55:00.000Z",
       "source": "Heise Online",
       "category": "KI & Tech",
       "score": 8
     },
     {
-      "title": "SpaceX, OpenAI, Anthropic: Milliardenverluste, Billionenbewertungen: Wie riskant ist die IPO-Welle?",
-      "link": "https://www.capital.de/geld-versicherungen/spacex--openai--anthropic--diese-ipos-stellen-den-markt-auf-die-probe-37339100.html?utm_medium=standard&amp;utm_source=rss",
-      "image": "https://image.capital.de/37339188/t/aE/v2/w1440/r1.7778/-/spacex-rakete.jpg",
-      "excerpt": "SpaceX, OpenAI und Anthropic streben Mega-IPOs an. Doch ihre Bewertungen klaffen weit auseinander von den Fundamentaldaten. Wie viel Risiko sind Investoren bereit einzugehen?",
-      "date": "2026-04-24T09:06:00.000Z",
-      "source": "Capital.de",
-      "category": "Finance & Banking",
+      "title": "KI-Agent vs. KI-Chatbot: Was brauchen Sie im Kundenservice?",
+      "link": "https://blog.hubspot.de/service/ki-agent-vs-ki-chatbot",
+      "image": "",
+      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/service/ki-agent-vs-ki-chatbot\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://53.fs1.hubspotusercontent-na1.net/hubfs/53/Germany/Blog_images/ki-agent-vs-ki-chatbot.png\" ",
+      "date": "2026-04-07T09:00:02.000Z",
+      "source": "HubSpot Service",
+      "category": "Marketing, Vertrieb & Service",
       "score": 8
     },
     {
-      "title": "Wegen Investitionen in KI: Meta will fast jeden zehnten Job streichen",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/meta-stellenstreichung-100.html",
-      "image": "https://images.tagesschau.de/image/88157c1b-9723-445c-9115-d8b060e52fe7/AAABmc1BV_4/AAABnSSvrFg/16x9-big/meta-150.jpg?width=1920",
-      "excerpt": "Meta steckt derzeit Milliarden in die Weiterentwicklung von Künstlicher Intelligenz. Um diese Investitionen auszugleichen, hat der Konzern die Streichung von rund zehn Prozent aller Stellen angekündigt.",
-      "date": "2026-04-24T02:53:36.000Z",
-      "source": "Tagesschau Wirtschaft",
-      "category": "Finance & Banking",
-      "score": 7
-    },
-    {
-      "title": "Big-Tech-Konzerne vernetzen sich enger - das birgt Risiken",
-      "link": "https://www.tagesschau.de/wirtschaft/digitales/allianz-der-techkonzerne-100.html",
-      "image": "https://images.tagesschau.de/image/bbbab00c-4df0-4b1b-a825-d82bdbe5ae62/AAABnbAlWyQ/AAABnSSvrFg/16x9-big/ai-apps-100.jpg?width=1920",
-      "excerpt": "Amazon, Anthropic, Microsoft und Co. investieren gegenseitig Milliarden Dollar und treiben damit das KI-Rennen weiter an. Das schafft gefährliche Abhängigkeiten und Risiken für die Weltwirtschaft. Von Melanie Böff.",
-      "date": "2026-04-23T17:00:27.000Z",
-      "source": "Tagesschau Wirtschaft",
-      "category": "Finance & Banking",
-      "score": 7
+      "title": "KI-Bias im Marketing: So schreiben Sie inklusive Prompts",
+      "link": "https://blog.hubspot.de/marketing/prompts-ohne-bias",
+      "image": "",
+      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/marketing/prompts-ohne-bias\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://53.fs1.hubspotusercontent-na1.net/hubfs/53/Germany/Blog_images/ki-bias-vermeiden.png\" alt=\"KI-",
+      "date": "2026-03-24T06:00:01.000Z",
+      "source": "HubSpot Marketing",
+      "category": "Marketing, Vertrieb & Service",
+      "score": 8
     },
     {
       "title": "KI-Agenten: Definition, Funktionsweise und Tools",
@@ -100,6 +50,16 @@
       "date": "2026-03-17T10:30:02.000Z",
       "source": "HubSpot Marketing",
       "category": "Marketing, Vertrieb & Service",
+      "score": 8
+    },
+    {
+      "title": "heise+ | IT-Mythen im Check: KI, Energiethemen, Quantenforschung, Hardware und Security",
+      "link": "https://www.heise.de/ratgeber/IT-Mythen-im-Check-KI-Energiethemen-Quantenforschung-Hardware-und-Security-11226371.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag_plus.beitrag_plus",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/5/3/1/5/7/https___xp-a205bff007b322ee.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "KI macht uns bald arbeitslos; Passwörter gehören regelmäßig gewechselt; Akkus sollte man nicht komplett entladen: Wir zeigen, was Quatsch und was wahr ist.",
+      "date": "2026-04-27T05:00:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
       "score": 7
     },
     {
@@ -110,16 +70,26 @@
       "date": "2026-04-22T09:30:01.000Z",
       "source": "HubSpot Marketing",
       "category": "Marketing, Vertrieb & Service",
-      "score": 6
+      "score": 7
     },
     {
-      "title": "KI-Bias im Marketing: So schreiben Sie inklusive Prompts",
-      "link": "https://blog.hubspot.de/marketing/prompts-ohne-bias",
+      "title": "KI im Kundenservice: Bessere Ergebnisse für Kund:innen",
+      "link": "https://blog.hubspot.de/service/ki-kundenservice",
       "image": "",
-      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/marketing/prompts-ohne-bias\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://53.fs1.hubspotusercontent-na1.net/hubfs/53/Germany/Blog_images/ki-bias-vermeiden.png\" alt=\"KI-",
-      "date": "2026-03-24T06:00:01.000Z",
-      "source": "HubSpot Marketing",
+      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/service/ki-kundenservice\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://53.fs1.hubspotusercontent-na1.net/hubfs/53/Germany/Blog_images/ki-im-kundenservice-header.png\" al",
+      "date": "2025-07-28T10:00:00.000Z",
+      "source": "HubSpot Service",
       "category": "Marketing, Vertrieb & Service",
+      "score": 7
+    },
+    {
+      "title": "heise+ | Mythen aus der Forschung: Technik der Zukunft auf dem Prüfstand",
+      "link": "https://www.heise.de/ratgeber/Mythen-aus-der-Forschung-Technik-der-Zukunft-auf-dem-Pruefstand-11257929.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag_plus.beitrag_plus",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/6/3/8/3/5/spa-910e2793d8f40371.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Neue Forschungsergebnisse werfen immer ein Licht auf die Zukunft. Wir prüfen, was dran ist an gedankenlesenden Chips und allmächtigen Quantencomputern.",
+      "date": "2026-04-27T05:00:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
       "score": 6
     }
   ]
