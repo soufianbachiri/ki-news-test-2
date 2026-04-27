@@ -1,26 +1,16 @@
 {
-  "updated": "2026-04-27T07:44:23.404Z",
+  "updated": "2026-04-27T11:28:45.397Z",
   "total_fetched": 117,
   "articles": [
     {
-      "title": "KI und Data Science im Unternehmen – von Rohdaten zu verwertbaren Erkenntnissen",
-      "link": "https://www.heise.de/news/KI-und-Data-Science-im-Unternehmen-von-Rohdaten-zu-verwertbaren-Erkenntnissen-11268069.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/6/9/1/2/6/classroom-ki-datascience-unternehmen-banner-ticker-1920x1080px-905e03fb95806330.png?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "In fünf Sessions lernen Teilnehmende ab dem 03.06., wie sie KI und Data Science einsetzen, um Datenquellen effektiv zu erschließen und Strategien abzuleiten.",
-      "date": "2026-04-27T06:00:00.000Z",
+      "title": "KI-Tool: China untersagt Milliardenübernahme von Manus durch Meta",
+      "link": "https://www.heise.de/news/KI-Tool-China-untersagt-Milliardenuebernahme-von-Manus-durch-Meta-11273289.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/7/1/9/2/6/shutterstock_2525579773-67430246707ff359.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Meta wollte angeblich zwei Milliarden US-Dollar für das chinesische KI-Start-up Manus bezahlen. Nach einer aufsehenerregenden Prüfung unterbindet China das nun.",
+      "date": "2026-04-27T11:19:00.000Z",
       "source": "Heise Online",
       "category": "KI & Tech",
       "score": 10
-    },
-    {
-      "title": "Geistiges US-Eigentum gestohlen: US-Botschaften sollen vor DeepSeek & Co. warnen",
-      "link": "https://www.heise.de/news/Geistiges-US-Eigentum-gestohlen-US-Botschaften-sollen-vor-DeepSeek-Co-warnen-11272583.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/7/1/5/4/3/shutterstock_2577766253-461a8b9ed0d59898.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "Die US-Regierung macht sich Kritik von KI-Firmen wie Anthropic an der Konkurrenz aus China zu eigen. US-Botschaften sollen vor der Nutzung von DeepSeek warnen.",
-      "date": "2026-04-27T04:55:00.000Z",
-      "source": "Heise Online",
-      "category": "KI & Tech",
-      "score": 8
     },
     {
       "title": "KI-Agent vs. KI-Chatbot: Was brauchen Sie im Kundenservice?",
@@ -30,6 +20,26 @@
       "date": "2026-04-07T09:00:02.000Z",
       "source": "HubSpot Service",
       "category": "Marketing, Vertrieb & Service",
+      "score": 9
+    },
+    {
+      "title": "KI-Agenten: Definition, Funktionsweise und Tools",
+      "link": "https://blog.hubspot.de/marketing/ki-agenten",
+      "image": "",
+      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/marketing/ki-agenten\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://53.fs1.hubspotusercontent-na1.net/hubfs/53/Germany/Blog_images/HubSpot%20AI%20Agents/ki-agenten.png\" ",
+      "date": "2026-03-17T10:30:02.000Z",
+      "source": "HubSpot Marketing",
+      "category": "Marketing, Vertrieb & Service",
+      "score": 9
+    },
+    {
+      "title": "Nachfrage Irankrieg: Massive Preissteigerungen bei Platinen",
+      "link": "https://www.golem.de/news/nachfrage-irankrieg-massive-preissteigerungen-bei-platinen-2604-208049.html",
+      "image": "",
+      "excerpt": "Hohe Nachfrage durch den KI-Boom trifft auf Materialengpässe und beschädigte Industriegelände infolge des Irankriegs. ( a href= https://www.golem.de/specials/technik-und-hardware/ Technik/Hardware /a , a href= https://www.golem.de/specials/wirtschaft",
+      "date": "2026-04-27T11:00:11.000Z",
+      "source": "Golem.de",
+      "category": "KI & Tech",
       "score": 8
     },
     {
@@ -43,36 +53,6 @@
       "score": 8
     },
     {
-      "title": "KI-Agenten: Definition, Funktionsweise und Tools",
-      "link": "https://blog.hubspot.de/marketing/ki-agenten",
-      "image": "",
-      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/marketing/ki-agenten\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://53.fs1.hubspotusercontent-na1.net/hubfs/53/Germany/Blog_images/HubSpot%20AI%20Agents/ki-agenten.png\" ",
-      "date": "2026-03-17T10:30:02.000Z",
-      "source": "HubSpot Marketing",
-      "category": "Marketing, Vertrieb & Service",
-      "score": 8
-    },
-    {
-      "title": "heise+ | IT-Mythen im Check: KI, Energiethemen, Quantenforschung, Hardware und Security",
-      "link": "https://www.heise.de/ratgeber/IT-Mythen-im-Check-KI-Energiethemen-Quantenforschung-Hardware-und-Security-11226371.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag_plus.beitrag_plus",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/5/3/1/5/7/https___xp-a205bff007b322ee.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "KI macht uns bald arbeitslos; Passwörter gehören regelmäßig gewechselt; Akkus sollte man nicht komplett entladen: Wir zeigen, was Quatsch und was wahr ist.",
-      "date": "2026-04-27T05:00:00.000Z",
-      "source": "Heise Online",
-      "category": "KI & Tech",
-      "score": 7
-    },
-    {
-      "title": "KI und Vertrauen im Marketing: So stärken Sie Ihre Marke 2026",
-      "link": "https://blog.hubspot.de/marketing/vertrauen-im-marketing",
-      "image": "",
-      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/marketing/vertrauen-im-marketing\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://53.fs1.hubspotusercontent-na1.net/hubfs/53/Germany/Blog_images/vertrauen-marketing.png\" a",
-      "date": "2026-04-22T09:30:01.000Z",
-      "source": "HubSpot Marketing",
-      "category": "Marketing, Vertrieb & Service",
-      "score": 7
-    },
-    {
       "title": "KI im Kundenservice: Bessere Ergebnisse für Kund:innen",
       "link": "https://blog.hubspot.de/service/ki-kundenservice",
       "image": "",
@@ -80,17 +60,17 @@
       "date": "2025-07-28T10:00:00.000Z",
       "source": "HubSpot Service",
       "category": "Marketing, Vertrieb & Service",
-      "score": 7
+      "score": 8
     },
     {
-      "title": "heise+ | Mythen aus der Forschung: Technik der Zukunft auf dem Prüfstand",
-      "link": "https://www.heise.de/ratgeber/Mythen-aus-der-Forschung-Technik-der-Zukunft-auf-dem-Pruefstand-11257929.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag_plus.beitrag_plus",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/6/3/8/3/5/spa-910e2793d8f40371.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "Neue Forschungsergebnisse werfen immer ein Licht auf die Zukunft. Wir prüfen, was dran ist an gedankenlesenden Chips und allmächtigen Quantencomputern.",
-      "date": "2026-04-27T05:00:00.000Z",
+      "title": "heise-Angebot: KI und Data Science im Unternehmen – von Rohdaten zu verwertbaren Erkenntnissen",
+      "link": "https://www.heise.de/news/KI-und-Data-Science-im-Unternehmen-von-Rohdaten-zu-verwertbaren-Erkenntnissen-11268069.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/6/9/1/2/6/classroom-ki-datascience-unternehmen-banner-ticker-1920x1080px-905e03fb95806330.png?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "In fünf Sessions lernen Teilnehmende ab dem 03.06., wie sie KI und Data Science einsetzen, um Datenquellen effektiv zu erschließen und Strategien abzuleiten.",
+      "date": "2026-04-27T06:00:00.000Z",
       "source": "Heise Online",
       "category": "KI & Tech",
-      "score": 6
+      "score": 7
     }
   ]
 }
