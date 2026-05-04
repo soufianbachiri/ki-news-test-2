@@ -1,54 +1,44 @@
 {
-  "updated": "2026-04-27T11:28:45.397Z",
-  "total_fetched": 117,
+  "updated": "2026-05-04T11:27:11.053Z",
+  "total_fetched": 122,
   "articles": [
     {
-      "title": "KI-Tool: China untersagt Milliardenübernahme von Manus durch Meta",
-      "link": "https://www.heise.de/news/KI-Tool-China-untersagt-Milliardenuebernahme-von-Manus-durch-Meta-11273289.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/7/1/9/2/6/shutterstock_2525579773-67430246707ff359.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "Meta wollte angeblich zwei Milliarden US-Dollar für das chinesische KI-Start-up Manus bezahlen. Nach einer aufsehenerregenden Prüfung unterbindet China das nun.",
-      "date": "2026-04-27T11:19:00.000Z",
+      "title": "ChatGPT teilt jetzt US-Nutzer:innendaten für Ads",
+      "link": "https://onlinemarketing.de/technologie/openai-chatgpt-usa-user-daten-werbung-tracking",
+      "image": "https://onlinemarketing.de/wp-content/uploads/2026/01/Kopie-von-Titelbild-fuer-Artikel-13-1.png",
+      "excerpt": "OpenAI hat die eigene Policy für US User angepasst. Das KI-Unternehmen teilt jetzt Daten aus ChatGPT und Co. mit Marketing-Partner:innen und nutzt Cookies, um Free User standardmäßig auch außerhalb der eigenen Dienste zu tracken.",
+      "date": "2026-05-04T07:52:36.000Z",
+      "source": "OnlineMarketing.de",
+      "category": "Marketing, Vertrieb & Service",
+      "score": 9
+    },
+    {
+      "title": "China: Gericht untersagt Entlassung wegen KI",
+      "link": "https://www.heise.de/news/China-Gericht-untersagt-Entlassung-wegen-KI-11279807.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/7/5/2/7/0/shutterstock_2320153373-d7a190ff3f2de580.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "In China sollte ein Angestellter weniger Gehalt bekommen, nachdem eine KI seine Arbeit übernommen hat – dann wurde er entlassen. Das hat ein Gericht untersagt.",
+      "date": "2026-05-04T07:15:00.000Z",
       "source": "Heise Online",
-      "category": "KI & Tech",
-      "score": 10
-    },
-    {
-      "title": "KI-Agent vs. KI-Chatbot: Was brauchen Sie im Kundenservice?",
-      "link": "https://blog.hubspot.de/service/ki-agent-vs-ki-chatbot",
-      "image": "",
-      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/service/ki-agent-vs-ki-chatbot\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://53.fs1.hubspotusercontent-na1.net/hubfs/53/Germany/Blog_images/ki-agent-vs-ki-chatbot.png\" ",
-      "date": "2026-04-07T09:00:02.000Z",
-      "source": "HubSpot Service",
-      "category": "Marketing, Vertrieb & Service",
-      "score": 9
-    },
-    {
-      "title": "KI-Agenten: Definition, Funktionsweise und Tools",
-      "link": "https://blog.hubspot.de/marketing/ki-agenten",
-      "image": "",
-      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/marketing/ki-agenten\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://53.fs1.hubspotusercontent-na1.net/hubfs/53/Germany/Blog_images/HubSpot%20AI%20Agents/ki-agenten.png\" ",
-      "date": "2026-03-17T10:30:02.000Z",
-      "source": "HubSpot Marketing",
-      "category": "Marketing, Vertrieb & Service",
-      "score": 9
-    },
-    {
-      "title": "Nachfrage Irankrieg: Massive Preissteigerungen bei Platinen",
-      "link": "https://www.golem.de/news/nachfrage-irankrieg-massive-preissteigerungen-bei-platinen-2604-208049.html",
-      "image": "",
-      "excerpt": "Hohe Nachfrage durch den KI-Boom trifft auf Materialengpässe und beschädigte Industriegelände infolge des Irankriegs. ( a href= https://www.golem.de/specials/technik-und-hardware/ Technik/Hardware /a , a href= https://www.golem.de/specials/wirtschaft",
-      "date": "2026-04-27T11:00:11.000Z",
-      "source": "Golem.de",
       "category": "KI & Tech",
       "score": 8
     },
     {
-      "title": "KI-Bias im Marketing: So schreiben Sie inklusive Prompts",
-      "link": "https://blog.hubspot.de/marketing/prompts-ohne-bias",
+      "title": "Microsoft Build 2025: Das Zeitalter der KI-Agenten und der Aufbau des Open Agentic Web",
+      "link": "https://news.microsoft.com/de-de/build2025/",
       "image": "",
-      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/marketing/prompts-ohne-bias\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://53.fs1.hubspotusercontent-na1.net/hubfs/53/Germany/Blog_images/ki-bias-vermeiden.png\" alt=\"KI-",
-      "date": "2026-03-24T06:00:01.000Z",
-      "source": "HubSpot Marketing",
+      "excerpt": "Die wichtigsten Neuigkeiten im Überblick: Microsoft Build 2025 läutet das Zeitalter der KI-Agenten ein: Durch große Fortschritte bei Reasoning und Memory sind KI-Modelle jetzt noch leistungsfähiger, um die Arbeit in Wirtschaft, Forschung und Alltag v",
+      "date": "2025-05-19T16:00:02.000Z",
+      "source": "Microsoft DE",
+      "category": "KI & Tech",
+      "score": 8
+    },
+    {
+      "title": "Googles AI-Werbung jetzt mit AI Max für Shopping und AI Brief fürs Targeting",
+      "link": "https://onlinemarketing.de/sea/ai-max-shopping-ai-brief-targeting-final-url-expansion-conversion",
+      "image": "https://onlinemarketing.de/wp-content/uploads/2026/02/Titelbild-fuer-Artikel-49.png",
+      "excerpt": "Wichtige Neuerung für Search Marketer: AI Max kommt für Shopping und Travel, AI Brief formt das Targeting mit deinen Worten und Final URL Expansion findet immer die passende Seite für die Conversion.",
+      "date": "2026-05-04T06:09:00.000Z",
+      "source": "OnlineMarketing.de",
       "category": "Marketing, Vertrieb & Service",
       "score": 8
     },
@@ -63,14 +53,64 @@
       "score": 8
     },
     {
-      "title": "heise-Angebot: KI und Data Science im Unternehmen – von Rohdaten zu verwertbaren Erkenntnissen",
-      "link": "https://www.heise.de/news/KI-und-Data-Science-im-Unternehmen-von-Rohdaten-zu-verwertbaren-Erkenntnissen-11268069.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/6/9/1/2/6/classroom-ki-datascience-unternehmen-banner-ticker-1920x1080px-905e03fb95806330.png?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "In fünf Sessions lernen Teilnehmende ab dem 03.06., wie sie KI und Data Science einsetzen, um Datenquellen effektiv zu erschließen und Strategien abzuleiten.",
-      "date": "2026-04-27T06:00:00.000Z",
+      "title": "heise+ | KI-Einkaufsagenten: Welche Risiken Nutzer und Firmen kennen müssen",
+      "link": "https://www.heise.de/hintergrund/KI-Einkaufsagenten-Welche-Risiken-Nutzer-und-Firmen-kennen-muessen-11184812.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag_plus.beitrag_plus",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/3/1/9/6/9/https___xp-d3b9c3dacd1722bb.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Der Artikel zeigt, wie manipulierbar KI-Shopping-Agenten sind und beleuchtet neue Risiken für Sicherheit, Datenschutz und Kontrolle.",
+      "date": "2026-05-04T05:00:00.000Z",
       "source": "Heise Online",
       "category": "KI & Tech",
       "score": 7
+    },
+    {
+      "title": "heise+ | Wenn KI-Agenten Ihr Geld ausgeben: So soll Agentic Commerce funktionieren",
+      "link": "https://www.heise.de/hintergrund/Wenn-KI-Agenten-Ihr-Geld-ausgeben-So-soll-Agentic-Commerce-funktionieren-11184804.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag_plus.beitrag_plus",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/3/1/9/6/5/mon-5fbf81beb0c4584b.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Bequem oder gefährlich? Wenn Software Produkte auswählt und bezahlt, geben Nutzer Kontrolle ab. Wir erklären die Technik dahinter und zeigen Risiken auf.",
+      "date": "2026-05-04T05:00:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 7
+    },
+    {
+      "title": "Sechs KI-Trends, von denen wir 2025 noch mehr sehen werden",
+      "link": "https://news.microsoft.com/de-de/sechs-ki-trends-von-denen-wir-2025-noch-mehr-sehen-werden/",
+      "image": "",
+      "excerpt": "Künstliche Intelligenz (KI) hat sich längst als unverzichtbares Werkzeug in Beruf und Alltag etabliert. Im Jahr 2025 wird sie jedoch weit mehr sein: KI wird neue Möglichkeiten eröffnen, komplexe Herausforderungen lösen und den Fortschritt in Wissensc",
+      "date": "2024-12-06T10:58:52.000Z",
+      "source": "Microsoft DE",
+      "category": "KI & Tech",
+      "score": 7
+    },
+    {
+      "title": "AI-Designs per Sprachbefehl: So holst du das Beste aus Claude Design heraus",
+      "link": "https://onlinemarketing.de/technologie/das-beste-aus-claude-design-herausholen-tipps",
+      "image": "https://onlinemarketing.de/wp-content/uploads/2026/04/Titelbild-fuer-Artikel-2026-04-17T094802.290.png",
+      "excerpt": "Mit Claude Design kannst du dank Opus 4.7 Prototypen für Seiten, One-Pager und Slides per KI-Prompt schnell erstellen. Ein Anthropic-Designer gibt sieben Tipps für die optimale Nutzung des Tools, das mit Lovable, Google und Co. konkurriert.",
+      "date": "2026-05-04T09:59:37.000Z",
+      "source": "OnlineMarketing.de",
+      "category": "Marketing, Vertrieb & Service",
+      "score": 7
+    },
+    {
+      "title": "KI verändert Filmbranche: Indien wird zum Experimentierfeld in Sachen KI",
+      "link": "https://www.golem.de/news/ki-veraendert-filmbranche-indien-wird-zum-experimentierfeld-in-sachen-ki-2605-208273.html",
+      "image": "",
+      "excerpt": "Indien setzt KI im Kino massiv ein - und stellt damit kreative Kontrolle und Geschäftsmodelle infrage. ( a href= https://www.golem.de/specials/ki/ KI /a , a href= https://www.golem.de/specials/film/ Film /a ) img src= https://cpx.golem.de/cpx.php?cla",
+      "date": "2026-05-04T10:38:04.000Z",
+      "source": "Golem.de",
+      "category": "KI & Tech",
+      "score": 6
+    },
+    {
+      "title": "Trotz KI und Krisen: Agenturen werden glücklicher",
+      "link": "https://www.absatzwirtschaft.de/trotz-ki-und-krisen-agenturen-werden-gluecklicher-281375/",
+      "image": "https://www.absatzwirtschaft.de/wp-content/uploads/2025/03/asw-Header_Special-Interest_WC_Servatius-1024x683.jpg",
+      "excerpt": "Der Arbeitsmarkt gerät ins Wanken, KI sägt am Geschäftsmodell von Agenturen – und die Menschen in Agenturen sind trotzdem zufriedener. Das hat der „Agency Happiness Report 2026“ herausgefunden. Wie kann das sein? Der Beitrag Trotz KI und Krisen: Agen",
+      "date": "2026-05-04T09:00:00.000Z",
+      "source": "Absatzwirtschaft",
+      "category": "Marketing, Vertrieb & Service",
+      "score": 5
     }
   ]
 }
