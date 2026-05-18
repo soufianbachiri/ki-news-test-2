@@ -1,56 +1,56 @@
 {
-  "updated": "2026-05-12T13:53:22.247Z",
-  "total_fetched": 122,
+  "updated": "2026-05-18T16:41:03.194Z",
+  "total_fetched": 117,
   "articles": [
     {
-      "title": "Red Hat OpenShift: Souveräne KI, Migration und Virtualisierung",
-      "link": "https://www.heise.de/news/Red-Hat-OpenShift-Souveraene-KI-Migration-und-Virtualisierung-11291049.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/8/0/9/4/7/shutterstock_2080318564-fe157bd518a40b54.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "Red Hat erweitert OpenShift um Funktionen für souveräne KI, Cloud-Dienste und verbesserte Virtualisierung. Auch Bare Metal as a Service kommt.",
-      "date": "2026-05-12T12:00:00.000Z",
-      "source": "Heise Online",
-      "category": "KI & Tech",
-      "score": 10
-    },
-    {
-      "title": "Microsoft veröffentlicht Evaluations-Tool für Copilot-Agenten",
-      "link": "https://www.heise.de/news/Microsoft-veroeffentlicht-Evaluations-Tool-fuer-Copilot-Agenten-11290815.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/8/0/8/2/9/shutterstock_2108335628-a8652414737cf56f.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "Mit dem Tool Microsoft 365 Copilot Agent Evaluations CLI lassen sich Copilot‑Agenten systematisch testen und verbessern. Derzeit geht das kostenlos.",
-      "date": "2026-05-12T10:10:00.000Z",
+      "title": "heise-Angebot: iX-Workshop: KI-Workflows für Product Owner und Product Manager",
+      "link": "https://www.heise.de/news/iX-Workshop-KI-Workflows-fuer-Product-Owner-und-Product-Manager-11288932.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/7/9/8/8/0/KI-Agenten-ohne-Cloud_converted_ticker_1920x1080-0dcf725c43b58678.png?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Erfahren Sie, wie Sie Routineaufgaben in Produktentwicklung und -management mit lokalen und cloudbasierten KI-Anwendungen effizient automatisieren.",
+      "date": "2026-05-18T08:00:00.000Z",
       "source": "Heise Online",
       "category": "KI & Tech",
       "score": 9
     },
     {
-      "title": "heise-Angebot: KI im Unternehmen: So gelingt der sichere GPT-Einsatz",
-      "link": "https://www.heise.de/news/KI-im-Unternehmen-So-gelingt-der-sichere-GPT-Einsatz-11287713.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/7/9/2/3/0/academy-gpt-fuers-unternehmen-werbebanner-ticker-1920x1080px-2-709e00710a4372ad.png?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "Wie Unternehmen KI sicher, skalierbar und praxisnah integrieren – mit Learnings zu Architektur, Sicherheit und Make-or-Buy-Strategien.",
-      "date": "2026-05-12T10:00:00.000Z",
-      "source": "Heise Online",
-      "category": "KI & Tech",
-      "score": 9
-    },
-    {
-      "title": "Microsoft Build 2025: Das Zeitalter der KI-Agenten und der Aufbau des Open Agentic Web",
-      "link": "https://news.microsoft.com/de-de/build2025/",
-      "image": "",
-      "excerpt": "Die wichtigsten Neuigkeiten im Überblick: Microsoft Build 2025 läutet das Zeitalter der KI-Agenten ein: Durch große Fortschritte bei Reasoning und Memory sind KI-Modelle jetzt noch leistungsfähiger, um die Arbeit in Wirtschaft, Forschung und Alltag v",
-      "date": "2025-05-19T16:00:02.000Z",
-      "source": "Microsoft DE",
-      "category": "KI & Tech",
-      "score": 9
-    },
-    {
-      "title": "heise+ | Privater Wissenssammler: Karakeep erschließt Bookmarks und Dateien per KI",
-      "link": "https://www.heise.de/tests/Privater-Wissenssammler-Karakeep-erschliesst-Bookmarks-und-Dateien-per-KI-11080855.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag_plus.beitrag_plus",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/4/9/7/8/8/4/9/Bildschirmfoto_2026-05-04_um_11-099fbd26f1baaab3.png?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "Karakeep archiviert Webseiten, PDFs und Videos auf dem eigenen Server. Er lässt sich gut in eigene Workflows einbauen.",
-      "date": "2026-05-12T10:00:00.000Z",
+      "title": "KI-Update kompakt: Cybersicherheit, Malta, Koloskopie, Wettervorhersage",
+      "link": "https://www.heise.de/news/KI-Update-kompakt-Cybersicherheit-Malta-Koloskopie-Wettervorhersage-11297284.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/8/4/0/8/8/heise_Podcasts_KIUpdate_ho_16_9-29d64feac662a6b2.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Das \"KI-Update\" liefert drei mal pro Woche eine Zusammenfassung der wichtigsten KI-Entwicklungen.",
+      "date": "2026-05-18T13:00:00.000Z",
       "source": "Heise Online",
       "category": "KI & Tech",
       "score": 8
+    },
+    {
+      "title": "Bildzeichengenerator: Genmojis sollen in iOS 27 besser werden",
+      "link": "https://www.heise.de/news/Bildzeichengenerator-Genmojis-sollen-in-iOS-27-besser-werden-11296623.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/8/3/7/4/4/genmoji-2-8b75e7936d8078eb.png?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Bislang wird Apple Intelligence offenbar zu wenig genutzt. Eines der generativen KI-Features soll nun hübscher werden.",
+      "date": "2026-05-18T10:45:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 7
+    },
+    {
+      "title": "Codex für Mac: OpenAI testet neue Fernsteuerung via ChatGPT-iPhone-App",
+      "link": "https://www.heise.de/news/Codex-fuer-Mac-OpenAI-testet-neue-Fernsteuerung-via-ChatGPT-iPhone-App-11296597.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/8/3/7/3/1/Screenshot_2026-05-17_at_23-042df8fafb0b5fe1.png?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Wer den OpenAI-Coding-Agenten auf dem Mac laufen hat, benötigt bald kein Terminal zur Remote-Kontrolle mehr. Die ChatGPT-App bekommt ein Feature dafür.",
+      "date": "2026-05-18T09:12:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 7
+    },
+    {
+      "title": "Neue Chatbot-Siri: Apple setzt auf Datenschutz",
+      "link": "https://www.heise.de/news/Neue-Chatbot-Siri-Apple-setzt-auf-Datenschutz-11296619.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/8/3/7/4/2/shutterstock_2727923947-886a7ce14efbd788.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Dialoge, die sich selbst löschen – und eine eingeschränkte Memory-Funktion: Apple will sich in Sachen KI-Privatsphäre mit iOS 27 vorne platzieren.",
+      "date": "2026-05-18T08:45:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 7
     }
   ]
 }
