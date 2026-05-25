@@ -1,56 +1,5 @@
 {
-  "updated": "2026-05-18T16:41:03.194Z",
+  "updated": "2026-05-25T08:52:00.665Z",
   "total_fetched": 117,
-  "articles": [
-    {
-      "title": "heise-Angebot: iX-Workshop: KI-Workflows für Product Owner und Product Manager",
-      "link": "https://www.heise.de/news/iX-Workshop-KI-Workflows-fuer-Product-Owner-und-Product-Manager-11288932.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/7/9/8/8/0/KI-Agenten-ohne-Cloud_converted_ticker_1920x1080-0dcf725c43b58678.png?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "Erfahren Sie, wie Sie Routineaufgaben in Produktentwicklung und -management mit lokalen und cloudbasierten KI-Anwendungen effizient automatisieren.",
-      "date": "2026-05-18T08:00:00.000Z",
-      "source": "Heise Online",
-      "category": "KI & Tech",
-      "score": 9
-    },
-    {
-      "title": "KI-Update kompakt: Cybersicherheit, Malta, Koloskopie, Wettervorhersage",
-      "link": "https://www.heise.de/news/KI-Update-kompakt-Cybersicherheit-Malta-Koloskopie-Wettervorhersage-11297284.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/8/4/0/8/8/heise_Podcasts_KIUpdate_ho_16_9-29d64feac662a6b2.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "Das \"KI-Update\" liefert drei mal pro Woche eine Zusammenfassung der wichtigsten KI-Entwicklungen.",
-      "date": "2026-05-18T13:00:00.000Z",
-      "source": "Heise Online",
-      "category": "KI & Tech",
-      "score": 8
-    },
-    {
-      "title": "Bildzeichengenerator: Genmojis sollen in iOS 27 besser werden",
-      "link": "https://www.heise.de/news/Bildzeichengenerator-Genmojis-sollen-in-iOS-27-besser-werden-11296623.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/8/3/7/4/4/genmoji-2-8b75e7936d8078eb.png?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "Bislang wird Apple Intelligence offenbar zu wenig genutzt. Eines der generativen KI-Features soll nun hübscher werden.",
-      "date": "2026-05-18T10:45:00.000Z",
-      "source": "Heise Online",
-      "category": "KI & Tech",
-      "score": 7
-    },
-    {
-      "title": "Codex für Mac: OpenAI testet neue Fernsteuerung via ChatGPT-iPhone-App",
-      "link": "https://www.heise.de/news/Codex-fuer-Mac-OpenAI-testet-neue-Fernsteuerung-via-ChatGPT-iPhone-App-11296597.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/8/3/7/3/1/Screenshot_2026-05-17_at_23-042df8fafb0b5fe1.png?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "Wer den OpenAI-Coding-Agenten auf dem Mac laufen hat, benötigt bald kein Terminal zur Remote-Kontrolle mehr. Die ChatGPT-App bekommt ein Feature dafür.",
-      "date": "2026-05-18T09:12:00.000Z",
-      "source": "Heise Online",
-      "category": "KI & Tech",
-      "score": 7
-    },
-    {
-      "title": "Neue Chatbot-Siri: Apple setzt auf Datenschutz",
-      "link": "https://www.heise.de/news/Neue-Chatbot-Siri-Apple-setzt-auf-Datenschutz-11296619.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/8/3/7/4/2/shutterstock_2727923947-886a7ce14efbd788.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "Dialoge, die sich selbst löschen – und eine eingeschränkte Memory-Funktion: Apple will sich in Sachen KI-Privatsphäre mit iOS 27 vorne platzieren.",
-      "date": "2026-05-18T08:45:00.000Z",
-      "source": "Heise Online",
-      "category": "KI & Tech",
-      "score": 7
-    }
-  ]
+  "articles": []
 }
