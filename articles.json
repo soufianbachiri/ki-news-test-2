@@ -1,5 +1,16 @@
 {
-  "updated": "2026-05-25T08:52:00.665Z",
+  "updated": "2026-06-01T10:12:10.583Z",
   "total_fetched": 117,
-  "articles": []
+  "articles": [
+    {
+      "title": "Die neuen Skills für Makler, die über Erfolg in KI-Zeiten entscheiden",
+      "link": "https://www.versicherungsbote.de/id/4950047/Die-neuen-Skills-fuer-Makler-die-ueber-Erfolg-in-KI-Zeiten-entscheiden/",
+      "image": "https://www.versicherungsbote.de/content.4950047.images.keavi.fabian-wesemann.578x264.jpeg",
+      "excerpt": "Künstliche Intelligenz wird den Maklerberuf verändern. Aber nicht zwingend, weil sie den Menschen ersetzt. Fabian Wesemann, heutiger CEO von Afori und früherer Mitgründer von Wefox, zeichnet das Bild des zukünftigen Maklerbüros, das von einer ganzen ",
+      "date": "2026-06-01T04:23:00.000Z",
+      "source": "Versicherungsbote",
+      "category": "Finance & Banking",
+      "score": 8
+    }
+  ]
 }
