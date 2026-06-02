@@ -1,16 +1,46 @@
 {
-  "updated": "2026-06-01T10:12:10.583Z",
+  "updated": "2026-06-02T12:16:21.775Z",
   "total_fetched": 117,
   "articles": [
     {
-      "title": "Die neuen Skills für Makler, die über Erfolg in KI-Zeiten entscheiden",
-      "link": "https://www.versicherungsbote.de/id/4950047/Die-neuen-Skills-fuer-Makler-die-ueber-Erfolg-in-KI-Zeiten-entscheiden/",
-      "image": "https://www.versicherungsbote.de/content.4950047.images.keavi.fabian-wesemann.578x264.jpeg",
-      "excerpt": "Künstliche Intelligenz wird den Maklerberuf verändern. Aber nicht zwingend, weil sie den Menschen ersetzt. Fabian Wesemann, heutiger CEO von Afori und früherer Mitgründer von Wefox, zeichnet das Bild des zukünftigen Maklerbüros, das von einer ganzen ",
-      "date": "2026-06-01T04:23:00.000Z",
-      "source": "Versicherungsbote",
+      "title": "Anthropics Claude Mythos: Wie KI Banken und das Finanzsystem bedrohen könnte",
+      "link": "https://www.tagesschau.de/wirtschaft/technologie/claude-mythos-ki-banken-finanzsystem-100.html",
+      "image": "https://images.tagesschau.de/image/f8f7d427-1013-4784-b13e-6fa3bbadd362/AAABnoKjB7w/AAABnSSvrFg/16x9-big/frankfurt-banken-112.jpg?width=1920",
+      "excerpt": "Das KI-Modell Claude Mythos des Unternehmens Anthropic findet Softwarelücken im Rekordtempo. Ein Missbrauch könnte Cyberangriffen Tür und Tor öffnen. Banken und Aufseher sind alarmiert: Ist das Finanzsystem verwundbarer denn je? Von A. Göpfert.",
+      "date": "2026-06-02T08:18:24.000Z",
+      "source": "Tagesschau Wirtschaft",
       "category": "Finance & Banking",
       "score": 8
+    },
+    {
+      "title": "IPO: KI-Wettrennen: Anthropic beantragt Börsengang – vor OpenAI",
+      "link": "https://www.capital.de/geld-versicherungen/ki--anthropic-beantragt-boersengang---noch-vor-openai-37479176.html?utm_medium=standard&amp;utm_source=rss",
+      "image": "https://image.capital.de/37479292/t/Z-/v2/w1440/r1.7778/-/anthropic-claude-openai-chatgpt-ipo-boersengang.jpg",
+      "excerpt": "Das KI-Startup Anthropic reicht Unterlagen für einen Börsengang ein. Hat das Unternehmen das Rennen gegen OpenAI schon gewonnen?",
+      "date": "2026-06-02T07:59:00.000Z",
+      "source": "Capital.de",
+      "category": "Finance & Banking",
+      "score": 8
+    },
+    {
+      "title": "KI-Unternehmen Anthropic bereitet Börsengang vor",
+      "link": "https://www.tagesschau.de/wirtschaft/boerse/boersengang-anthropic-100.html",
+      "image": "https://images.tagesschau.de/image/024b5aa6-9ac8-495e-ac68-7bbc1c56affd/AAABnoSf7y4/AAABnSSvrFg/16x9-big/anthropic-116.jpg?width=1920",
+      "excerpt": "Es ist der erste Schritt auf dem Weg an die Börse: Das US-Unternehmen Anthropic - bekannt für seine KI-Anwendung Claude - hat Unterlagen bei der Börsenaufsicht eingereicht.",
+      "date": "2026-06-01T19:19:20.000Z",
+      "source": "Tagesschau Wirtschaft",
+      "category": "Finance & Banking",
+      "score": 8
+    },
+    {
+      "title": "Florida verklagt KI-Unternehmen OpenAI wegen Gefährdung von Kindern",
+      "link": "https://www.tagesschau.de/wirtschaft/digitales/openai-klage-florida-100.html",
+      "image": "https://images.tagesschau.de/image/abc8ab20-8997-4f07-aa2c-63a3e8c4c6ac/AAABnoXySuQ/AAABnSSvrFg/16x9-big/sam-altman-120.jpg?width=1920",
+      "excerpt": "Dem KI-Unternehmen OpenAI drohen juristische Probleme: Der US-Bundesstaat Florida will den ChatGPT-Entwickler wegen der Gefährdung von Kindern und Jugendlichen belangen. Risiken seien bewusst ignoriert worden.",
+      "date": "2026-06-02T01:28:29.000Z",
+      "source": "Tagesschau Wirtschaft",
+      "category": "Finance & Banking",
+      "score": 6
     }
   ]
 }
