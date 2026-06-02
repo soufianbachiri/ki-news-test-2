@@ -29,4 +29,5 @@ jobs:
           git config user.email "bot@ki-news.local"
           git add articles.json
           git diff --staged --quiet || git commit -m "chore: news aktualisiert"
+          git pull --rebase origin main
           git push
