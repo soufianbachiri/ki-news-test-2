@@ -1,5 +1,106 @@
 {
-  "updated": "2026-06-15T10:51:40.883Z",
+  "updated": "2026-06-22T10:33:55.211Z",
   "total_fetched": 117,
-  "articles": []
+  "articles": [
+    {
+      "title": "Gemini for Home: KI-Zusammenfassungen statt eigentlicher News",
+      "link": "https://www.heise.de/news/Gemini-for-Home-KI-Zusammenfassungen-statt-eigentlicher-News-11339923.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/0/4/3/0/2/gemini-for-home-speaker-de3a0fdc92552902-7a5f7d1d4a92f34c.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Gemini for Home spielt auf Smart-Displays und -Speakern KI-Zusammenfassungen statt Inhalte aus voreingestellten Nachrichtenquellen.",
+      "date": "2026-06-22T08:24:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 10
+    },
+    {
+      "title": "Playstation-Studios: Sony bestätigt KI-Einsatz in der Spieleentwicklung",
+      "link": "https://www.heise.de/news/Playstation-Sonys-Studios-setzen-verstaerkt-KI-in-der-Entwicklung-ein-11339729.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/0/4/2/0/5/shutterstock_1987605866-d4a5b117b548f80f.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Sonys Playstation-Studios automatisieren mit KI-Werkzeugen Arbeitsschritte in der Videospielentwicklung. Das soll „menschliches Potenzial freischalten“.",
+      "date": "2026-06-22T05:19:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 9
+    },
+    {
+      "title": "Bayern: Steuerprüfungen bei Influencern bringen Hunderttausende Euro",
+      "link": "https://www.heise.de/news/Bayern-Steuerpruefungen-bei-Influencern-bringen-Hunderttausende-Euro-11339878.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/0/4/2/8/0/shutterstock_1478318918-e162e84207468720.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Für die Auswertung Tausender Datensätze nutzt Bayerns Landesamt für Steuern auch KI. Zusammengekommen ist eine stattliche Summe.",
+      "date": "2026-06-22T07:12:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 8
+    },
+    {
+      "title": "Inhalte schreiben und optimieren für Perplexity: Das müssen Sie beachten",
+      "link": "https://blog.hubspot.de/marketing/inhalte-perplexity-fuer-perplexity-schreiben",
+      "image": "",
+      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/marketing/inhalte-perplexity-fuer-perplexity-schreiben\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://53.fs1.hubspotusercontent-na1.net/hubfs/53/Germany/Blog_images/Cont",
+      "date": "2026-06-11T07:41:03.000Z",
+      "source": "HubSpot Marketing",
+      "category": "Marketing, Vertrieb & Service",
+      "score": 8
+    },
+    {
+      "title": "J.A.R.V.I.S. für jeden: Wo bleibt unser persönlicher KI-Assistent?",
+      "link": "https://www.golem.de/news/j-a-r-v-i-s-fuer-jeden-wo-bleibt-unser-persoenlicher-ki-assistent-2606-208234.html",
+      "image": "",
+      "excerpt": "Versprochen wird bei KI immer viel. Wir erklären, warum der KI-Agent für die Hosentasche immer noch weit entfernt ist. Eine Analyse von Tim Elsner ( a href= https://www.golem.de/specials/ki/ KI /a , a href= https://www.golem.de/specials/sicherheitslu",
+      "date": "2026-06-22T10:00:06.000Z",
+      "source": "Golem.de",
+      "category": "KI & Tech",
+      "score": 7
+    },
+    {
+      "title": "heise+ | Bit-Rauschen: Microsoft verzettelt sich bei KI für Windows",
+      "link": "https://www.heise.de/hintergrund/Bit-Rauschen-Microsoft-verzettelt-sich-bei-KI-fuer-Windows-11264112.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag_plus.beitrag_plus",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/6/6/9/4/8/Aufmacher-Prozessorkolumne_Bitrauschen-734272370c8cda6c.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Microsoft kooperiert mit Nvidia bei KI-PCs, aber ohne Copilot. In Frankreich entstehen Gigawatt-Rechenzentren und in Magdeburg vielleicht doch eine Chipfabrik.",
+      "date": "2026-06-22T05:00:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 7
+    },
+    {
+      "title": "5 Fragen, die man KI-Anbietern vor dem Kauf guthabenbasierter Tools stellen sollte",
+      "link": "https://blog.hubspot.de/service/fragen-an-ki-anbieter",
+      "image": "",
+      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/service/fragen-an-ki-anbieter\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://53.fs1.hubspotusercontent-na1.net/hubfs/53/Germany/Blog_images/fragen-guthabenbasierten-tool",
+      "date": "2026-06-22T08:43:54.000Z",
+      "source": "HubSpot Service",
+      "category": "Marketing, Vertrieb & Service",
+      "score": 7
+    },
+    {
+      "title": "Guthaben schlägt Abo: Die neue KI-Ökonomie",
+      "link": "https://blog.hubspot.de/service/warum-ki-nutzungsbasierte-preismodelle",
+      "image": "",
+      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/service/warum-ki-nutzungsbasierte-preismodelle\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://53.fs1.hubspotusercontent-na1.net/hubfs/53/Germany/Blog_images/warum-ki-nut",
+      "date": "2026-06-19T15:11:54.000Z",
+      "source": "HubSpot Service",
+      "category": "Marketing, Vertrieb & Service",
+      "score": 7
+    },
+    {
+      "title": "Leitfaden für guthabenbasierte Abrechnungsmodelle: Was man wissen sollte",
+      "link": "https://blog.hubspot.de/service/ki-guthabenbasierte-abrechnungsmodelle",
+      "image": "",
+      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/service/ki-guthabenbasierte-abrechnungsmodelle\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://53.fs1.hubspotusercontent-na1.net/hubfs/53/Germany/Blog_images/guthabenbasi",
+      "date": "2026-06-16T08:40:44.000Z",
+      "source": "HubSpot Service",
+      "category": "Marketing, Vertrieb & Service",
+      "score": 7
+    },
+    {
+      "title": "KI-Agent vs. KI-Chatbot: Was brauchen Sie im Kundenservice?",
+      "link": "https://blog.hubspot.de/service/ki-agent-vs-ki-chatbot",
+      "image": "",
+      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/service/ki-agent-vs-ki-chatbot\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://53.fs1.hubspotusercontent-na1.net/hubfs/53/Germany/Blog_images/ki-agent-vs-ki-chatbot.png\" ",
+      "date": "2026-04-07T09:00:02.000Z",
+      "source": "HubSpot Service",
+      "category": "Marketing, Vertrieb & Service",
+      "score": 7
+    }
+  ]
 }
