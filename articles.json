@@ -1,46 +1,46 @@
 {
-  "updated": "2026-06-29T09:22:53.598Z",
-  "total_fetched": 107,
+  "updated": "2026-07-06T08:56:20.332Z",
+  "total_fetched": 117,
   "articles": [
     {
-      "title": "Forschende warnen vor unkritischer KI-Nutzung",
-      "link": "https://www.tagesschau.de/wissen/forschung/unkritische-ki-nutzung-100.html",
-      "image": "https://images.tagesschau.de/image/19c10d8f-1e96-42a0-a3e7-3d87c4a18dbb/AAABnu772VQ/AAABnSSvrFg/16x9-big/kuenstliche-intelligenz-196.jpg?width=1920",
-      "excerpt": "Autonomes Fahren, Bildbearbeitung, Auswertungen medizinischer Untersuchungen - überall boomt KI. Sie trifft Entscheidungen und hilft als netter Chatbot. Forschende warnen vor einem unkritischen Einsatz. Von M. Lang und V. Weber.",
-      "date": "2026-06-29T04:33:34.000Z",
-      "source": "Tagesschau Wirtschaft",
-      "category": "Finance & Banking",
-      "score": 8
+      "title": "Multispektrale Sensortechnik und KI finden Unterwasser-Blindgänger",
+      "link": "https://www.heise.de/news/Multispektrale-Sensortechnik-und-KI-finden-Unterwasser-Blindgaenger-11354350.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/1/1/5/8/7/UXO-ba57e6e1448db100.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Küstennahe Unterwasser-Blindgänger gefährden Touristen und Schifffahrt. Mit MiDAR und KI sollen sie zuverlässig erkannt werden.",
+      "date": "2026-07-06T05:46:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 10
     },
     {
-      "title": "Zwischen KI und Faxgerät: Wer versteht die Branche wirklich?",
-      "link": "https://www.versicherungsbote.de/id/4950563/Zwischen-KI-und-Faxgeraet-Wer-versteht-die-Branche-wirklich-/",
-      "image": "https://www.versicherungsbote.de/content.4950563.images.pqeum.MMK-22-Torsten-Jasper-Artikelbild.578x264.jpg",
-      "excerpt": "Vor Kurzem kommentierte ich einen LinkedIn-Beitrag von Marcel Neumann von der Provinzial. Darin ging es um eine Zahl, die viele überraschen dürfte: Selbst bei der Kfz-Versicherung, einem Produkt, das sich heute nahezu vollständig digital abschließen ",
-      "date": "2026-06-29T09:16:51.000Z",
-      "source": "Versicherungsbote",
-      "category": "Finance & Banking",
+      "title": "Stargate UK: 20-Milliarden-Pfund-Investment war nicht mehr als ein PR-Stunt",
+      "link": "https://www.heise.de/news/Stargate-UK-20-Milliarden-Pfund-Investment-war-nicht-mehr-als-ein-PR-Stunt-11354198.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/1/1/5/1/1/UK_Union_jack_Cartoon-3bc085812da7d460.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Stargate UK sollte OpenAI & Co. in die britische Wirtschaft bringen. Doch am Großteil des Projekts wurde nie wirklich gearbeitet.",
+      "date": "2026-07-05T15:33:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
       "score": 7
     },
     {
-      "title": "Die wichtigsten Marketing-Statistiken und Trends zu KI, AEO Social Media",
-      "link": "https://blog.hubspot.de/marketing/state-of-marketing-report",
-      "image": "",
-      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/marketing/state-of-marketing-report\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://53.fs1.hubspotusercontent-na1.net/hubfs/53/Germany/Blog_images/Marketing%20Trends%2020",
-      "date": "2026-06-19T14:41:51.000Z",
-      "source": "HubSpot Marketing",
-      "category": "Marketing, Vertrieb & Service",
-      "score": 6
+      "title": "Nach Diebstahlsvorwürfen: Alibaba bannt Claude-KI",
+      "link": "https://www.heise.de/news/Alibaba-verbietet-Beschaeftigten-die-Nutzung-von-Claude-KI-11353982.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/1/1/4/0/3/shutterstock_2132565193-89d04a4fa7f8d22d.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Aus Angst vor Überwachung dürfen Alibaba-Mitarbeiter Anthropics KI Claude nicht mehr nutzen. Anthropic hatte das eigentlich schon vorher verboten.",
+      "date": "2026-07-04T15:41:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 7
     },
     {
-      "title": "Bonnfinanz: Die moderne Verpackung des alten Finanzvertriebs?",
-      "link": "https://www.versicherungsbote.de/id/4950039/Bonnfinanz-Die-moderne-Verpackung-des-alten-Finanzvertriebs/",
-      "image": "https://www.versicherungsbote.de/content.4950039.images.gvprd.ChatGPT-Image-28-Mai-2026-08_19_25.578x264.jpeg",
-      "excerpt": "Bonnfinanz sieht sich als moderner Finanzdienstleister mit ganzheitlicher Beratung, digitalen Analyseverfahren und objektiver Finanzplanung. Doch hinter Begriffen wie DIN-Standardisierung, Lebensplanung und individueller Vorsorge bleibt die wirtschaf",
-      "date": "2026-06-29T04:12:00.000Z",
-      "source": "Versicherungsbote",
-      "category": "Finance & Banking",
-      "score": 5
+      "title": "Montag: Britisches Stargate nur Medien-Coup, Identitätsdiebstahl bei WhatsApp",
+      "link": "https://www.heise.de/news/Montag-Britisches-Stargate-nur-Medien-Coup-Identitaetsdiebstahl-bei-WhatsApp-11354314.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/1/1/5/6/9/monday-dc2ecd15b2618e26.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "KI-Milliarden als Inszenierung + Warnung bei WhatsApp-Benutzernamen + Alibaba-Verbot von Anthropic-KI + 30 Jahre „Independence Day“ + Bahnhofsumbau ohne Ausfall",
+      "date": "2026-07-06T04:15:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 6
     }
   ]
 }
