@@ -1,46 +1,76 @@
 {
-  "updated": "2026-07-06T08:56:20.332Z",
+  "updated": "2026-07-13T08:11:04.842Z",
   "total_fetched": 117,
   "articles": [
     {
-      "title": "Multispektrale Sensortechnik und KI finden Unterwasser-Blindgänger",
-      "link": "https://www.heise.de/news/Multispektrale-Sensortechnik-und-KI-finden-Unterwasser-Blindgaenger-11354350.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/1/1/5/8/7/UXO-ba57e6e1448db100.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "Küstennahe Unterwasser-Blindgänger gefährden Touristen und Schifffahrt. Mit MiDAR und KI sollen sie zuverlässig erkannt werden.",
-      "date": "2026-07-06T05:46:00.000Z",
+      "title": "Anthropic: In-App-Browser für Claude Code, Fable 5 länger „gratis“",
+      "link": "https://www.heise.de/news/Claude-Code-auf-dem-Desktop-bekommt-einen-eingebauten-Browser-11362078.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/1/5/4/8/6/shutterstock_2645234093-1e12caed58e50647.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Anthropic gibt Claude Code auf dem Desktop einen eingebauten Browser. Das Frontier-Modell Fable 5 wird erneut verlängert – es bleibt bis zum 19. Juli im Abo.",
+      "date": "2026-07-13T05:45:00.000Z",
       "source": "Heise Online",
       "category": "KI & Tech",
       "score": 10
     },
     {
-      "title": "Stargate UK: 20-Milliarden-Pfund-Investment war nicht mehr als ein PR-Stunt",
-      "link": "https://www.heise.de/news/Stargate-UK-20-Milliarden-Pfund-Investment-war-nicht-mehr-als-ein-PR-Stunt-11354198.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/1/1/5/1/1/UK_Union_jack_Cartoon-3bc085812da7d460.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "Stargate UK sollte OpenAI & Co. in die britische Wirtschaft bringen. Doch am Großteil des Projekts wurde nie wirklich gearbeitet.",
-      "date": "2026-07-05T15:33:00.000Z",
+      "title": "Microsoft nutzt in manchen Apps offenbar eigene KI statt OpenAI und Anthropic",
+      "link": "https://www.heise.de/news/Microsoft-nutzt-in-manchen-Apps-offenbar-eigene-KI-statt-OpenAI-und-Anthropic-11362060.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/1/5/4/7/7/Copilot-Taste-16-9-b723458606d60b2c.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Einige Prozesse in Microsoft-Software basieren auf KI-Modellen von OpenAI und Anthropic. Doch aus Kostengründen stellt Microsoft wohl auf eigene KI-Modelle um.",
+      "date": "2026-07-13T03:04:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 9
+    },
+    {
+      "title": "Vom Copilot zum Agenten – die Bank als AI Factory - Open Source und eigene GPU-Stacks werden zur Pflicht",
+      "link": "https://www.der-bank-blog.de/vom-copilot-agenten-bank/technologie/37732219/?utm_source=bankblog&#038;utm_medium=rss&#038;utm_campaign=rss",
+      "image": "https://www.der-bank-blog.de/wp-content/uploads/2026/05/infrastruktur-ki-agent-336x200.jpg",
+      "excerpt": "In vielen Banken assistiert KI – sie entscheidet aber nicht. Der Sprung zu echten Agenten-Prozessen scheitert seltener am Modell als an der Lieferkette darunter. Wer Souveränität ernst meint, muss seinen KI-Stack vom Chip bis zum Agentenprotokoll neu",
+      "date": "2026-07-08T22:25:31.000Z",
+      "source": "Der Bank Blog",
+      "category": "Finance & Banking",
+      "score": 8
+    },
+    {
+      "title": "Montag: YouTube mit DuckDuckGo ohne Werbung, Copilot mit Microsoft-eigener KI",
+      "link": "https://www.heise.de/news/Montag-YouTube-mit-DuckDuckGo-ohne-Werbung-Copilot-mit-Microsoft-eigener-KI-11362070.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/1/5/4/8/2/monday-f5e98d07c1961ed0.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "DuckDuckGo-Browser mit uBlock für YouTube + Microsoft-KI statt OpenAI + Hynix-Börsengang mit Warnung + Abschied von eiserner Lunge + VR-Spielebranche im Umbruch",
+      "date": "2026-07-13T04:15:00.000Z",
       "source": "Heise Online",
       "category": "KI & Tech",
       "score": 7
     },
     {
-      "title": "Nach Diebstahlsvorwürfen: Alibaba bannt Claude-KI",
-      "link": "https://www.heise.de/news/Alibaba-verbietet-Beschaeftigten-die-Nutzung-von-Claude-KI-11353982.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/1/1/4/0/3/shutterstock_2132565193-89d04a4fa7f8d22d.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "Aus Angst vor Überwachung dürfen Alibaba-Mitarbeiter Anthropics KI Claude nicht mehr nutzen. Anthropic hatte das eigentlich schon vorher verboten.",
-      "date": "2026-07-04T15:41:00.000Z",
-      "source": "Heise Online",
-      "category": "KI & Tech",
+      "title": "Daten als Asset: Wie heben Banken diesen Schatz? - Wie KI den Durchbruch schaffen kann",
+      "link": "https://www.der-bank-blog.de/daten-asset-wie-banken/technologie/37732227/?utm_source=bankblog&#038;utm_medium=rss&#038;utm_campaign=rss",
+      "image": "https://www.der-bank-blog.de/wp-content/uploads/2026/05/daten-schluessel-ki-336x200.jpg",
+      "excerpt": "Generative KI weckt enorme Erwartungen – doch viele Unternehmen sind nach ersten Piloten und mäßigen Ergebnissen ernüchtert. Nicht die KI ist zu schwach, sondern die Datenbasis zu fragmentiert, zu wenig durchdacht. Die Lösung heißt Kontext.",
+      "date": "2026-07-07T22:25:47.000Z",
+      "source": "Der Bank Blog",
+      "category": "Finance & Banking",
       "score": 7
     },
     {
-      "title": "Montag: Britisches Stargate nur Medien-Coup, Identitätsdiebstahl bei WhatsApp",
-      "link": "https://www.heise.de/news/Montag-Britisches-Stargate-nur-Medien-Coup-Identitaetsdiebstahl-bei-WhatsApp-11354314.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/1/1/5/6/9/monday-dc2ecd15b2618e26.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "KI-Milliarden als Inszenierung + Warnung bei WhatsApp-Benutzernamen + Alibaba-Verbot von Anthropic-KI + 30 Jahre „Independence Day“ + Bahnhofsumbau ohne Ausfall",
-      "date": "2026-07-06T04:15:00.000Z",
+      "title": "heise+ | Wie Schulen Kinder fit für die digitale Welt machen sollen",
+      "link": "https://www.heise.de/hintergrund/Wie-Schulen-Kinder-fit-fuer-die-digitale-Welt-machen-sollen-11332485.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag_plus.beitrag_plus",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/0/0/5/4/6/aufmacher_handyverbot_an_schulen_adobestock_169533076_digital-8ec094ebfdde762e.png?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Handyverbot, KI-Seepferdchen, Medienguides: Was die Expertenkommission für Schulen fordert – und warum die Umsetzung schwierig wird.",
+      "date": "2026-07-13T05:00:00.000Z",
       "source": "Heise Online",
       "category": "KI & Tech",
       "score": 6
+    },
+    {
+      "title": "Managerhaftpflicht: Viele Unternehmen sehen Lücken beim D O-Versicherungsschutz",
+      "link": "https://www.versicherungsbote.de/id/4950739/Managerhaftpflicht-Viele-Unternehmen-sehen-Luecken-beim-DO-Versicherungsschutz/",
+      "image": "https://www.versicherungsbote.de/content.4950739.images.tjllp.ChatGPT-Image-8-Juli-2026-10_23_11.578x264.jpeg",
+      "excerpt": "Geopolitik und Künstliche Intelligenz verändern die Risikolandschaft für Unternehmenslenker spürbar und zählen für sie inzwischen zu den größten globalen Risiken. Gleichzeitig zweifeln viele Vorstände und Führungskräfte am ausreichenden Schutz ihrer ",
+      "date": "2026-07-13T04:11:00.000Z",
+      "source": "Versicherungsbote",
+      "category": "Finance & Banking",
+      "score": 5
     }
   ]
 }
