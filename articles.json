@@ -1,46 +1,5 @@
 {
-  "updated": "2026-08-24T05:31:14.237Z",
+  "updated": "2026-08-31T11:15:25.246Z",
   "total_fetched": 117,
-  "articles": [
-    {
-      "title": "Warum einfache KI-Chatbots im Versicherungsservice scheitern",
-      "link": "https://www.versicherungsbote.de/id/4951437/Warum-einfache-KI-Chatbots-im-Versicherungsservice-scheitern/",
-      "image": "https://www.versicherungsbote.de/content.4951437.images.zgwep.Oliver_Trabert_CPTO_octonomy.578x264.jpg",
-      "excerpt": "Einfache Chatbots stoßen bei komplexen Versicherungsfragen schnell an ihre Grenzen. Warum KI im Kundenservice Antworten nicht nur generieren, sondern mit Vertragsdaten verknüpfen, belegen und ganze Prozesse zuverlässig zu Ende führen muss, erklärt Ol",
-      "date": "2026-08-24T04:03:00.000Z",
-      "source": "Versicherungsbote",
-      "category": "Finance & Banking",
-      "score": 8
-    },
-    {
-      "title": "Agentic AI: Vom Pilotprojekt zur Skalierung - Warum KI-Agenten klare Leitplanken brauchen",
-      "link": "https://www.der-bank-blog.de/agentic-ai-vom-pilotprojekt/studien/37732607/?utm_source=bankblog&#038;utm_medium=rss&#038;utm_campaign=rss",
-      "image": "https://www.der-bank-blog.de/wp-content/uploads/2026/06/agentic-ai-prozesse-336x200.jpg",
-      "excerpt": "Agentic AI gilt als nächster Reifeschritt der Künstlichen Intelligenz. Für Finanzinstitute stellt sich damit eine strategische Frage: Wie lassen sich autonome Systeme produktiv nutzen, ohne Kontrolle, Vertrauen und Sicherheit wirksam zu gefährden?",
-      "date": "2026-08-18T22:15:26.000Z",
-      "source": "Der Bank Blog",
-      "category": "Finance & Banking",
-      "score": 8
-    },
-    {
-      "title": "OpenAI startet Werbegeschäft in Europa: Wie sich KI finanzieren lässt",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/chat-gpt-werbung-finanzierung-ki-100.html",
-      "image": "https://images.tagesschau.de/image/65d6d538-e998-4951-88d7-ffd1bf85e787/AAABn9E-S2Q/AAABnSSvrFg/16x9-big/rechenzentrum-192.jpg?width=1920",
-      "excerpt": "Von Montag an wird ChatGPT in Europa Werbung enthalten. Obwohl OpenAI-Chef Altman lange dagegen war, setzt der Konzern nun genau darauf, um die KI zu finanzieren. Welche Folgen das hat, erklärt Lilli-Marie Hiltscher.",
-      "date": "2026-08-23T18:34:43.000Z",
-      "source": "Tagesschau Wirtschaft",
-      "category": "Finance & Banking",
-      "score": 7
-    },
-    {
-      "title": "Investoren besorgt: Droht durch KI die nächste Finanzkrise?",
-      "link": "https://www.faz.net/aktuell/finanzen/milliarden-fuer-ki-unternehmen-droht-die-naechste-finanzkrise-accg-201136408.html",
-      "image": "https://media0.faz.net/image/c2b34216404c/w3506h1972x199y537/202607/43601.0.2341517176/der-nvidia-chef-jensen-huang.webp",
-      "excerpt": "Den Anlegern wird allmählich mulmig. KI-Unternehmen, wie Nvidia, brauchen Milliardensummen für ihre Investitionen. Was rollt da auf uns zu?",
-      "date": "2026-08-23T06:15:49.000Z",
-      "source": "FAZ Finanzen",
-      "category": "Finance & Banking",
-      "score": 7
-    }
-  ]
+  "articles": []
 }
