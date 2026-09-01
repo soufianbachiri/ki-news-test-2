@@ -1,5 +1,46 @@
 {
-  "updated": "2026-08-31T11:15:25.246Z",
+  "updated": "2026-09-01T18:40:49.384Z",
   "total_fetched": 117,
-  "articles": []
+  "articles": [
+    {
+      "title": "Microsoft Build 2025: Das Zeitalter der KI-Agenten und der Aufbau des Open Agentic Web",
+      "link": "https://news.microsoft.com/de-de/build2025/",
+      "image": "",
+      "excerpt": "Die wichtigsten Neuigkeiten im Überblick: Microsoft Build 2025 läutet das Zeitalter der KI-Agenten ein: Durch große Fortschritte bei Reasoning und Memory sind KI-Modelle jetzt noch leistungsfähiger, um die Arbeit in Wirtschaft, Forschung und Alltag v",
+      "date": "2025-05-19T16:00:02.000Z",
+      "source": "Microsoft DE",
+      "category": "KI & Tech",
+      "score": 8
+    },
+    {
+      "title": "heise-Angebot: September-Termin: heise security Tour mit Vorträgen zu KI, Lieferketten und mehr",
+      "link": "https://www.heise.de/news/September-Termin-heise-security-Tour-mit-Vortraegen-zu-KI-Lieferketten-und-mehr-11437401.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/5/7/0/6/8/heise-security-tour-25_ticker_1920x1080-be8c1195368a5a01.png?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Die Eintageskonferenz für Sicherheitsverantwortliche mit praxisrelevantem Wissen zu aktuellen Herausforderungen der IT-Sicherheit: KI, Lieferketten und mehr.",
+      "date": "2026-09-01T15:30:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 7
+    },
+    {
+      "title": "Firefox 155 zeigt blockierte Tracker direkt an",
+      "link": "https://www.heise.de/news/Firefox-155-zeigt-blockierte-Tracker-direkt-an-11437247.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/5/6/9/8/9/Screenshot_2026-04-22_at_11-27-00_Firefox_____Firefox-c2baef1f71651b99.png?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Firefox 155 bringt neue KI-Funktionen, einen Tracker-Zähler und Verbesserungen für Container – verursacht aber Probleme in manchen Firmennetzen.",
+      "date": "2026-09-01T15:00:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 6
+    },
+    {
+      "title": "Pixel 11 Pro zuerst: Gemini hilft bei der Gerätesteuerung",
+      "link": "https://www.heise.de/news/Pixel-11-Pro-zuerst-Gemini-hilft-bei-der-Geraetesteuerung-11437195.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/5/6/9/6/3/gemini-android-17-hilfe-geraet-pixel-11-pro-a30e93756ba81014.png?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Google baut die Steuerungsfunktionen von Gemini unter Android 17 aus. Mit „Hilfe für Gerät“ sollen Nutzer Einstellungen per KI-Dialog anpassen können.",
+      "date": "2026-09-01T14:22:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 6
+    }
+  ]
 }
