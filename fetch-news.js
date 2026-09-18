@@ -1,97 +1,106 @@
 // ═══════════════════════════════════════════════
-// KI News Fetcher — läuft täglich via GitHub Actions
+// KI News Fetcher — läuft wöchentlich via GitHub Actions
 // Holt alle RSS-Feeds, bewertet Artikel mit Gemini
-// und speichert die besten 25 als articles.json
+// und speichert die besten Artikel als articles.json
+//
+// FIXES (2026-09-18):
+//  - Echter Gemini-HTTP-Fehler wird jetzt geloggt (Status + Body)
+//  - maxOutputTokens 300 -> 2048 (2.5-flash "thinking" gab sonst
+//    leeren Text zurück -> alle Scores 0 -> leere Liste)
+//  - Wenn die KI-Bewertung fehlschlägt, wird die vorhandene,
+//    zuletzt GEFILTERTE articles.json BEHALTEN und NICHT durch
+//    ungefilterte News ersetzt oder geleert.
+//  - Optionaler ENV-Override GEMINI_MODEL (falls Modell deprecated)
 // ═══════════════════════════════════════════════
 
-const { writeFileSync } = require('fs');
+const { writeFileSync, readFileSync, existsSync } = require('fs');
 
 // ── Quellen — nur deutschsprachige DACH-Medien ──
 const SOURCES = [
   // KI & Tech — DACH
-  { name: 'Heise Online',          url: 'https://www.heise.de/thema/Kuenstliche-Intelligenz.xml',                  category: 'KI & Tech' },
-  { name: 't3n',                   url: 'https://t3n.de/tag/kuenstliche-intelligenz/rss.xml',                      category: 'KI & Tech' },
-  { name: 'Golem.de',              url: 'https://www.golem.de/rss.php?feed=ATOM1.0',                               category: 'KI & Tech' },
-  { name: 'Wired DE',              url: 'https://www.wired.de/feed/',                                             category: 'KI & Tech' },
-  { name: 'MIT Tech Review DE',    url: 'https://www.technologyreview.de/feed/',                                  category: 'KI & Tech' },
-  { name: 'Google Deutschland',    url: 'https://blog.google/intl/de-de/feed/',                                   category: 'KI & Tech' },
-  { name: 'Microsoft DE',          url: 'https://news.microsoft.com/de-de/tag/agents/feed/',                       category: 'KI & Tech' },
-  { name: 'ZDNet DE',              url: 'https://www.zdnet.de/feed/',                                             category: 'KI & Tech' },
-  { name: 'Computerwoche',         url: 'https://www.computerwoche.de/a/rss.xml',                                  category: 'KI & Tech' },
-  { name: 'PC-Welt',               url: 'https://www.pcwelt.de/feed/',                                            category: 'KI & Tech' },
-  { name: 'CHIP.de',               url: 'https://www.chip.de/rss/news.xml',                                       category: 'KI & Tech' },
-  { name: 'Gründerszene',          url: 'https://www.gruenderszene.de/feed/',                                     category: 'KI & Tech' },
-  { name: 'futurezone.at',         url: 'https://futurezone.at/rss/tech',                                         category: 'KI & Tech' },
-  { name: 'netzpolitik.org',       url: 'https://netzpolitik.org/feed/',                                          category: 'KI & Tech' },
-  { name: 'WirtschaftsWoche Tech', url: 'https://www.wiwo.de/themen/digitale-welt/rss',                           category: 'KI & Tech' },
-  { name: 'Handelsblatt Tech',     url: 'https://www.handelsblatt.com/rss/technologie',                           category: 'KI & Tech' },
-  { name: 'Manager Magazin KI',    url: 'https://www.manager-magazin.de/thema/kuenstliche_intelligenz/rss',        category: 'KI & Tech' },
-  { name: 'Spiegel Netzwelt',      url: 'https://www.spiegel.de/netzwelt/index.rss',                              category: 'KI & Tech' },
-  { name: 'SAP News DE',           url: 'https://news.sap.com/de/category/artificial-intelligence/feed/',          category: 'KI & Tech' },
-  { name: 'Zeit Online Digital',   url: 'https://www.zeit.de/digital/index.xml',                                  category: 'KI & Tech' },
-  { name: 'FAZ Digital',           url: 'https://www.faz.net/rss/aktuell/digitec/',                               category: 'KI & Tech' },
-  { name: 'Deutsche Welle Tech',   url: 'https://rss.dw.com/rdf/rss-de-tech',                                    category: 'KI & Tech' },
-  { name: 'Bitkom',                url: 'https://www.bitkom.org/rss/Presse.xml',                                  category: 'KI & Tech' },
-  { name: 'iX Magazin',            url: 'https://www.ix.de/rss.xml',                                             category: 'KI & Tech' },
-  { name: 'c\'t',                  url: 'https://www.ct.de/rss/ct.php',                                          category: 'KI & Tech' },
-  { name: 'Digital Kompakt',       url: 'https://www.digitalkompakt.de/feed/',                                   category: 'KI & Tech' },
-  { name: 'Fraunhofer',            url: 'https://www.fraunhofer.de/de/presse/aktuelles/rss.xml',                 category: 'KI & Tech' },
-  { name: 'Dataconomy DE',         url: 'https://dataconomy.com/de/feed/',                                       category: 'KI & Tech' },
+  { name: 'Heise Online',          url: 'https://www.heise.de/thema/Kuenstliche-Intelligenz.xml', category: 'KI & Tech' },
+  { name: 't3n',                   url: 'https://t3n.de/tag/kuenstliche-intelligenz/rss.xml', category: 'KI & Tech' },
+  { name: 'Golem.de',              url: 'https://www.golem.de/rss.php?feed=ATOM1.0', category: 'KI & Tech' },
+  { name: 'Wired DE',              url: 'https://www.wired.de/feed/', category: 'KI & Tech' },
+  { name: 'MIT Tech Review DE',    url: 'https://www.technologyreview.de/feed/', category: 'KI & Tech' },
+  { name: 'Google Deutschland',    url: 'https://blog.google/intl/de-de/feed/', category: 'KI & Tech' },
+  { name: 'Microsoft DE',          url: 'https://news.microsoft.com/de-de/tag/agents/feed/', category: 'KI & Tech' },
+  { name: 'ZDNet DE',              url: 'https://www.zdnet.de/feed/', category: 'KI & Tech' },
+  { name: 'Computerwoche',         url: 'https://www.computerwoche.de/a/rss.xml', category: 'KI & Tech' },
+  { name: 'PC-Welt',               url: 'https://www.pcwelt.de/feed/', category: 'KI & Tech' },
+  { name: 'CHIP.de',               url: 'https://www.chip.de/rss/news.xml', category: 'KI & Tech' },
+  { name: 'Gründerszene',          url: 'https://www.gruenderszene.de/feed/', category: 'KI & Tech' },
+  { name: 'futurezone.at',         url: 'https://futurezone.at/rss/tech', category: 'KI & Tech' },
+  { name: 'netzpolitik.org',       url: 'https://netzpolitik.org/feed/', category: 'KI & Tech' },
+  { name: 'WirtschaftsWoche Tech', url: 'https://www.wiwo.de/themen/digitale-welt/rss', category: 'KI & Tech' },
+  { name: 'Handelsblatt Tech',     url: 'https://www.handelsblatt.com/rss/technologie', category: 'KI & Tech' },
+  { name: 'Manager Magazin KI',    url: 'https://www.manager-magazin.de/thema/kuenstliche_intelligenz/rss', category: 'KI & Tech' },
+  { name: 'Spiegel Netzwelt',      url: 'https://www.spiegel.de/netzwelt/index.rss', category: 'KI & Tech' },
+  { name: 'SAP News DE',           url: 'https://news.sap.com/de/category/artificial-intelligence/feed/', category: 'KI & Tech' },
+  { name: 'Zeit Online Digital',   url: 'https://www.zeit.de/digital/index.xml', category: 'KI & Tech' },
+  { name: 'FAZ Digital',           url: 'https://www.faz.net/rss/aktuell/digitec/', category: 'KI & Tech' },
+  { name: 'Deutsche Welle Tech',   url: 'https://rss.dw.com/rdf/rss-de-tech', category: 'KI & Tech' },
+  { name: 'Bitkom',                url: 'https://www.bitkom.org/rss/Presse.xml', category: 'KI & Tech' },
+  { name: 'iX Magazin',            url: 'https://www.ix.de/rss.xml', category: 'KI & Tech' },
+  { name: 'c\'t',                  url: 'https://www.ct.de/rss/ct.php', category: 'KI & Tech' },
+  { name: 'Digital Kompakt',       url: 'https://www.digitalkompakt.de/feed/', category: 'KI & Tech' },
+  { name: 'Fraunhofer',            url: 'https://www.fraunhofer.de/de/presse/aktuelles/rss.xml', category: 'KI & Tech' },
+  { name: 'Dataconomy DE',         url: 'https://dataconomy.com/de/feed/', category: 'KI & Tech' },
 
   // Finance & Banking
-  { name: 'IT Finanzmagazin',      url: 'https://www.it-finanzmagazin.de/tag/kuenstliche-intelligenz/feed/',       category: 'Finance & Banking' },
-  { name: 'IT Finanzmagazin KI',   url: 'https://www.it-finanzmagazin.de/tag/ki/feed/',                           category: 'Finance & Banking' },
-  { name: 'Der Bank Blog',         url: 'https://www.der-bank-blog.de/stichwort/kuenstliche-intelligenz/feed/',    category: 'Finance & Banking' },
-  { name: 'Finance Forward',       url: 'https://financeforward.de/feed/',                                        category: 'Finance & Banking' },
-  { name: 'Payment & Banking',     url: 'https://paymentandbanking.com/feed/',                                    category: 'Finance & Banking' },
-  { name: 'BankingHub',            url: 'https://www.bankinghub.eu/feed/',                                        category: 'Finance & Banking' },
-  { name: 'finews.ch',             url: 'https://www.finews.ch/rss/',                                             category: 'Finance & Banking' },
-  { name: 'Gründerszene Fintech',  url: 'https://www.gruenderszene.de/feed/?cat=fintech',                         category: 'Finance & Banking' },
-  { name: 'WirtschaftsWoche KI',   url: 'https://www.wiwo.de/themen/kuenstliche-intelligenz/rss',                 category: 'Finance & Banking' },
-  { name: 'Handelsblatt Finanzen', url: 'https://www.handelsblatt.com/rss/finanzen',                              category: 'Finance & Banking' },
-  { name: 'Capital.de',            url: 'https://www.capital.de/feed',                                            category: 'Finance & Banking' },
-  { name: 'Versicherungsbote',     url: 'https://www.versicherungsbote.de/feed/',                                 category: 'Finance & Banking' },
-  { name: 'FAZ Finanzen',          url: 'https://www.faz.net/rss/aktuell/finanzen/',                              category: 'Finance & Banking' },
-  { name: 'Tagesschau Wirtschaft', url: 'https://www.tagesschau.de/wirtschaft/index~rss2.xml',                    category: 'Finance & Banking' },
+  { name: 'IT Finanzmagazin',      url: 'https://www.it-finanzmagazin.de/tag/kuenstliche-intelligenz/feed/', category: 'Finance & Banking' },
+  { name: 'IT Finanzmagazin KI',   url: 'https://www.it-finanzmagazin.de/tag/ki/feed/', category: 'Finance & Banking' },
+  { name: 'Der Bank Blog',         url: 'https://www.der-bank-blog.de/stichwort/kuenstliche-intelligenz/feed/', category: 'Finance & Banking' },
+  { name: 'Finance Forward',       url: 'https://financeforward.de/feed/', category: 'Finance & Banking' },
+  { name: 'Payment & Banking',     url: 'https://paymentandbanking.com/feed/', category: 'Finance & Banking' },
+  { name: 'BankingHub',            url: 'https://www.bankinghub.eu/feed/', category: 'Finance & Banking' },
+  { name: 'finews.ch',             url: 'https://www.finews.ch/rss/', category: 'Finance & Banking' },
+  { name: 'Gründerszene Fintech',  url: 'https://www.gruenderszene.de/feed/?cat=fintech', category: 'Finance & Banking' },
+  { name: 'WirtschaftsWoche KI',   url: 'https://www.wiwo.de/themen/kuenstliche-intelligenz/rss', category: 'Finance & Banking' },
+  { name: 'Handelsblatt Finanzen', url: 'https://www.handelsblatt.com/rss/finanzen', category: 'Finance & Banking' },
+  { name: 'Capital.de',            url: 'https://www.capital.de/feed', category: 'Finance & Banking' },
+  { name: 'Versicherungsbote',     url: 'https://www.versicherungsbote.de/feed/', category: 'Finance & Banking' },
+  { name: 'FAZ Finanzen',          url: 'https://www.faz.net/rss/aktuell/finanzen/', category: 'Finance & Banking' },
+  { name: 'Tagesschau Wirtschaft', url: 'https://www.tagesschau.de/wirtschaft/index~rss2.xml', category: 'Finance & Banking' },
 
   // Marketing, Vertrieb & Service
-  { name: 'HubSpot Marketing',     url: 'https://blog.hubspot.de/marketing/rss.xml',                              category: 'Marketing, Vertrieb & Service' },
-  { name: 'HubSpot Sales',         url: 'https://blog.hubspot.de/sales/rss.xml',                                  category: 'Marketing, Vertrieb & Service' },
-  { name: 'HubSpot Service',       url: 'https://blog.hubspot.de/service/rss.xml',                                category: 'Marketing, Vertrieb & Service' },
-  { name: 'OMR',                   url: 'https://omr.com/de/daily/feed/',                                         category: 'Marketing, Vertrieb & Service' },
-  { name: 'OnlineMarketing.de',    url: 'https://onlinemarketing.de/feed/',                                       category: 'Marketing, Vertrieb & Service' },
-  { name: 'W&V',                   url: 'https://www.wuv.de/rss/alle-news.xml',                                   category: 'Marketing, Vertrieb & Service' },
-  { name: 'Absatzwirtschaft',      url: 'https://www.absatzwirtschaft.de/feed/',                                  category: 'Marketing, Vertrieb & Service' },
-  { name: 'meedia',                url: 'https://meedia.de/feed/',                                                category: 'Marketing, Vertrieb & Service' },
-  { name: 'Horizont',              url: 'https://www.horizont.net/rss/',                                          category: 'Marketing, Vertrieb & Service' },
-  { name: 'LEAD Digital',          url: 'https://www.lead-digital.de/feed/',                                      category: 'Marketing, Vertrieb & Service' },
-  { name: 'eCommerce Magazin',     url: 'https://www.ecommerce-magazin.de/feed/',                                 category: 'Marketing, Vertrieb & Service' },
-  { name: 'acquisa',               url: 'https://www.acquisa.de/feed',                                            category: 'Marketing, Vertrieb & Service' },
-  { name: 'Internetworld',         url: 'https://www.internetworld.de/rss/feed.html',                             category: 'Marketing, Vertrieb & Service' },
-  { name: 'BVDW',                  url: 'https://www.bvdw.org/news/rss/',                                         category: 'Marketing, Vertrieb & Service' },
-  { name: 'Allfacebook.de',        url: 'https://allfacebook.de/feed',                                           category: 'Marketing, Vertrieb & Service' },
-  { name: 't3n Marketing',         url: 'https://t3n.de/tag/marketing/rss.xml',                                   category: 'Marketing, Vertrieb & Service' },
-  { name: 'OnlineMarketing Praxis',url: 'https://www.onlinemarketing-praxis.de/feed/',                            category: 'Marketing, Vertrieb & Service' },
+  { name: 'HubSpot Marketing',     url: 'https://blog.hubspot.de/marketing/rss.xml', category: 'Marketing, Vertrieb & Service' },
+  { name: 'HubSpot Sales',         url: 'https://blog.hubspot.de/sales/rss.xml', category: 'Marketing, Vertrieb & Service' },
+  { name: 'HubSpot Service',       url: 'https://blog.hubspot.de/service/rss.xml', category: 'Marketing, Vertrieb & Service' },
+  { name: 'OMR',                   url: 'https://omr.com/de/daily/feed/', category: 'Marketing, Vertrieb & Service' },
+  { name: 'OnlineMarketing.de',    url: 'https://onlinemarketing.de/feed/', category: 'Marketing, Vertrieb & Service' },
+  { name: 'W&V',                   url: 'https://www.wuv.de/rss/alle-news.xml', category: 'Marketing, Vertrieb & Service' },
+  { name: 'Absatzwirtschaft',      url: 'https://www.absatzwirtschaft.de/feed/', category: 'Marketing, Vertrieb & Service' },
+  { name: 'meedia',                url: 'https://meedia.de/feed/', category: 'Marketing, Vertrieb & Service' },
+  { name: 'Horizont',              url: 'https://www.horizont.net/rss/', category: 'Marketing, Vertrieb & Service' },
+  { name: 'LEAD Digital',          url: 'https://www.lead-digital.de/feed/', category: 'Marketing, Vertrieb & Service' },
+  { name: 'eCommerce Magazin',     url: 'https://www.ecommerce-magazin.de/feed/', category: 'Marketing, Vertrieb & Service' },
+  { name: 'acquisa',               url: 'https://www.acquisa.de/feed', category: 'Marketing, Vertrieb & Service' },
+  { name: 'Internetworld',         url: 'https://www.internetworld.de/rss/feed.html', category: 'Marketing, Vertrieb & Service' },
+  { name: 'BVDW',                  url: 'https://www.bvdw.org/news/rss/', category: 'Marketing, Vertrieb & Service' },
+  { name: 'Allfacebook.de',        url: 'https://allfacebook.de/feed', category: 'Marketing, Vertrieb & Service' },
+  { name: 't3n Marketing',         url: 'https://t3n.de/tag/marketing/rss.xml', category: 'Marketing, Vertrieb & Service' },
+  { name: 'OnlineMarketing Praxis',url: 'https://www.onlinemarketing-praxis.de/feed/', category: 'Marketing, Vertrieb & Service' },
 
   // HR & Future of Work
-  { name: 'Personalwirtschaft',    url: 'https://www.personalwirtschaft.de/feed/',                                category: 'HR & Future of Work' },
-  { name: 'HR Journal',            url: 'https://www.hr-journal.de/rss.xml',                                     category: 'HR & Future of Work' },
-  { name: 'Haufe Personal',        url: 'https://www.haufe.de/personal/rss/alle-news.xml',                       category: 'HR & Future of Work' },
-  { name: 't3n Future of Work',    url: 'https://t3n.de/tag/future-of-work/rss.xml',                             category: 'HR & Future of Work' },
-  { name: 'HR Pepper',             url: 'https://hr-pepper.de/feed/',                                            category: 'HR & Future of Work' },
-  { name: 'Haufe Karriere',        url: 'https://www.haufe.de/karriere/rss/alle-news.xml',                       category: 'HR & Future of Work' },
+  { name: 'Personalwirtschaft',    url: 'https://www.personalwirtschaft.de/feed/', category: 'HR & Future of Work' },
+  { name: 'HR Journal',            url: 'https://www.hr-journal.de/rss.xml', category: 'HR & Future of Work' },
+  { name: 'Haufe Personal',        url: 'https://www.haufe.de/personal/rss/alle-news.xml', category: 'HR & Future of Work' },
+  { name: 't3n Future of Work',    url: 'https://t3n.de/tag/future-of-work/rss.xml', category: 'HR & Future of Work' },
+  { name: 'HR Pepper',             url: 'https://hr-pepper.de/feed/', category: 'HR & Future of Work' },
+  { name: 'Haufe Karriere',        url: 'https://www.haufe.de/karriere/rss/alle-news.xml', category: 'HR & Future of Work' },
 
   // Recht & KI
-  { name: 'Legal Tribune Online',  url: 'https://www.lto.de/rss/',                                              category: 'Recht & KI' },
-  { name: 'Heise Recht',           url: 'https://www.heise.de/thema/Recht/rss',                                 category: 'Recht & KI' },
-  { name: 'Datenschutz-Guru',      url: 'https://www.datenschutz-guru.de/feed/',                                 category: 'Recht & KI' },
-  { name: 'Haufe Recht',           url: 'https://www.haufe.de/recht/rss/alle-news.xml',                         category: 'Recht & KI' },
-  { name: 'CR-online',             url: 'https://www.cr-online.de/feed/',                                       category: 'Recht & KI' },
+  { name: 'Legal Tribune Online',  url: 'https://www.lto.de/rss/', category: 'Recht & KI' },
+  { name: 'Heise Recht',           url: 'https://www.heise.de/thema/Recht/rss', category: 'Recht & KI' },
+  { name: 'Datenschutz-Guru',      url: 'https://www.datenschutz-guru.de/feed/', category: 'Recht & KI' },
+  { name: 'Haufe Recht',           url: 'https://www.haufe.de/recht/rss/alle-news.xml', category: 'Recht & KI' },
+  { name: 'CR-online',             url: 'https://www.cr-online.de/feed/', category: 'Recht & KI' },
 ];
 
 // ── KI-Relevanz-Filter ──
 function isRelevant(art) {
-  const title   = art.title.toLowerCase();
+  const title = art.title.toLowerCase();
   const excerpt = art.excerpt.toLowerCase();
   const KI_KEYWORDS = [
     'künstliche intelligenz','maschinelles lernen','sprachmodell','chatbot','automatisierung',
@@ -145,10 +154,10 @@ function parseRSS(xml, source) {
   while ((match = re.exec(xml)) && items.length < 5) {
     const c = match[2];
     const title = stripHtml(extract(c, 'title'));
-    const link  = extractLink(c);
-    const desc  = extract(c, 'description') || extract(c, 'summary') || extract(c, 'content');
-    const date  = extract(c, 'pubDate') || extract(c, 'published') || extract(c, 'updated');
-    const imgM  = c.match(/<img[^>]+src=["']([^"'> ]+)["']/i);
+    const link = extractLink(c);
+    const desc = extract(c, 'description') || extract(c, 'summary') || extract(c, 'content');
+    const date = extract(c, 'pubDate') || extract(c, 'published') || extract(c, 'updated');
+    const imgM = c.match(/<img[^>]+src=["']([^"'> ]+)["']/i);
     const encEl = c.match(/<enclosure[^>]+url=["']([^"']+)["'][^>]+type=["']image/i);
     const mediaEl = c.match(/<media:thumbnail[^>]+url=["']([^"']+)["']/i) ||
                     c.match(/<media:content[^>]+url=["']([^"']+)["'][^>]+type=["']image/i);
@@ -189,15 +198,29 @@ async function fetchFeed(url) {
 }
 
 // ── Gemini Bewertung ──
+// Gibt { scored, okBatches, failedBatches } zurück.
+// scored: Artikel mit numerischem score (0-10) oder score=null wenn
+// der Batch nicht bewertet werden konnte.
 async function scoreWithGemini(articles) {
   const apiKey = process.env.GEMINI_API_KEY;
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
+
+  // Kein Key -> als kompletter Fehlschlag behandeln (nichts wird bewertet)
+  if (!apiKey) {
+    console.error('⚠️ GEMINI_API_KEY fehlt — Bewertung nicht möglich.');
+    return { scored: articles.map(a => ({ ...a, score: null })), okBatches: 0, failedBatches: 1 };
+  }
+
+  const model = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
 
   const BATCH = 25;
-  const result = [];
+  const scored = [];
+  let okBatches = 0;
+  let failedBatches = 0;
 
   for (let i = 0; i < articles.length; i += BATCH) {
     const batch = articles.slice(i, i + BATCH);
+    const batchNr = Math.floor(i / BATCH) + 1;
 
     const liste = batch.map((a, idx) =>
       `${idx + 1}. [${a.category}] "${a.title}"\n   ${a.excerpt.slice(0, 150)}`
@@ -232,23 +255,47 @@ Antworte NUR mit den Zahlen (0-10), eine pro Zeile, in der gleichen Reihenfolge.
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           contents: [{ parts: [{ text: prompt }] }],
-          generationConfig: { temperature: 0.1, maxOutputTokens: 300 },
+          generationConfig: { temperature: 0.1, maxOutputTokens: 2048 },
         }),
       });
+
+      // Echter HTTP-Fehler (z. B. abgelaufener Key, deprecated Modell): loggen, Batch als Fehler markieren
+      if (!res.ok) {
+        const errText = await res.text().catch(() => '');
+        console.error(`  ⚠️ Gemini HTTP ${res.status} (Batch ${batchNr}): ${errText.slice(0, 300)}`);
+        batch.forEach(a => scored.push({ ...a, score: null }));
+        failedBatches++;
+        if (i + BATCH < articles.length) await new Promise(r => setTimeout(r, 1500));
+        continue;
+      }
+
       const data = await res.json();
       const text = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
-      const scores = text.trim().split('\n').map(s => parseInt(s.trim()) || 0);
-      batch.forEach((a, idx) => result.push({ ...a, score: scores[idx] ?? 0 }));
-      console.log(`  Batch ${Math.floor(i / BATCH) + 1} bewertet (${batch.length} Artikel)`);
+      const scores = text.trim().split('\n')
+        .map(s => parseInt(s.trim(), 10))
+        .filter(n => !Number.isNaN(n));
+
+      if (scores.length === 0) {
+        // Antwort ohne verwertbare Zahlen (z. B. leerer Text bei Token-Limit)
+        const finish = data.candidates?.[0]?.finishReason || 'unbekannt';
+        console.error(`  ⚠️ Gemini ohne Bewertungen (Batch ${batchNr}, finishReason=${finish})`);
+        batch.forEach(a => scored.push({ ...a, score: null }));
+        failedBatches++;
+      } else {
+        batch.forEach((a, idx) => scored.push({ ...a, score: scores[idx] ?? 0 }));
+        okBatches++;
+        console.log(`  Batch ${batchNr} bewertet (${batch.length} Artikel)`);
+      }
     } catch (e) {
-      console.error(`  Batch Fehler: ${e.message}`);
-      batch.forEach(a => result.push({ ...a, score: 5 }));
+      console.error(`  Batch Fehler (${batchNr}): ${e.message}`);
+      batch.forEach(a => scored.push({ ...a, score: null }));
+      failedBatches++;
     }
 
     if (i + BATCH < articles.length) await new Promise(r => setTimeout(r, 1500));
   }
 
-  return result;
+  return { scored, okBatches, failedBatches };
 }
 
 // ── Hauptprogramm ──
@@ -279,7 +326,7 @@ async function main() {
   console.log(`📰 Insgesamt ${allArticles.length} Artikel gesammelt, davon ${deutscheArtikel.length} auf Deutsch`);
   console.log('\n🤖 Gemini bewertet die Artikel...\n');
 
-  const scored = await scoreWithGemini(deutscheArtikel);
+  const { scored, okBatches, failedBatches } = await scoreWithGemini(deutscheArtikel);
 
   // Duplikate entfernen (gleicher Link oder sehr ähnlicher Titel)
   const seenLinks = new Set();
@@ -293,12 +340,43 @@ async function main() {
     return true;
   });
 
-  // Top-Artikel nach Score filtern
+  // Nur echt bewertete Artikel (score ist eine Zahl) über der Schwelle
   const top = deduped
-    .filter(a => a.score >= 5)
+    .filter(a => typeof a.score === 'number' && a.score >= 5)
     .sort((a, b) => b.score - a.score || new Date(b.date) - new Date(a.date));
 
-  // Mindestens 5 pro Kategorie sicherstellen
+  // ══════════════════════════════════════════════════════════════
+  // 🛟 Kernregel: Wenn die KI-Bewertung fehlgeschlagen ist oder keine
+  // Artikel übrig bleiben, wird die VORHANDENE (letzte gute, gefilterte)
+  // articles.json BEHALTEN. Sie wird niemals geleert und niemals durch
+  // ungefilterte News ersetzt.
+  // ══════════════════════════════════════════════════════════════
+  const bewertungFehlgeschlagen = okBatches === 0; // kein einziger Batch erfolgreich
+
+  if (bewertungFehlgeschlagen || top.length === 0) {
+    console.warn(`\n⚠️ KI-Bewertung nicht verwertbar (ok=${okBatches}, fehler=${failedBatches}, brauchbare Artikel=${top.length}).`);
+
+    let previous = null;
+    try {
+      if (existsSync('articles.json')) {
+        previous = JSON.parse(readFileSync('articles.json', 'utf8'));
+      }
+    } catch (e) {
+      console.error(`  Konnte vorhandene articles.json nicht lesen: ${e.message}`);
+      previous = null;
+    }
+
+    if (previous && Array.isArray(previous.articles) && previous.articles.length > 0) {
+      console.warn(`↩️  Behalte die letzte gute Version (${previous.articles.length} Artikel, Stand ${previous.updated}).`);
+      console.log('⏭️  articles.json wird NICHT überschrieben.\n');
+      return; // nichts schreiben -> Git-Commit-Schritt überspringt automatisch
+    }
+
+    console.error('❌ Keine vorherige gute articles.json vorhanden — Datei bleibt unverändert, um sie nicht zu leeren.\n');
+    return;
+  }
+
+  // ── Normalfall: KI-Bewertung ok -> kuratierte Liste schreiben ──
   const categories = ['KI & Tech', 'Finance & Banking', 'Marketing, Vertrieb & Service', 'HR & Future of Work', 'Recht & KI'];
   const selected = [];
   const used = new Set();
