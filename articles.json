@@ -1,156 +1,46 @@
 {
-  "updated": "2026-10-05T11:57:54.460Z",
-  "total_fetched": 112,
+  "updated": "2026-10-12T12:36:47.711Z",
+  "total_fetched": 107,
   "articles": [
     {
-      "title": "Betroffene in ganz Europa: Mindestens 147 Abgeordnete wurden Ziel sexualisierter Deepfakes",
-      "link": "https://netzpolitik.org/2026/betroffene-in-ganz-europa-mindestens-147-abgeordnete-wurden-ziel-sexualisierter-deepfakes/",
-      "image": "https://cdn.netzpolitik.org/wp-upload/2026/10/Egor-Komarov-Unsplash-1.jpg",
-      "excerpt": "Ein Gesicht reicht: Mit KI lassen sich Fotos für sexualisierte Deepfakes missbrauchen (Symbolbild) – Gemeinfrei-ähnlich freigegeben durch unsplash.com: Egor KomarovEine neue Studie zeigt, wie Politiker:innen in Europa von sexualisierten Deepfakes bet",
-      "date": "2026-10-03T04:28:56.000Z",
-      "source": "netzpolitik.org",
-      "category": "KI & Tech",
-      "score": 10
-    },
-    {
-      "title": "Microsoft Build 2025: Das Zeitalter der KI-Agenten und der Aufbau des Open Agentic Web",
-      "link": "https://news.microsoft.com/de-de/build2025/",
-      "image": "",
-      "excerpt": "Die wichtigsten Neuigkeiten im Überblick: Microsoft Build 2025 läutet das Zeitalter der KI-Agenten ein: Durch große Fortschritte bei Reasoning und Memory sind KI-Modelle jetzt noch leistungsfähiger, um die Arbeit in Wirtschaft, Forschung und Alltag v",
-      "date": "2025-05-19T16:00:02.000Z",
-      "source": "Microsoft DE",
-      "category": "KI & Tech",
-      "score": 10
-    },
-    {
-      "title": "(g+) Open-Source-KI-Agent im Selbstversuch: Schickt mich Hermes als ITler in Frührente?",
-      "link": "https://www.golem.de/news/open-source-ki-agent-im-selbstversuch-schickt-mich-hermes-als-itler-in-fruehrente-2610-213702.html",
-      "image": "",
-      "excerpt": "Hermes verspricht einen lernfähigen KI-Agenten. Wir richten ihn lokal ein und testen, was bei Modellen, Tools und Hardware wirklich zählt. Ein Erfahrungsbericht von Thorsten Müller ( a href= https://www.golem.de/specials/ki/ KI /a , a href= https://w",
-      "date": "2026-10-05T11:30:04.000Z",
-      "source": "Golem.de",
-      "category": "KI & Tech",
-      "score": 9
-    },
-    {
-      "title": "ChatGPT-App für macOS: Angreifer konnten sensible Daten einsehen – wie bei Muse",
-      "link": "https://www.heise.de/news/Nach-Muse-Auch-ChatGPT-App-fuer-macOS-war-angreifbar-11475385.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/7/6/3/3/0/chatgptmacos-7786bb6e363ca3fe.png?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "Nach Meta hatte auch OpenAI ein Sicherheitsproblem in seiner macOS-App. Erneut wurde es vom Security-Experten Patrick Wardle entdeckt.",
-      "date": "2026-10-05T09:08:00.000Z",
-      "source": "Heise Online",
-      "category": "KI & Tech",
-      "score": 9
-    },
-    {
-      "title": "Vorwahlen USA in Georgia: KI legt offenbar offen, wie Bürger abgestimmt haben",
-      "link": "https://www.spiegel.de/netzwelt/netzpolitik/vorwahlen-usa-in-georgia-ki-legt-offenbar-offen-wie-buerger-bei-vorwahlen-abgestimmt-haben-a-88fa202f-2c19-426e-a3f0-d42c1df8a759#ref=rss",
-      "image": "",
-      "excerpt": "Ein Forscher behauptet, er könne mithilfe von künstlicher Intelligenz nachvollziehen, wie einzelne Wähler in Georgia bei den jüngsten Vorwahlen abgestimmt haben. Der Wahlausschuss traf sich deswegen nun zu einer Dringlichkeitssitzung.",
-      "date": "2026-10-04T11:32:00.000Z",
-      "source": "Spiegel Netzwelt",
-      "category": "KI & Tech",
-      "score": 9
-    },
-    {
-      "title": "Sechs KI-Trends, von denen wir 2025 noch mehr sehen werden",
-      "link": "https://news.microsoft.com/de-de/sechs-ki-trends-von-denen-wir-2025-noch-mehr-sehen-werden/",
-      "image": "",
-      "excerpt": "Künstliche Intelligenz (KI) hat sich längst als unverzichtbares Werkzeug in Beruf und Alltag etabliert. Im Jahr 2025 wird sie jedoch weit mehr sein: KI wird neue Möglichkeiten eröffnen, komplexe Herausforderungen lösen und den Fortschritt in Wissensc",
-      "date": "2024-12-06T10:58:52.000Z",
-      "source": "Microsoft DE",
-      "category": "KI & Tech",
-      "score": 9
-    },
-    {
-      "title": "DORA, KI Zero Trust: Banken-IT unter Dauerfeuer",
-      "link": "https://www.it-finanzmagazin.de/dora-ki-zero-trust-banken-it-unter-dauerfeuer-251383/",
-      "image": "",
-      "excerpt": "Banken stehen unter großem Druck, Innovationen schneller voranzutreiben, weil die Kundenerwartungen steigen und die Konkurrenz durch neue Player im Markt wächst. Das darf aber nicht dazu führen, das Thema Cybersecurity hintenanzustellen. von Christia",
-      "date": "2026-10-05T09:15:58.000Z",
-      "source": "IT Finanzmagazin",
-      "category": "Finance & Banking",
-      "score": 9
-    },
-    {
-      "title": "Versicherungssoftware bereitet sich auf autonome KI-Agenten vor",
-      "link": "https://www.versicherungsbote.de/id/4952177/Versicherungssoftware-bereitet-sich-auf-autonome-KI-Agenten-vor/",
-      "image": "https://www.versicherungsbote.de/content.4952177.images.vdhsn.ChatGPT-Bild-30-Sept-2026-15_00_36.578x264.jpeg",
-      "excerpt": "Künstliche Intelligenz ist in der Versicherungssoftware im Produktivbetrieb inzwischen fest verankert. Bei fast drei Viertel der untersuchten Anbieter ist Generative KI bereits im Einsatz. Nun rücken autonome KI-Agenten in den Mittelpunkt. weiterlese",
-      "date": "2026-10-05T04:11:00.000Z",
+      "title": "Künstliche Intelligenz in Versicherungen: So gelingt die unternehmensweite Einführung",
+      "link": "https://www.versicherungsbote.de/id/4952352/Kuenstliche-Intelligenz-in-Versicherungen-So-gelingt-die-unternehmensweite-Einfuehrung/",
+      "image": "https://www.versicherungsbote.de/content.4952352.images.gbeyo.PPIAG_DirkWeske_2020-6343_2400px.578x264.jpg",
+      "excerpt": "Viele Versicherer haben KI längst pilotiert. Die größere Herausforderung beginnt jedoch beim unternehmensweiten Einsatz. Unterschiedliche Wissensstände, Begriffe und Kompetenzen können verhindern, dass aus einzelnen Anwendungen eine gemeinsame KI-Str",
+      "date": "2026-10-12T04:05:00.000Z",
       "source": "Versicherungsbote",
       "category": "Finance & Banking",
-      "score": 9
+      "score": 10
     },
     {
-      "title": "Der KI-Use-Case der NRW.BANK im Risikocontrolling - KI als Baustein für mehr Förderwirkung",
-      "link": "https://www.der-bank-blog.de/der-ki-use-case/technologie/37735755/?utm_source=bankblog&#038;utm_medium=rss&#038;utm_campaign=rss",
-      "image": "https://www.der-bank-blog.de/wp-content/uploads/2026/08/ki-use-case-risikocontrolling-336x200.jpg",
-      "excerpt": "KI entfaltet ihren Wert erst, wenn aus Potenzial eine sichere Anwendung wird. Die NRW.BANK zeigt, wie das im Risikocontrolling gelingt. Der Einsatz eines neuen KI-Modells baut dabei Kompetenzen auf und kann zugleich den Förderauftrag stärken.",
-      "date": "2026-10-04T22:25:00.000Z",
-      "source": "Der Bank Blog",
-      "category": "Finance & Banking",
-      "score": 9
+      "title": "Claude erstellt Live Dashboards und Videos, setzt Usern aber neue Grenzen",
+      "link": "https://onlinemarketing.de/technologie/anthropic-startet-claude-motion-und-claude-dashboards-in-beta",
+      "image": "https://onlinemarketing.de/wp-content/uploads/2026/09/Titelbild-fuer-Artikel-2026-09-29T091330.651.png",
+      "excerpt": "Ein Dashboard auf Zuruf oder ein animiertes Video statt der nächsten langweiligen Präsentation? Claude macht jetzt beides möglich. Anthropic startet dafür Dashboards und Motion und schaltet weitere Funktionen für Free User frei. Doch das Unternehmen ",
+      "date": "2026-10-09T10:01:53.000Z",
+      "source": "OnlineMarketing.de",
+      "category": "Marketing, Vertrieb & Service",
+      "score": 10
     },
     {
-      "title": "Börsengang: So wird Anthropic zwei Billionen wert",
-      "link": "https://www.faz.net/aktuell/finanzen/anthropic-boersengang-ist-eine-bewertung-von-2-bio-accg-201275707.html",
-      "image": "https://media0.faz.net/image/afb1f215f67b/w8256h4644x0y860/202609/43601.0.2566452682/das-anthropic-logo.webp",
-      "excerpt": "Die KI-Firma will beim Börsengang so viel wert sein wie kein Unternehmen zuvor. Angemessen ist das nur, wenn Anthropic bald die US-Wirtschaft dominiert.",
-      "date": "2026-10-03T17:55:18.000Z",
-      "source": "FAZ Finanzen",
-      "category": "Finance & Banking",
-      "score": 9
-    },
-    {
-      "title": "Wie KI den Service im Kundencenter der TARGOBANK verbessert - Mehr Effizienz, Mehrwert und Kundenzufriedenheit",
-      "link": "https://www.der-bank-blog.de/wie-ki-service-kundencenter/kundenservice/37735217/?utm_source=bankblog&#038;utm_medium=rss&#038;utm_campaign=rss",
-      "image": "https://www.der-bank-blog.de/wp-content/uploads/2026/08/ki-bankservice-336x200.jpg",
-      "excerpt": "Wie KI den Bankenservice verbessert: Die TARGOBANK setzt mit ihrem „AI Call Assist“ neue Maßstäbe im Kundencenter. Das Tool ermöglicht effizientere Gespräche, Mehrwerte in der Beratung und mehr Kundenzufriedenheit.",
-      "date": "2026-09-29T22:25:42.000Z",
-      "source": "Der Bank Blog",
-      "category": "Finance & Banking",
-      "score": 9
-    },
-    {
-      "title": "Mistral eröffnet Hub in München: Physik-KI für die Industrie, Souveränität als Botschaft an die Banken",
-      "link": "https://www.it-finanzmagazin.de/mistral-eroeffnet-hub-in-muenchen-physik-ki-fuer-die-industrie-souveraenitaet-als-botschaft-an-die-banken-251481/",
-      "image": "",
-      "excerpt": "Mistral AI hat gestern (Montag, 28.9.) seinen Deutschland-Hub in München eröffnet. Im Mittelpunkt stehen Physik-KI und Industriekunden wie BMW und Siemens Energy. Für die Finanzwirtschaft gab es keine Produktankündigung, dafür eine klare Positionieru",
-      "date": "2026-09-29T08:33:05.000Z",
-      "source": "IT Finanzmagazin",
-      "category": "Finance & Banking",
-      "score": 9
-    },
-    {
-      "title": "KI-Compliance beginnt in der Architektur, nicht im Regelwerk",
-      "link": "https://www.it-finanzmagazin.de/ki-compliance-beginnt-in-der-architektur-nicht-im-regelwerk-250085/",
-      "image": "",
-      "excerpt": "Wie kann eine Bank oder Versicherung Monate später technisch beweisen, warum konkrete KI-gestützte Rating- oder Underwriting-Entscheidungen so gefallen sind? Und wie kann garantiert werden, dass niemand Daten, Modell, Regeln oder Entscheidungspfad un",
-      "date": "2026-09-22T13:04:34.000Z",
-      "source": "IT Finanzmagazin",
-      "category": "Finance & Banking",
-      "score": 9
-    },
-    {
-      "title": "Underwriting: mgm technology partners entwickelt erste agentische Lösung",
-      "link": "https://www.it-finanzmagazin.de/underwriting-mgm-technology-partners-agentische-loesung-250654/",
-      "image": "",
-      "excerpt": "Das Münchener Software-Unternehmen mgm technology partners hat eigenen Angaben zufolge die erste agentische Underwriting-Lösung in Deutschland entwickelt. Die sogenannte „Cosmo Agentic Underwriting Workbench (AUWWB)” lasse Underwriter und autonome KI",
-      "date": "2026-09-14T11:48:32.000Z",
-      "source": "IT Finanzmagazin KI",
-      "category": "Finance & Banking",
-      "score": 9
+      "title": "Der neue Gemini Agent ist da: 24/7 für die Arbeit bereit",
+      "link": "https://onlinemarketing.de/technologie/neue-gemini-agent-24-7-arbeit",
+      "image": "https://onlinemarketing.de/wp-content/uploads/2026/09/Titelbild-fuer-Artikel-2026-09-30T085421.981.png",
+      "excerpt": "Mit dem Gemini Agent möchte Google eine universelle Lösung zur agentischen KI-Bearbeitung bieten, mobil, im Web, im Workspace, in Verbindung mit Apps und via API. Der Cloud Agent arbeitet umfassend für dich und wird zur Konkurrenz für Muse, dots und ",
+      "date": "2026-10-09T09:35:20.000Z",
+      "source": "OnlineMarketing.de",
+      "category": "Marketing, Vertrieb & Service",
+      "score": 10
     },
     {
       "title": "KI im Customer Success: Anwendung, Tools und Best Practices",
       "link": "https://blog.hubspot.de/service/ki-customer-success",
       "image": "",
-      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/service/ki-customer-success\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://www.hubspot.com/hubfs/Germany/Blog_images/ki-customer-success.webp\" alt=\"KI im Customer-Succes",
+      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/service/ki-customer-success\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://blog.hubspot.de/hubfs/Germany/Blog_images/ki-customer-success.webp\" alt=\"KI im Customer-Succes",
       "date": "2026-10-05T11:08:43.000Z",
       "source": "HubSpot Service",
       "category": "Marketing, Vertrieb & Service",
-      "score": 9
+      "score": 10
     },
     {
       "title": "KI-gestütztes Sales Forecasting: So bauen Sie präzise Umsatzprognosen auf",
@@ -160,166 +50,226 @@
       "date": "2026-10-01T07:11:17.000Z",
       "source": "HubSpot Sales",
       "category": "Marketing, Vertrieb & Service",
+      "score": 10
+    },
+    {
+      "title": "heise+ | AnythingLLM: Eigene Dokumente mit KI lokal auswerten",
+      "link": "https://www.heise.de/ratgeber/AnythingLLM-Eigene-Dokumente-mit-KI-lokal-auswerten-11431828.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag_plus.beitrag_plus",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/5/4/2/5/3/Minimalistischer_lokaler_KI-Arbeitsplatz-b7f74f78fc7b5fb4.png?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "AnythingLLM liest Dokumente ein und gibt mit einem KI-Chat Antworten dazu. Dabei bleiben Daten und LLM lokal und so vollständig unter Ihrer Kontrolle.",
+      "date": "2026-10-12T12:11:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 9
+    },
+    {
+      "title": "Künstliche Intelligenz: Microsoft-Chef Nadella fordert Notbremse für KI-Modelle",
+      "link": "https://www.spiegel.de/netzwelt/web/ki-sicherheitsdebatte-microsoft-chef-plaediert-fuer-notbremse-a-a84558c8-207f-40cc-a275-01c37651bdb7#ref=rss",
+      "image": "",
+      "excerpt": "Microsoft-Chef Nadella schaltet sich in die Debatte über KI-Sicherheit ein: Der Mensch müsse immer in der Lage sein, ein KI-Modell mitten in einer Aufgabe zu stoppen.",
+      "date": "2026-10-11T12:03:00.000Z",
+      "source": "Spiegel Netzwelt",
+      "category": "KI & Tech",
+      "score": 9
+    },
+    {
+      "title": "Microsoft Build 2025: Das Zeitalter der KI-Agenten und der Aufbau des Open Agentic Web",
+      "link": "https://news.microsoft.com/de-de/build2025/",
+      "image": "",
+      "excerpt": "Die wichtigsten Neuigkeiten im Überblick: Microsoft Build 2025 läutet das Zeitalter der KI-Agenten ein: Durch große Fortschritte bei Reasoning und Memory sind KI-Modelle jetzt noch leistungsfähiger, um die Arbeit in Wirtschaft, Forschung und Alltag v",
+      "date": "2025-05-19T16:00:02.000Z",
+      "source": "Microsoft DE",
+      "category": "KI & Tech",
+      "score": 9
+    },
+    {
+      "title": "ChatGPT und Co als Vertriebskanal",
+      "link": "https://www.versicherungsbote.de/id/4951842/ChatGPT-und-Co-als-Vertriebskanal/",
+      "image": "https://www.versicherungsbote.de/content.4951842.images.apbrg.Bild-fuer-LLM-Optimierung.578x264.png",
+      "excerpt": "Wer bei ChatGPT Co. sichtbar sein will, sollte nicht nur die eigene Website optimieren. Social-Media-Inhalte, Kunden-Cases, externe Erwähnungen und belastbare Zahlen prägen zunehmend die digitale Spur, anhand derer KI-Systeme Unternehmen und Marken e",
+      "date": "2026-10-12T04:12:00.000Z",
+      "source": "Versicherungsbote",
+      "category": "Finance & Banking",
+      "score": 9
+    },
+    {
+      "title": "Künstliche Intelligenz im KYC-Prozess der DZ BANK - Wenn KI Beteiligungen sichtbar macht - Ein Praxisbeispiel",
+      "link": "https://www.der-bank-blog.de/kuenstliche-intelligenz-kyc-prozess/regulierung-aufsicht/37735204/?utm_source=bankblog&#038;utm_medium=rss&#038;utm_campaign=rss",
+      "image": "https://www.der-bank-blog.de/wp-content/uploads/2026/08/ki-kyc-336x200.jpg",
+      "excerpt": "Beteiligungsstrukturen im KYC-Prozess manuell aufzubereiten kostet viel Zeit. Ein Praxisbeispiel der DZ BANK zeigt, wie Agentic KI Fachexperten entlastet und Bearbeitungszeiten verkürzt. Entscheidend bleibt das Zusammenspiel von Mensch und Maschine.",
+      "date": "2026-10-11T22:25:15.000Z",
+      "source": "Der Bank Blog",
+      "category": "Finance & Banking",
+      "score": 9
+    },
+    {
+      "title": "NTT Data eröffnet AI Factory München – ein Testfeld mit Mistral an Bord, aber ohne freie Megawatt",
+      "link": "https://www.it-finanzmagazin.de/ntt-data-eroeffnet-ai-factory-muenchen-ein-testfeld-mit-mistral-an-bord-aber-ohne-freie-megawatt-251914/",
+      "image": "",
+      "excerpt": "NTT Data hat gestern (Mittwoch, 7.10.) in Unterschleißheim bei München seine AI Factory Munich eröffnet, in der Unternehmen eigene KI-Anwendungsfälle auf produktionsnaher Infrastruktur testen können, bevor sie investieren. Technologiepartner sind Del",
+      "date": "2026-10-08T09:10:53.000Z",
+      "source": "IT Finanzmagazin",
+      "category": "Finance & Banking",
       "score": 9
     },
     {
       "title": "KI-gestützte Tools für das E-Mail-Marketing: unsere Favoriten",
       "link": "https://blog.hubspot.de/marketing/ai-email-marketing-tools",
       "image": "",
-      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/marketing/ai-email-marketing-tools\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://53.fs1.hubspotusercontent-na1.net/hubfs/53/Germany/Blog_images/ki-e-mail-marketing-tool",
+      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/marketing/ai-email-marketing-tools\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://blog.hubspot.de/hubfs/Germany/Blog_images/ki-e-mail-marketing-tools.png\" alt=\"Die beste",
       "date": "2026-09-14T08:40:13.000Z",
       "source": "HubSpot Marketing",
       "category": "Marketing, Vertrieb & Service",
       "score": 9
     },
     {
-      "title": "KI-Preismodelle im Vergleich: So bewerten Sie verschiedener Anbieter",
-      "link": "https://blog.hubspot.de/service/vergleich-ki-preismodell",
-      "image": "",
-      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/service/vergleich-ki-preismodell\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://www.hubspot.com/hubfs/Germany/Blog_images/Guthaben-basierte%20Abrechnung/vergleich-ki-pre",
-      "date": "2026-07-30T09:18:48.000Z",
-      "source": "HubSpot Service",
-      "category": "Marketing, Vertrieb & Service",
-      "score": 9
-    },
-    {
-      "title": "5 Fragen, die man KI-Anbietern vor dem Kauf guthabenbasierter Tools stellen sollte",
-      "link": "https://blog.hubspot.de/service/fragen-an-ki-anbieter",
-      "image": "",
-      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/service/fragen-an-ki-anbieter\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://www.hubspot.com/hubfs/Germany/Blog_images/fragen-guthabenbasierten-tools.png\" alt=\"Fragen zu",
-      "date": "2026-06-22T08:43:54.000Z",
-      "source": "HubSpot Service",
-      "category": "Marketing, Vertrieb & Service",
-      "score": 9
-    },
-    {
-      "title": "IBM Bob: COBOL trifft KI – ohne Umweg über die Cloud",
-      "link": "https://www.heise.de/news/IBM-Bob-COBOL-trifft-KI-ohne-Umweg-ueber-die-Cloud-11475819.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/7/6/5/5/0/shutterstock_1874458645-bd8efdbb0abd50e2.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "IBM bietet Bob nun als selbstgehostete Option an. So können Unternehmen KI-gestützte Softwareentwicklung in ihrer eigenen Infrastruktur nutzen.",
-      "date": "2026-10-05T09:32:00.000Z",
-      "source": "Heise Online",
-      "category": "KI & Tech",
-      "score": 8
-    },
-    {
-      "title": "BMW streicht Managementebenen und setzt auf agentische KI-Systeme",
-      "link": "https://www.heise.de/news/BMW-will-20-Prozent-seines-Managements-abbauen-11475761.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
-      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/7/6/5/2/1/Komponenten_BMW_Werk_Leipzig-6137113ac462eff0.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
-      "excerpt": "BMW will bis Mitte 2027 rund 20 Prozent seiner Bereiche und Managementfunktionen abbauen. KI-Agenten sollen schlankere Strukturen ermöglichen.",
-      "date": "2026-10-05T08:35:00.000Z",
-      "source": "Heise Online",
-      "category": "KI & Tech",
-      "score": 8
-    },
-    {
-      "title": "Googles AI Overviews für Marken: Auch Drittquellen für Markendarstellung integriert",
-      "link": "https://onlinemarketing.de/seo/googles-ai-overviews-fuer-marken-drittquellen",
-      "image": "https://onlinemarketing.de/wp-content/uploads/2025/08/Titelbild-fuer-Artikel-5-1.png",
-      "excerpt": "In den AI Overviews zeigt Google zu diversen Marken dedizierte Antworten an, deren Grundlage aber nicht allein Quellen der Marken selbst sind. Daraus entsteht Sichtbarkeit für Brands, aber auch Creator und Publisher. Das kann für eine Marke jedoch au",
-      "date": "2026-10-05T08:18:23.000Z",
-      "source": "OnlineMarketing.de",
-      "category": "Marketing, Vertrieb & Service",
-      "score": 8
-    },
-    {
       "title": "So erstellen Sie eine KI-Wissensdatenbank, die wirklich funktioniert",
       "link": "https://blog.hubspot.de/service/ki-wissensdatenbank",
       "image": "",
-      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/service/ki-wissensdatenbank\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://www.hubspot.com/hubfs/ai-knowledge-base-1-20241115-4080442.webp\" alt=\"woman looks up informati",
+      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/service/ki-wissensdatenbank\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://blog.hubspot.de/hubfs/ai-knowledge-base-1-20241115-4080442.webp\" alt=\"woman looks up informati",
       "date": "2026-08-25T10:33:55.000Z",
       "source": "HubSpot Service",
       "category": "Marketing, Vertrieb & Service",
-      "score": 8
+      "score": 9
     },
     {
-      "title": "KI-Wettlauf: Weltuntergang als Marketing: Warum Horrorwarnungen den KI-Riesen helfen",
-      "link": "https://www.capital.de/wirtschaft-politik/ki-horrorwarnungen-sind-die-ideale-werbung-fuer-techriesen-38350510.html?utm_medium=standard&amp;utm_source=rss",
-      "image": "https://image.capital.de/38350574/t/Lw/v4/w1440/r1.7778/-/ki-entwickler.jpg",
-      "excerpt": "Die Menschheit in Gefahr, der Börsengang in Sicht: Die Horrorwarnungen vor der KI können den Wert der Anbieter steigern. Denn sie vermitteln eine Botschaft: Unsere KI-Modelle verändern alles!",
-      "date": "2026-10-05T10:44:00.000Z",
-      "source": "Capital.de",
-      "category": "Finance & Banking",
-      "score": 8
+      "title": "Personal steuern wie Finanzen und Vertrieb",
+      "link": "https://www.personalwirtschaft.de/news/sponsored/personal-steuern-wie-finanzen-und-vertrieb-209927/",
+      "image": "https://www.personalwirtschaft.de/wp-content/uploads/2026/10/UKG-BenediktLell_1200x628.jpg",
+      "excerpt": "Für Finanzen und Vertrieb gibt es überall ein System, für den Personaleinsatz nicht. Wie eine Plattform und KI diese Lücke schließen, gerade an der Frontline.",
+      "date": "2026-10-12T07:38:00.000Z",
+      "source": "Personalwirtschaft",
+      "category": "HR & Future of Work",
+      "score": 9
     },
     {
-      "title": "Ich habe die neue „Try-it-on“-Shopping-Funktion von ChatGPT ausprobiert",
-      "link": "https://www.businessinsider.de/leben/chatgpt-ich-habe-die-neue-try-it-on-funktion-ausprobiert/",
-      "image": "https://cdn.businessinsider.de/wp-content/uploads/2026/10/6abf03c6d15f8a572974d541-800x400.jpg?ver=1791104431",
-      "excerpt": "Ich habe die virtuelle Anprobe-Funktion von ChatGPT mit Schmuck, Outfits und meiner Katze getestet. So hat es funktioniert.",
-      "date": "2026-10-05T06:58:14.000Z",
-      "source": "Gründerszene",
+      "title": "heise-Angebot: iX-Workshop: Claude Code in der Praxis – effizienter entwickeln mit KI-Agenten",
+      "link": "https://www.heise.de/news/iX-Workshop-Claude-Code-in-der-Praxis-effizienter-entwickeln-mit-KI-Agenten-11467949.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/7/2/5/6/3/Hands-on-Claude-Code_ticker_1920x1080-4a76c38b001ca18e.png?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Erfahren Sie, wie Sie Ihre Entwicklungsaufgaben mit Claude Code autonom bearbeiten lassen und Ihre Workflows mit KI-Agenten spürbar beschleunigen können.",
+      "date": "2026-10-12T12:00:00.000Z",
+      "source": "Heise Online",
       "category": "KI & Tech",
       "score": 8
     },
     {
-      "title": "Muse von Meta: Wir haben Mark Zuckerbergs »persönlichen KI-Agenten« getestet",
-      "link": "https://www.spiegel.de/netzwelt/apps/muse-von-meta-wir-haben-mark-zuckerbergs-persoenlichen-ki-agenten-getestet-a-78539158-792b-49ae-973e-d5efdca7dda0#ref=rss",
+      "title": "Anthropic: Fake-Hinweis von KI-Agent an Polizei in Philadelphia",
+      "link": "https://www.spiegel.de/netzwelt/anthropic-fake-hinweis-von-ki-agent-an-polizei-in-philadelphia-a-5524c5c9-8b21-43c4-a0db-5e8310b854c9#ref=rss",
       "image": "",
-      "excerpt": "Metas neuer KI-Dienst Muse kann einem angeblich vieles abnehmen: Antworten auf E-Mails, Reservierungen in Restaurants und Reisebuchungen etwa. Wir haben den gehypten Digitalhelfer getestet.",
-      "date": "2026-10-04T08:11:00.000Z",
+      "excerpt": "In den USA lässt die KI-Firma Anthropic ihre Software den Umgang mit Behörden üben. Wegen mehrerer Fehler soll der Agent vorerst offline bleiben.",
+      "date": "2026-10-10T07:58:00.000Z",
       "source": "Spiegel Netzwelt",
       "category": "KI & Tech",
       "score": 8
     },
     {
-      "title": "KI im Retail Banking: Der Weg zu messbarer Wirkung Infografik - Zwischen Effizienz und Kundennutzen",
-      "link": "https://www.der-bank-blog.de/ki-retail-banking-der/studien/37735881/?utm_source=bankblog&#038;utm_medium=rss&#038;utm_campaign=rss",
-      "image": "https://www.der-bank-blog.de/wp-content/uploads/2026/08/ki-im-retail-banking-336x200.jpg",
-      "excerpt": "Künstliche Intelligenz ist im Banking längst mehr als ein Pilotprojekt. Doch zwischen breitem Einsatz und nachhaltigem Geschäftswert liegt eine entscheidende Lücke. Für Institute stellt sich damit die Frage, wovon erfolgreiche KI-Nutzung tatsächlich ",
-      "date": "2026-09-30T22:15:56.000Z",
+      "title": "Sechs KI-Trends, von denen wir 2025 noch mehr sehen werden",
+      "link": "https://news.microsoft.com/de-de/sechs-ki-trends-von-denen-wir-2025-noch-mehr-sehen-werden/",
+      "image": "",
+      "excerpt": "Künstliche Intelligenz (KI) hat sich längst als unverzichtbares Werkzeug in Beruf und Alltag etabliert. Im Jahr 2025 wird sie jedoch weit mehr sein: KI wird neue Möglichkeiten eröffnen, komplexe Herausforderungen lösen und den Fortschritt in Wissensc",
+      "date": "2024-12-06T10:58:52.000Z",
+      "source": "Microsoft DE",
+      "category": "KI & Tech",
+      "score": 8
+    },
+    {
+      "title": "KI in der Softwareentwicklung: Vom Test zum Betrieb - Zwischen Produktivität, Governance und Kompetenzen",
+      "link": "https://www.der-bank-blog.de/ki-softwareentwicklung-vom-test/studien/37737745/?utm_source=bankblog&#038;utm_medium=rss&#038;utm_campaign=rss",
+      "image": "https://www.der-bank-blog.de/wp-content/uploads/2026/09/ki-betriebliche-softwareentwicklung-336x200.jpg",
+      "excerpt": "Künstliche Intelligenz verändert die Softwareentwicklung grundlegend. Doch zwischen erfolgreichen Tests und einem verlässlichen Einsatz im Unternehmen liegt ein weiter Weg. Für Entscheider beginnt damit eine anspruchsvolle Phase der Umsetzung.",
+      "date": "2026-10-08T22:10:38.000Z",
       "source": "Der Bank Blog",
       "category": "Finance & Banking",
       "score": 8
     },
     {
-      "title": "Die KI empfiehlt die maschinenlesbarste Bank, nicht zwingend die beste",
-      "link": "https://www.it-finanzmagazin.de/die-ki-empfiehlt-die-maschinenlesbarste-bank-nicht-zwingend-die-beste-251542/",
-      "image": "",
-      "excerpt": "Der hypt Report – Banking Austria 2026, in Zusammenarbeit mit der Hochschule HES-SO, analysiert neben den Google-Bewertungen der österreichischen Banken auch deren Präsenz in den Antworten verschiedener KI-Systeme. Vier Sprachmodelle wurden dafür mit",
-      "date": "2026-09-30T09:03:16.000Z",
-      "source": "IT Finanzmagazin",
+      "title": "Fünf Lektionen für Banken aus 30 Jahren KI-Projekten - KI-Projekte scheitern selten an der KI",
+      "link": "https://www.der-bank-blog.de/fuenf-lektionen-banken-jahren/technologie/37733623/?utm_source=bankblog&#038;utm_medium=rss&#038;utm_campaign=rss",
+      "image": "https://www.der-bank-blog.de/wp-content/uploads/2026/07/warum-ki-projekte-scheitern-336x200.jpg",
+      "excerpt": "Über 30 Jahre KI-Projekte: Von der Videothek 1994 bis zum Adverse Media Screening für Banken heute. Viele funktionierten anders als erwartet. Aber fast nie lag es nur an der Technologie. Was Finanzinstitute daraus für ihre eigenen KI-Vorhaben lernen ",
+      "date": "2026-10-07T22:25:34.000Z",
+      "source": "Der Bank Blog",
       "category": "Finance & Banking",
       "score": 8
     },
     {
-      "title": "„Größer als die Industrielle Revolution“ – Trump ruft Super Intelligence Force aus",
-      "link": "https://onlinemarketing.de/technologie/trump-ruft-super-intelligence-force-aus",
-      "image": "https://onlinemarketing.de/wp-content/uploads/2020/09/weisses-haus_rene-deanda-unsplash.jpg",
-      "excerpt": "Erst soll AI nur noch SI heißen, jetzt gibt es sogar eine SI Force in den USA, die die KI-Macht des Landes sichern soll. Die Regulierung spielt womöglich nur eine Nebenrolle.",
-      "date": "2026-10-05T09:43:32.000Z",
-      "source": "OnlineMarketing.de",
-      "category": "Marketing, Vertrieb & Service",
-      "score": 7
-    },
-    {
-      "title": "KI-Zar ohne KI-Expertise: Jay Clayton: Wer ist Trumps Mann für die „Superintelligenz“?",
-      "link": "https://www.capital.de/wirtschaft-politik/ki-zar-jay-clayton--wer-ist-trumps-mann-fuer-die--superintelligenz---38349750.html?utm_medium=standard&amp;utm_source=rss",
-      "image": "https://image.capital.de/38349806/t/GL/v2/w1440/r1.7778/-/imago0861744895h.jpg",
-      "excerpt": "Börsenaufseher, Bundesanwalt, Geheimdienstkoordinator – und nun „KI-Zar“: Jay Clayton übernimmt für US-Präsident Trump eine der Schlüsselpositionen im Kampf um die technologische Vorherrschaft",
-      "date": "2026-10-05T09:07:00.000Z",
-      "source": "Capital.de",
-      "category": "Finance & Banking",
-      "score": 7
-    },
-    {
-      "title": "Donald Trump: Geheimdienstdirektor Clayton wird Leiter der »Super Intelligence Force«",
-      "link": "https://www.spiegel.de/netzwelt/netzpolitik/donald-trump-ernennt-geheimdienstdirektor-jay-clayton-zum-ki-beauftragten-a-f7c18c22-94f7-4b5e-860f-3ba2bc9244ed#ref=rss",
+      "title": "Underwriting: mgm technology partners entwickelt erste agentische Lösung",
+      "link": "https://www.it-finanzmagazin.de/underwriting-mgm-technology-partners-agentische-loesung-250654/",
       "image": "",
-      "excerpt": "Ein neues Gremium soll laut »Wall Street Journal« den US-Präsidenten über Chancen und Risiken von KI informieren. Chef dieser »Super Intelligence Force« wird Geheimdienstdirektor Jay Clayton. Für den Bericht hat er 120 Tage Zeit.",
-      "date": "2026-10-04T06:18:00.000Z",
-      "source": "Spiegel Netzwelt",
-      "category": "KI & Tech",
-      "score": 7
+      "excerpt": "Das Münchener Software-Unternehmen mgm technology partners hat eigenen Angaben zufolge die erste agentische Underwriting-Lösung in Deutschland entwickelt. Die sogenannte „Cosmo Agentic Underwriting Workbench (AUWWB)” lasse Underwriter und autonome KI",
+      "date": "2026-09-14T11:48:32.000Z",
+      "source": "IT Finanzmagazin KI",
+      "category": "Finance & Banking",
+      "score": 8
+    },
+    {
+      "title": "Künstliche Intelligenz im Social Media Marketing: Die Top Feed und Fudder Episoden zu AI, Geo und Content Slop",
+      "link": "https://allsocial.de/podcast/kuenstliche-intelligenz-im-social-media-marketing-die-top-feed-und-fudder-episoden-zu-ai-geo-und-content-slop",
+      "image": "",
+      "excerpt": "Welche KI-Trends bringen echten Mehrwert? Die 7 besten KI-Folgen des Feed Fudder Podcasts im Überblick",
+      "date": "2026-10-07T08:48:54.000Z",
+      "source": "Allfacebook.de",
+      "category": "Marketing, Vertrieb & Service",
+      "score": 8
     },
     {
       "title": "Marketingautomatisierung für Großunternehmen: Funktionen und Best Practices",
       "link": "https://blog.hubspot.de/marketing/enterprise-marketing-automation",
       "image": "",
-      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/marketing/enterprise-marketing-automation\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://53.fs1.hubspotusercontent-na1.net/hubfs/53/Germany/Blog_images/enterprise-market",
+      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/marketing/enterprise-marketing-automation\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://blog.hubspot.de/hubfs/Germany/Blog_images/enterprise-marketing-automatisierung.p",
       "date": "2026-09-11T08:13:23.000Z",
       "source": "HubSpot Marketing",
       "category": "Marketing, Vertrieb & Service",
+      "score": 8
+    },
+    {
+      "title": "Kundenservice-Automatisierung: Zeit sparen und Kundschaft begeistern",
+      "link": "https://blog.hubspot.de/service/kundenservice-automatisierung",
+      "image": "",
+      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/service/kundenservice-automatisierung\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://blog.hubspot.de/hubfs/Customer-service-automation-1-20260225-7698533.webp\" alt=\"Cust",
+      "date": "2026-08-25T10:32:40.000Z",
+      "source": "HubSpot Service",
+      "category": "Marketing, Vertrieb & Service",
+      "score": 8
+    },
+    {
+      "title": "Im Kampf gegen KI-Scam: Wie Bots Betrügern ihre wertvolle Zeit stehlen",
+      "link": "https://www.heise.de/news/Im-Kampf-gegen-KI-Scam-Wie-Bots-Betruegern-ihre-wertvolle-Zeit-stehlen-11484115.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/8/0/7/5/1/shutterstock_2552483369-f8024e9654bfe36c.jpeg?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Am besten kämpft man gegen die steigende Anzahl von KI-Betrugsfällen laut Sicherheitsexperten ebenfalls mit KI. Wie KI-Bots Betrüger in Schach halten.",
+      "date": "2026-10-12T11:08:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 7
+    },
+    {
+      "title": "Model-Schau: Decision-Modelle, N-Gramme, schlanke Modelle und lokale LLMs",
+      "link": "https://www.heise.de/hintergrund/Model-Schau-Decision-Modelle-N-Gramme-schlanke-Modelle-und-lokale-LLMs-11483777.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag",
+      "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/8/0/5/7/9/llm-a51194b803c72acb.png?height=300&amp;org_if_sml=1&amp;q=75",
+      "excerpt": "Das Decision-Modell Jev hat einen neuen Trend begründet, und die altbekannten Techniken sorgen bei LLMs für schlankere Modelle.",
+      "date": "2026-10-12T10:55:00.000Z",
+      "source": "Heise Online",
+      "category": "KI & Tech",
+      "score": 7
+    },
+    {
+      "title": "Was bewegt wirklich zur Nutzung von KI? - Sechs Motive erklären Akzeptanz und Verhalten",
+      "link": "https://www.der-bank-blog.de/was-bewegt-wirklich-zur-nutzung-von-ki/studien/37737453/?utm_source=bankblog&#038;utm_medium=rss&#038;utm_campaign=rss",
+      "image": "https://www.der-bank-blog.de/wp-content/uploads/2026/08/ki-nutzung-alltag-336x200.jpg",
+      "excerpt": "Zwischen technischer Faszination und dauerhafter Nutzung liegt ein entscheidender Unterschied. Wer die Akzeptanz künstlicher Intelligenz verstehen will, muss deshalb den Blick von einzelnen Plattformen auf Motive, Gewohnheiten und Lebensumstände rich",
+      "date": "2026-10-11T22:10:09.000Z",
+      "source": "Der Bank Blog",
+      "category": "Finance & Banking",
+      "score": 7
+    },
+    {
+      "title": "DORA, KI Zero Trust: Banken-IT unter Dauerfeuer",
+      "link": "https://www.it-finanzmagazin.de/dora-ki-zero-trust-banken-it-unter-dauerfeuer-251383/",
+      "image": "",
+      "excerpt": "Banken stehen unter großem Druck, Innovationen schneller voranzutreiben, weil die Kundenerwartungen steigen und die Konkurrenz durch neue Player im Markt wächst. Das darf aber nicht dazu führen, das Thema Cybersecurity hintenanzustellen. von Christia",
+      "date": "2026-10-05T09:15:58.000Z",
+      "source": "IT Finanzmagazin",
+      "category": "Finance & Banking",
       "score": 7
     },
     {
@@ -333,44 +283,44 @@
       "score": 7
     },
     {
-      "title": "Kundenservice-Automatisierung: Zeit sparen und Kundschaft begeistern",
-      "link": "https://blog.hubspot.de/service/kundenservice-automatisierung",
+      "title": "Fadata stellt neues KI- und SaaS-Führungsteam auf",
+      "link": "https://www.it-finanzmagazin.de/fadata-stellt-neues-ki-und-saas-fuehrungsteam-auf-252071/",
       "image": "",
-      "excerpt": "div class=\"hs-featured-image-wrapper\" a href=\"https://blog.hubspot.de/service/kundenservice-automatisierung\" title=\"\" class=\"hs-featured-image-link\" img src=\"https://www.hubspot.com/hubfs/Customer-service-automation-1-20260225-7698533.webp\" alt=\"Cust",
-      "date": "2026-08-25T10:32:40.000Z",
-      "source": "HubSpot Service",
-      "category": "Marketing, Vertrieb & Service",
-      "score": 7
-    },
-    {
-      "title": "Der Preis einer „AI-First”-Strategie bei Finanzdienstleistern",
-      "link": "https://www.it-finanzmagazin.de/der-preis-einer-ai-first-strategie-bei-finanzdienstleistern-249346/",
-      "image": "",
-      "excerpt": "Der „Global Security Research Report” von Fastly, einem Unternehmen für Content Delivery, Compute- und Sicherheitslösungen, zeigt: KI‑orientierte Finanzdienstleister mit der Strategie „AI First” benötigen im Schnitt 96 Tage länger zur Erholung nach C",
-      "date": "2026-08-17T16:51:03.000Z",
-      "source": "IT Finanzmagazin KI",
+      "excerpt": "Fadata, Anbieter von Softwarelösungen für die Versicherungsbranche, treibt mit zwei neuen Personalien seine KI-Transformation voran. Antoaneta Karagyozova übernimmt als Chief SaaS AI Transformation Officer die strategische Führung. Milena Georgieva v",
+      "date": "2026-10-12T10:41:07.000Z",
+      "source": "IT Finanzmagazin",
       "category": "Finance & Banking",
-      "score": 7
+      "score": 6
     },
     {
-      "title": "Platz 1 bei Google, trotzdem nicht empfohlen: Warum ChatGPT deine Konkurrenz nennt",
-      "link": "https://onlinemarketing.de/seo/platz-1-google-warum-chatgpt-deine-konkurrenz-nennt",
-      "image": "",
-      "excerpt": "ChatGPT empfiehlt den Wettbewerb statt dich? Woran das liegt und wie du Zugriff, Klarheit und Belege prüfst, statt zu raten. [Anzeige ]",
-      "date": "2026-10-05T06:40:53.000Z",
-      "source": "OnlineMarketing.de",
-      "category": "Marketing, Vertrieb & Service",
+      "title": "Ich habe die neue „Try-it-on“-Shopping-Funktion von ChatGPT ausprobiert",
+      "link": "https://www.businessinsider.de/leben/chatgpt-hat-eine-neue-shopping-funktion-mein-test-zeigt-wo-die-ki-noch-versagt/",
+      "image": "https://cdn.businessinsider.de/wp-content/uploads/2026/10/6abf03c6d15f8a572974d541-800x400.jpg?ver=1791104431",
+      "excerpt": "Ich habe die virtuelle Anprobe-Funktion von ChatGPT mit Schmuck, Outfits und meiner Katze getestet. So hat es funktioniert.",
+      "date": "2026-10-09T13:48:30.000Z",
+      "source": "Gründerszene",
+      "category": "KI & Tech",
       "score": 6
     },
     {
-      "title": "Die beliebtesten Beiträge im September 2026 - Top Themen für Banken und Sparkassen",
-      "link": "https://www.der-bank-blog.de/die-beliebtesten-beitraege-im-september-2026/trends/37737865/?utm_source=bankblog&#038;utm_medium=rss&#038;utm_campaign=rss",
-      "image": "https://www.der-bank-blog.de/wp-content/uploads/2018/02/top-trends-banking-336x200.jpg",
-      "excerpt": "Im September stand – neben Perspektiven für das Omnikanalbanking von Regionalbanken - vor allem das Thema „Künstliche Intelligenz“ und die damit verbundene neue Serie über „Einsatzbereiche für KI im Banking“ im Blickpunkt.",
-      "date": "2026-10-01T22:10:48.000Z",
-      "source": "Der Bank Blog",
+      "title": "Die KI empfiehlt die maschinenlesbarste Bank, nicht zwingend die beste",
+      "link": "https://www.it-finanzmagazin.de/die-ki-empfiehlt-die-maschinenlesbarste-bank-nicht-zwingend-die-beste-251542/",
+      "image": "",
+      "excerpt": "Der hypt Report – Banking Austria 2026, in Zusammenarbeit mit der Hochschule HES-SO, analysiert neben den Google-Bewertungen der österreichischen Banken auch deren Präsenz in den Antworten verschiedener KI-Systeme. Vier Sprachmodelle wurden dafür mit",
+      "date": "2026-09-30T09:03:16.000Z",
+      "source": "IT Finanzmagazin",
       "category": "Finance & Banking",
       "score": 6
+    },
+    {
+      "title": "BearingPoint-Studie: Kapitalpuffer top, Kreditbuch faul – Deutschlands Dilemma",
+      "link": "https://www.it-finanzmagazin.de/bearingpoint-studie-kapitalpuffer-top-kreditbuch-faul-deutschlands-dilemma-250334/",
+      "image": "",
+      "excerpt": "Als einziger großer Markt Europas baut Deutschland wieder Problemkredite auf – sagt BearingPoint. Künftig entscheiden Effizienz, Ertragskraft, Daten und KI über Gewinner und Verlierer im Bankenmarkt. Deutschlands Banken sind heute so stabil wie seit ",
+      "date": "2026-10-06T12:40:42.000Z",
+      "source": "IT Finanzmagazin",
+      "category": "Finance & Banking",
+      "score": 5
     }
   ]
 }
